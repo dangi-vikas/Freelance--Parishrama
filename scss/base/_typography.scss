@@ -1,0 +1,71 @@
+body {
+    font-family: ;
+    font-weight: ;
+    line-height: ;
+    color: $;
+}
+
+.heading-primary {
+    color: ;
+    text-transform: uppercase;
+
+    backface-visibility: hidden;
+    margin-bottom: ;
+
+    &--main {
+        display: block;
+        font-size: rem;
+        font-weight: ;
+        letter-spacing: rem;
+ 
+        @include respond(phone) {
+            letter-spacing: rem;
+            font-family: rem;
+        }
+    }
+    
+    &--sub {
+        display: block;
+        font-size: rem;
+        font-weight: ;
+        letter-spacing: rem;
+    
+        @include respond(phone) {
+            letter-spacing: rem;
+        }
+    }
+}
+
+.heading-secondary {
+    font-size: rem;
+    text-transform: uppercase;
+    font-weight: ;
+    display: inline-block;
+
+    background-image: ;
+    color: ; 
+    letter-spacing: rem;
+    
+    @include respond(tab-port) {
+        font-size: rem;
+    }
+
+    @include respond(phone) {
+        font-size: rem;
+    }
+
+}
+
+.heading-tertiary {
+    font-size: $default-font-size;
+    font-weight: ;
+    text-transform: uppercase;
+}
+
+.paragraph {
+    font-size: $default-font-size;
+
+    &:not(:last-child) {
+        margin-bottom: rem;
+    }
+}
