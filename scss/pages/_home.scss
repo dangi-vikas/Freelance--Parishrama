@@ -9,3 +9,79 @@
   background-size: cover;
   clip-path: ellipse(100% 55% at 48% 44%);
 }
+
+.section-hero {
+  .swiper {
+    width: 100%;
+    height: 100%;
+
+    &-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.section-courses {
+  &__container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__card {
+    width: 40.5rem;
+    height: 26rem;
+    background-image: url(/img/courseCardBackground.png);
+    position: absolute;
+    border-radius: 0.5rem;
+
+    &--textbox {
+      position: relative;
+      top: 15rem;
+      left: 4rem;
+    }
+
+    &--text {
+      color: $color-white;
+      font-weight: 500;
+      font-size: 2.8rem;
+    }
+
+    &--icon--container {
+      height: 5.5rem;
+      width: 4.2rem;
+      position: absolute;
+      top: 3.2rem;
+      left: 31rem;
+      display: inline-block;
+  
+      img {
+        height: 100%;
+      }
+    }
+  }
+
+  
+}

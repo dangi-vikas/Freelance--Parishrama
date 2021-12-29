@@ -17,7 +17,7 @@ body {
 }
 
 body {
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
 }
 
@@ -25,7 +25,6 @@ body {
   color: #373435;
   text-transform: uppercase;
   display: block;
-  font-family: "Roboto", sans-serif;
   font-size: 42px;
   font-weight: 500;
 }
@@ -34,8 +33,18 @@ body {
   font-size: 16px;
 }
 
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .u-center-text {
   text-align: center !important;
+}
+
+.u-margin-bottom-big {
+  margin-bottom: 2rem !important;
 }
 
 .btn, .btn:link, .btn:visited {
@@ -109,5 +118,75 @@ body {
   background-size: cover;
   -webkit-clip-path: ellipse(100% 55% at 48% 44%);
           clip-path: ellipse(100% 55% at 48% 44%);
+}
+
+.section-hero .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.section-hero .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.section-hero .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.section-courses__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.section-courses__card {
+  width: 40.5rem;
+  height: 26rem;
+  background-image: url(/img/courseCardBackground.png);
+  position: absolute;
+  border-radius: 0.5rem;
+}
+
+.section-courses__card--textbox {
+  position: relative;
+  top: 15rem;
+  left: 4rem;
+}
+
+.section-courses__card--text {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 2.8rem;
+}
+
+.section-courses__card--icon--container {
+  height: 5.5rem;
+  width: 4.2rem;
+  position: absolute;
+  top: 3.2rem;
+  left: 31rem;
+  display: inline-block;
+}
+
+.section-courses__card--icon--container img {
+  height: 100%;
 }
 /*# sourceMappingURL=main.css.map */
