@@ -1,0 +1,22 @@
+.btn {
+    
+    &,
+    &:link,
+    &:visited {
+        height: 40px;
+        width: 141px;
+        text-decoration: none;
+        display: flex;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+        color: #373435;
+        font-size: 16px;
+
+
+        position: relative;
+
+        border: 2px solid black;
+        cursor: pointer;
+    }
+}

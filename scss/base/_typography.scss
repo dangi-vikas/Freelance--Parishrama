@@ -1,71 +1,75 @@
 body {
-    font-family: ;
-    font-weight: ;
-    line-height: ;
-    color: $;
+  font-family: Roboto;
+  font-weight: 300;
+  //     line-height: ;
+  //     color: $;
 }
 
 .heading-primary {
-    color: ;
-    text-transform: uppercase;
+  color: #373435;
+  text-transform: uppercase;
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-size: 42px;
+  font-weight: 500;
 
-    backface-visibility: hidden;
-    margin-bottom: ;
+  //     backface-visibility: hidden;
+  //     margin-bottom: ;
 
-    &--main {
-        display: block;
-        font-size: rem;
-        font-weight: ;
-        letter-spacing: rem;
- 
-        @include respond(phone) {
-            letter-spacing: rem;
-            font-family: rem;
-        }
-    }
-    
-    &--sub {
-        display: block;
-        font-size: rem;
-        font-weight: ;
-        letter-spacing: rem;
-    
-        @include respond(phone) {
-            letter-spacing: rem;
-        }
-    }
+  //     &--main {
+  //         display: block;
+  //         font-size: rem;
+  //         font-weight: ;
+  //         letter-spacing: rem;
+
+  //         @include respond(phone) {
+  //             letter-spacing: rem;
+  //             font-family: rem;
+  //         }
+  //     }
+
+  //     &--sub {
+  //         display: block;
+  //         font-size: rem;
+  //         font-weight: ;
+  //         letter-spacing: rem;
+
+  //         @include respond(phone) {
+  //             letter-spacing: rem;
+  //         }
+  //     }
 }
 
-.heading-secondary {
-    font-size: rem;
-    text-transform: uppercase;
-    font-weight: ;
-    display: inline-block;
+// .heading-secondary {
+//     font-size: rem;
+//     text-transform: uppercase;
+//     font-weight: ;
+//     display: inline-block;
 
-    background-image: ;
-    color: ; 
-    letter-spacing: rem;
-    
-    @include respond(tab-port) {
-        font-size: rem;
-    }
+//     background-image: ;
+//     color: ;
+//     letter-spacing: rem;
 
-    @include respond(phone) {
-        font-size: rem;
-    }
+//     @include respond(tab-port) {
+//         font-size: rem;
+//     }
 
-}
+//     @include respond(phone) {
+//         font-size: rem;
+//     }
 
-.heading-tertiary {
-    font-size: $default-font-size;
-    font-weight: ;
-    text-transform: uppercase;
-}
+// }
+
+// .heading-tertiary {
+//     font-size: $default-font-size;
+//     font-weight: ;
+//     text-transform: uppercase;
+// }
 
 .paragraph {
-    font-size: $default-font-size;
+  font-size: 16px;
 
-    &:not(:last-child) {
-        margin-bottom: rem;
-    }
+  // &:not(:last-child) {
+  //     margin-bottom: rem;
+  // }
 }

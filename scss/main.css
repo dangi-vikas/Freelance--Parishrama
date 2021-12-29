@@ -1,0 +1,113 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto;
+  font-weight: 300;
+}
+
+.heading-primary {
+  color: #373435;
+  text-transform: uppercase;
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-size: 42px;
+  font-weight: 500;
+}
+
+.paragraph {
+  font-size: 16px;
+}
+
+.u-center-text {
+  text-align: center !important;
+}
+
+.btn, .btn:link, .btn:visited {
+  height: 40px;
+  width: 141px;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #373435;
+  font-size: 16px;
+  position: relative;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.header {
+  height: 100px;
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__logo-box {
+  position: absolute;
+  top: 15px;
+  left: 40px;
+}
+
+.header__logo {
+  height: 69.04px;
+  width: 233px;
+}
+
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
+}
+
+.header__link {
+  color: #373435;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.section-about {
+  height: 511px;
+  background: linear-gradient(159.17deg, #ffc700 33.66%, rgba(255, 199, 0, 0.83) 81.72%);
+  opacity: 0.76;
+  background-size: cover;
+  -webkit-clip-path: ellipse(100% 55% at 48% 44%);
+          clip-path: ellipse(100% 55% at 48% 44%);
+}
+/*# sourceMappingURL=main.css.map */
