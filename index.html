@@ -1,99 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
 
-        <link rel="stylesheet" href="css/icon-font.css">
-        <link rel="stylesheet" href="scss/main.css">
-        <link rel="stylesheet" href="css/icon-font.css">
-        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-        
-        <title>Parishrama</title>
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <header class="header">
-            <div class="header__logo-box">
-                <img src="./img/Group 259.jpg" alt="Logo", class="header__logo">
-            </div>  
-
-            <div class="header__background">&nbsp;</div>
-
-            <ul class="header__list">
-                <li class="header__item"><a href="#" class="header__link">Home</a></li>
-                <li class="header__item"><a href="#" class="header__link">About Us</a></li>
-                <li class="header__item"><a href="#" class="header__link">Courses</a></li>
-                <li class="header__item"><a href="#" class="header__link">Downloads</a></li>
-                <li class="header__item"><a href="#" class="header__link">Hostel</a></li>
-                <li class="header__item"><a href="#" class="header__link">Gallery</a></li>
-            </ul>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
 
 
-            <a href="#" class="btn btn--white">Apply Now</a>
-        </header>
-        
-        <main>
-            <section class="section-hero" id="section-hero">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/icon-font.css">
+    <link rel="stylesheet" href="scss/main.css">
+    <link rel="stylesheet" href="css/icon-font.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
-            </section>
+    <title>Parishrama</title>
+</head>
 
-            <section class="section-updates" id="section-updates">
+<body>
 
-                <div class="u-center-text u-margin-bottom-big">
-                    <h2 class="heading-secondary">
-                        Important Updates       
-                    </h2>
-                </div> 
+    <header class="header">
+        <div class="container header__container">
+            <div class="header__logo-container">
+                <img src="./img/Group 259.jpg" alt="Logo" , class="header__logo">
+            </div>
 
-            </section>
+            <div class="header__navbar-container">
+                <ul class="header__navbar">
+                    <li class="header__navbar-item"><a href="#">Home</a></li>
+                    <li class="header__navbar-item"><a href="#">About Us</a></li>
+                    <li class="header__navbar-item"><a href="#">Courses</a></li>
+                    <li class="header__navbar-item"><a href="#">Downloads</a></li>
+                    <li class="header__navbar-item"><a href="#">Hostel</a></li>
+                    <li class="header__navbar-item"><a href="#">Gallery</a></li>
+                </ul>
 
-            <section class="section-downloads" id="section-downloads">
-
-                <div class="u-center-text u-margin-bottom-big">
-                    <h2 class="heading-secondary">
-                        Latest Downloads       
-                    </h2>
-                </div> 
-
-            </section>
-
-            <section class="section-about" id="section-about">
-
-                <div class="u-center-text u-margin-bottom-big">
-                    <h2 class="heading-primary">
-                        Why Us
-                    </h2>
-                    <p class="paragraph">
-                        Lorem ipsum dolor sit amet, consettur sadipscing elitr, sed diam nonumy eirmod tempor 
-                        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores 
-                    </p>
-                </div>
-
-            </section>
-
-            <section class="section-courses" id="section-courses">
-
-                
-            </section>
-
-            <section class="section-pp" id="section-pp">
-
-            </section>
-
-            <section class="section-testimonials" id="section-testimonials">
-
-            </section>
-
-        </main>
-
-        <footer class="footer">
-            
-        </footer>
-
+                <a href="#" class="btn btn--grey-outline header__navbar-item mr-0">Apply Now</a>
+            </div>
         </div>
+    </header>
 
-    </body>
+    <main>
+        <section class="section-hero" id="section-hero">
+            <div class="container">
+                <div class="section-hero__container row">
+                    <div class="section-hero__content col-sm-12 col-md-6 pb-4">
+                        <div class="section-hero__content--header">
+                            <h1 class="heading heading-primary">Admissions Open</h1>
+
+                            <p class="paragraph">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam magnam explicabo dolore
+                                odio temporibus accusamus ducimus sed fugiat aliquid et architecto eaque.
+                            </p>
+                        </div>
+
+                        <div class="section-hero__content--cta">
+                            <div class="section-hero__content--cta-card">
+                                <p>NEET</p>
+                                <p>Long Term Course</p>
+
+                                <div class="strip">
+                                    <p>New Batch Starts from</p>
+                                    <p>January 15th, 2022</p>
+                                </div>
+
+                                <button class="btn btn--white-outline">Apply Now</button>
+                            </div>
+                            <div class="section-hero__content--cta-card">
+                                <p>NEET</p>
+                                <p>Crash Course</p>
+
+                                <div class="strip">
+                                    <p>New Batch Starts from</p>
+                                    <p>January 16th, 2022</p>
+                                </div>
+
+                                <button class="btn btn--white-outline">Apply Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-hero__image col-sm-12 col-md-6">
+                        <img src="./img/heroImage.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="section-updates" id="section-updates">
+
+            <div class="u-center-text u-margin-bottom-big">
+                <h2 class="heading-secondary">
+                    Important Updates
+                </h2>
+            </div>
+
+        </section>
+
+        <section class="section-downloads" id="section-downloads">
+
+            <div class="u-center-text u-margin-bottom-big">
+                <h2 class="heading-secondary">
+                    Latest Downloads
+                </h2>
+            </div>
+
+        </section>
+
+        <section class="section-about" id="section-about">
+
+            <div class="u-center-text u-margin-bottom-big">
+                <h2 class="heading-primary">
+                    Why Us
+                </h2>
+                <p class="paragraph">
+                    Lorem ipsum dolor sit amet, consettur sadipscing elitr, sed diam nonumy eirmod tempor
+                    invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
+                    duo dolores
+                </p>
+            </div>
+
+        </section>
+
+        <section class="section-courses" id="section-courses">
+
+
+        </section>
+
+        <section class="section-pp" id="section-pp">
+
+        </section>
+
+        <section class="section-testimonials" id="section-testimonials">
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+    </footer>
+
+    </div>
+
+</body>
+
 </html>

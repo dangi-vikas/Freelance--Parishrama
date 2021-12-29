@@ -1,34 +1,45 @@
 .header {
-  height: 100px;
+  height: 10rem;
   background-size: cover;
   background-position: top;
   position: relative;
 
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-
-  &__logo-box {
-    position: absolute;
-    top: 15px;
-    left: 40px;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   &__logo {
-    height: 69.04px;
-    width: 233px;
+    height: 100%;
+
+    &-container {
+      height: 6.4rem;
+      width: 100%;
+      max-width: 24rem;
+    }
   }
 
-  &__list { 
+  &__navbar {
     display: flex;
-    justify-content: space-around;
-    list-style: none;
-  }
+    align-items: center;
 
-  &__link {
-    color: #373435;
-    font-weight: 500;
-    font-size: 16px;
-    text-decoration: none;
+    &-container {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+    }
+
+    &-item {
+      margin: 2rem 1.5rem;
+      padding: 1rem;
+      list-style: none;
+
+      & a {
+        font-size: $text;
+        font-weight: 500;
+        color: $color-grey-dark;
+      }
+    }
   }
 }

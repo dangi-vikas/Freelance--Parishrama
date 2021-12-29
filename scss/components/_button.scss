@@ -1,22 +1,23 @@
 .btn {
-    
-    &,
-    &:link,
-    &:visited {
-        height: 40px;
-        width: 141px;
-        text-decoration: none;
-        display: flex;
-        border-radius: 10px;
-        justify-content: center;
-        align-items: center;
-        color: #373435;
-        font-size: 16px;
+  &,
+  &:link,
+  &:visited {
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    font-size: $text;
+    text-align: center;
+    font-weight: 500;
+    background: none;
+    cursor: pointer;
+  }
 
+  &--grey-outline {
+    color: $color-grey-dark;
+    border: 2px solid $color-grey-dark;
+  }
 
-        position: relative;
-
-        border: 2px solid black;
-        cursor: pointer;
-    }
+  &--white-outline {
+    border: 2px solid #fff;
+    color: #fff;
+  }
 }
