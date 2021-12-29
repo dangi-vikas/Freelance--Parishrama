@@ -45,43 +45,5 @@
 }
 
 .section-courses {
-  &__container {
-    display: flex;
-    justify-content: space-around;
-  }
-
-  &__card {
-    width: 40.5rem;
-    height: 26rem;
-    background-image: url(/img/courseCardBackground.png);
-    position: absolute;
-    border-radius: 0.5rem;
-
-    &--textbox {
-      position: relative;
-      top: 15rem;
-      left: 4rem;
-    }
-
-    &--text {
-      color: $color-white;
-      font-weight: 500;
-      font-size: 2.8rem;
-    }
-
-    &--icon--container {
-      height: 5.5rem;
-      width: 4.2rem;
-      position: absolute;
-      top: 3.2rem;
-      left: 31rem;
-      display: inline-block;
-  
-      img {
-        height: 100%;
-      }
-    }
-  }
-
-  
+  margin-bottom: 30rem;
 }

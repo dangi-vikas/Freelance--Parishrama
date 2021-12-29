@@ -1,0 +1,73 @@
+.footer {
+  height: 142rem;
+  background-color: #202439;
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  padding: 1rem 7rem;
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    height: 100%;
+
+    &-container {
+      height: 6rem;
+      width: 100%;
+      max-width: 20rem;
+    }
+
+    &--icon-container {
+      margin-left: 25%;
+      height: 2.4rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      img {
+        max-width: 2.4rem;
+      }
+    }
+  }
+
+  &__contact {
+    width: 41rem;
+
+    &-container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &--phone,
+    &--mail {
+      display: flex;
+      margin-left: 2rem;
+    }
+
+    &--icon {
+      height: 2.4rem;
+      width: 2.4rem;
+      margin-right: 1rem;
+    }
+
+    &--text {
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: $color-white;
+    }
+
+    &--location {
+      width: 100%;
+      display: flex;
+      margin-left: 2rem;
+
+      p {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

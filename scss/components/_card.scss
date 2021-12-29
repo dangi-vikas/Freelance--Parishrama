@@ -1,0 +1,80 @@
+.card {
+  position: relative;
+  height: 26rem;
+  display: flex;
+  align-items: center;
+
+  &--up {
+    width: 40.5rem;
+    height: 26rem;
+    background-image: url(/img/courseCardBackground.png);
+    backface-visibility: hidden;
+    background-size: cover;
+    position: absolute;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    top: 0;
+    z-index: 5;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+
+    &__textbox {
+      position: absolute;
+      top: 15rem;
+      left: 4rem;
+    }
+
+    &__text {
+      color: $color-white;
+      font-weight: 500;
+      font-size: 2.8rem;
+    }
+
+    &__icon--container {
+      height: 5.5rem;
+      width: 4.2rem;
+      position: absolute;
+      top: 3.2rem;
+      left: 31rem;
+      display: inline-block;
+
+      img {
+        height: 100%;
+      }
+    }
+  }
+
+  &--down {
+    width: 39rem;
+    height: 17rem;
+    border-radius: 5px;
+    background-color: $color-white;
+    position: absolute;
+    bottom: -30%;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+    transition: all 0.5s;
+
+    &__textbox {
+      padding: 2rem;
+      margin: 2rem;
+      display: inline-block;
+      position: relative;
+    }
+
+    &__text {
+      font-size: 1.6rem;
+      color: $color-black;
+      font-weight: 400;
+      text-align: center;
+    }
+
+    a {
+      position: absolute;
+      left: 25%;
+      margin-top: 2rem;
+    }
+  }
+
+  &:hover &--down {
+    transform: translateY(50%);
+  }
+}

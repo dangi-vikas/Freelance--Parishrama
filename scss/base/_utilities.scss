@@ -11,12 +11,14 @@
 //     }
 // }
 .u-margin-bottom-big {
-    margin-bottom: 2rem !important;
+  margin-bottom: 4rem !important;
 
-    // @include respond(tab-port) {
-    //     margin-bottom: rem !important;
-    // }
+  // @include respond(tab-port) {
+  //     margin-bottom: rem !important;
+  // }
 }
 
-// .u-margin-top-big { margin-top: rem !important; }
+.u-margin-top-big {
+  margin-top: 5rem rem !important;
+}
 // .u-margin-top-huge { margin-top: rem !important; }
