@@ -40,25 +40,13 @@ body {
   //     }
 }
 
-// .heading-secondary {
-//     font-size: rem;
-//     text-transform: uppercase;
-//     font-weight: ;
-//     display: inline-block;
+.heading-secondary {
+  font-size: 4.2rem;
+  text-transform: uppercase;
+  font-weight: 500;
 
-//     background-image: ;
-//     color: ;
-//     letter-spacing: rem;
-
-//     @include respond(tab-port) {
-//         font-size: rem;
-//     }
-
-//     @include respond(phone) {
-//         font-size: rem;
-//     }
-
-// }
+  color: $color-grey-dark;
+}
 
 // .heading-tertiary {
 //     font-size: $text;
