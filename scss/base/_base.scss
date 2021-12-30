@@ -24,11 +24,6 @@ html {
 
 body {
   box-sizing: border-box;
-  background: #e5e5e5;
-}
-
-a {
-  text-decoration: none;
 }
 
 .container {
@@ -59,7 +54,14 @@ a {
     width: 1280px;
   }
 }
-// ::selection {
-//     background-color: $;
-//     color: $;
-// }
+hr {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  color: $color-white;
+  border: 2px solid rgba($color-white, 0.2);
+}
+
+a {
+  text-decoration: none;
+}

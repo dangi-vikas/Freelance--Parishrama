@@ -6,11 +6,10 @@ body {
 }
 
 .heading-primary {
-  color: #373435;
+  color: $color-grey-dark;
   text-transform: uppercase;
   display: block;
-  font-family: "Roboto", sans-serif;
-  font-size: 42px;
+  font-size: $text-extra-big;
   font-weight: 500;
 
   //     backface-visibility: hidden;
@@ -48,17 +47,45 @@ body {
   color: $color-grey-dark;
 }
 
-// .heading-tertiary {
-//     font-size: $text;
-//     font-weight: ;
-//     text-transform: uppercase;
-// }
-
 .paragraph {
   font-size: 16px;
   color: $color-grey-dark;
+}
 
-  // &:not(:last-child) {
-  //     margin-bottom: rem;
-  // }
+.heading-tertiary {
+  font-size: $text-big;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  &--yellow {
+    color: $color-secondary;
+  }
+
+  &--white {
+    color: $color-white;
+  }
+}
+
+.heading-subtertiary {
+  font-size: $text-big;
+  font-weight: 500;
+
+  &--yellow {
+    color: $color-secondary;
+  }
+
+  &--white {
+    color: $color-white;
+  }
+}
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
 }
