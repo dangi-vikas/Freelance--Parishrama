@@ -78,8 +78,17 @@ li {
   padding: 0;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 .u-center-text {
   text-align: center !important;
+}
+
+.u-margin-bottom-huge {
+  margin-bottom: 5rem !important;
 }
 
 .u-margin-bottom-big {
@@ -99,24 +108,29 @@ li {
 }
 
 .btn, .btn:link, .btn:visited {
-  height: 40px;
-  width: 141px;
-  text-decoration: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border-radius: 10px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #373435;
-  font-size: 16px;
-  position: relative;
-  border: 2px solid black;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: 500;
+  background: none;
   cursor: pointer;
+}
+
+.btn--white-outline {
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.btn-search, .btn-search:link, .btn-search:visited {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 500;
+  background-color: #ffc700;
+  cursor: pointer;
+  color: #202439;
 }
 
 .card {
@@ -210,7 +224,6 @@ li {
 }
 
 .footer__container {
-  height: 142rem;
   background-color: #202439;
   background-size: cover;
   background-position: top;
@@ -228,7 +241,7 @@ li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 3rem;
+  margin: 2rem;
 }
 
 .footer__logo {
@@ -259,17 +272,7 @@ li {
 }
 
 .footer__contact {
-  width: 45rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  max-width: 42rem;
 }
 
 .footer__contact-container {
@@ -282,14 +285,13 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: auto;
 }
 
 .footer__contact--phone, .footer__contact--mail {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 2rem;
+  margin-top: 3rem;
 }
 
 .footer__contact--icon {
@@ -309,61 +311,79 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 2rem;
 }
 
 .footer__contact--location p {
   font-size: 1.2rem;
 }
 
-.footer__middle--heading {
-  padding-left: 5rem;
-  padding-right: 5rem;
+.footer__middle {
+  margin: 3rem 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: auto;
 }
 
 .footer__navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.footer__navbar-container {
-  margin-left: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 .footer__navbar-item {
-  margin: 2rem 1.5rem;
-  padding: 1rem;
   list-style: none;
+  margin-right: 5rem;
 }
 
 .footer__navbar-item a {
   font-size: 1.6rem;
   font-weight: 500;
   color: #ffffff;
+}
+
+.footer__navbar-item--yellow a {
+  color: #ffc700;
+  font-weight: 700;
+}
+
+.footer__search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5rem;
+}
+
+.footer__search--container {
+  min-width: 42rem;
+  height: 4rem;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+}
+
+.footer__search--text {
+  padding-left: 2rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.footer__bottom {
+  margin: 3rem 2rem;
 }
 
 .footer__bottom--list-container {
