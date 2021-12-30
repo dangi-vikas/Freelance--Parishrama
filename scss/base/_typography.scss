@@ -6,10 +6,10 @@ body {
 }
 
 .heading-primary {
-  color: #373435;
+  color: $color-grey-dark;
   text-transform: uppercase;
   display: block;
-  font-size: 42px;
+  font-size: $text-extra-big;
   font-weight: 500;
 
   //     backface-visibility: hidden;
@@ -60,12 +60,12 @@ body {
 // }
 
 .heading-tertiary {
-  font-size: 1.8rem;
+  font-size: $text-big;
   font-weight: 500;
   text-transform: uppercase;
 
   &--yellow {
-    color: #ffc700;
+    color: $color-secondary;
   }
 
   &--white {
@@ -74,11 +74,11 @@ body {
 }
 
 .heading-subtertiary {
-  font-size: 1.8rem;
+  font-size: $text-big;
   font-weight: 500;
 
   &--yellow {
-    color: #ffc700;
+    color: $color-secondary;
   }
 
   &--white {
@@ -87,11 +87,7 @@ body {
 }
 
 .paragraph {
-  font-size: 16px;
-
-  // &:not(:last-child) {
-  //     margin-bottom: rem;
-  // }
+  font-size: $text;
 }
 
 li {

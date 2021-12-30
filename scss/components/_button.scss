@@ -4,17 +4,17 @@
   &:visited {
     padding: 1rem 1.5rem;
     border-radius: 1rem;
-    font-size: 1.6rem;
+    font-size: $text;
     text-align: center;
     font-weight: 500;
     background: none;
     cursor: pointer;
   }
 
-  //   &--grey-outline {
-  //     color: $color-grey-dark;
-  //     border: 2px solid $color-grey-dark;
-  //   }
+  &--grey-outline {
+    color: $color-grey-dark;
+    border: 2px solid $color-grey-dark;
+  }
 
   &--white-outline {
     border: 2px solid #fff;
@@ -28,11 +28,17 @@
   &:visited {
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
-    font-size: 1.2rem;
+    font-size: $text-extra-small;
     text-align: center;
     font-weight: 500;
-    background-color: #ffc700;
+    background-color: $color-secondary;
     cursor: pointer;
-    color: #202439;
+    color: $color-primary;
+
+    @include respond(tab-land) {
+      padding: 0.5rem 3rem;
+      border-radius: 1rem;
+      font-size: $text;
+    }
   }
 }
