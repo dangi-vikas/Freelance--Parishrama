@@ -1,12 +1,12 @@
 .card {
   position: relative;
-  height: 26rem;
+  min-height: 26rem;
   display: flex;
   align-items: center;
 
   &--up {
-    width: 40.5rem;
-    height: 26rem;
+    width: 100%;
+    height: 100%;
     background-image: url(/img/courseCardBackground.png);
     backface-visibility: hidden;
     background-size: cover;
@@ -16,11 +16,12 @@
     top: 0;
     z-index: 5;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
 
     &__textbox {
-      position: absolute;
-      top: 15rem;
-      left: 4rem;
+      padding-left: 2rem;
     }
 
     &__text {
@@ -30,12 +31,10 @@
     }
 
     &__icon--container {
-      height: 5.5rem;
-      width: 4.2rem;
-      position: absolute;
-      top: 3.2rem;
-      left: 31rem;
+      padding: 2rem;
+      margin-right: 1rem;
       display: inline-block;
+      align-self: flex-end;
 
       img {
         height: 100%;
