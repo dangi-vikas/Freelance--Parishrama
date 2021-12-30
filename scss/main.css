@@ -709,7 +709,7 @@ ul {
 }
 
 .section-updates {
-  margin: 2rem auto;
+  margin: 5rem auto;
 }
 
 .section-updates__important-header, .section-updates__latest-header {
@@ -830,6 +830,99 @@ ul {
 
 .section-updates__important-list-wrapper ul li img, .section-updates__latest-list-wrapper ul li img {
   padding-right: 1rem;
+}
+
+.section-main-carousel {
+  margin: 2rem auto;
+}
+
+.section-main-carousel .main-carousel .item {
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-main-carousel .main-carousel .item .item-content {
+  background: #fff;
+  -webkit-box-shadow: 0 0 5px #0003;
+          box-shadow: 0 0 5px #0003;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.section-main-carousel .main-carousel .owl-nav {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section-main-carousel .main-carousel .owl-nav .owl-prev {
+  left: -2rem;
+}
+
+.section-main-carousel .main-carousel .owl-nav .owl-next {
+  right: -2rem;
+}
+
+.section-main-carousel .main-carousel .owl-nav .owl-prev,
+.section-main-carousel .main-carousel .owl-nav .owl-next {
+  position: relative;
+  height: 5rem;
+  width: 5rem;
+  font-size: 4rem;
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #ffc700;
+  -webkit-box-shadow: 0 0 5px #0003;
+          box-shadow: 0 0 5px #0003;
+}
+
+.section-main-carousel .main-carousel .owl-nav .owl-prev span,
+.section-main-carousel .main-carousel .owl-nav .owl-next span {
+  margin-top: -5px;
+}
+
+.section-main-carousel .main-carousel .owl-dots {
+  text-align: center;
+}
+
+.section-main-carousel .main-carousel .owl-dots .owl-dot {
+  height: 1rem;
+  width: 1rem;
+  margin: 5px;
+  background: #373435;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.section-main-carousel .main-carousel .owl-dots .owl-dot.active {
+  background: #ffc700;
+  width: 2rem;
 }
 
 .section-whyus {
