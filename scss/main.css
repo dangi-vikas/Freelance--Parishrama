@@ -168,6 +168,25 @@ ul {
   border: none !important;
 }
 
+.owl-dots {
+  text-align: center;
+}
+
+.owl-dots .owl-dot {
+  height: 1rem;
+  width: 1rem;
+  margin: 5px;
+  background: #373435 !important;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.owl-dots .owl-dot.active {
+  background: #ffc700 !important;
+  width: 2rem;
+}
+
 .btn, .btn:link, .btn:visited {
   padding: 0.5rem 1rem;
   border-radius: 1rem;
@@ -209,7 +228,6 @@ ul {
 
 .card {
   position: relative;
-  min-height: 26rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -221,27 +239,17 @@ ul {
 .card--up {
   width: 100%;
   height: 100%;
-  background-image: url(/img/courseCardBackground.png);
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   background-size: cover;
   position: absolute;
+  display: contents;
   border-radius: 0.5rem;
   overflow: hidden;
   top: 0;
   z-index: 5;
   -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
           box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .card--up__textbox {
@@ -273,7 +281,8 @@ ul {
   padding: 2rem;
   background-color: #ffffff;
   position: absolute;
-  bottom: -30%;
+  z-index: -1;
+  bottom: -7rem;
   -webkit-box-shadow: 0 1.5rem 4rem #0002;
           box-shadow: 0 1.5rem 4rem #0002;
   -webkit-transition: all 0.5s;
@@ -298,8 +307,8 @@ ul {
 }
 
 .card:hover .card--down {
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
+  -webkit-transform: translateY(60%);
+          transform: translateY(60%);
 }
 
 .footer__container {
@@ -906,25 +915,6 @@ ul {
   margin-top: -5px;
 }
 
-.section-main-carousel .main-carousel .owl-dots {
-  text-align: center;
-}
-
-.section-main-carousel .main-carousel .owl-dots .owl-dot {
-  height: 1rem;
-  width: 1rem;
-  margin: 5px;
-  background: #373435;
-  border-radius: 5px;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.section-main-carousel .main-carousel .owl-dots .owl-dot.active {
-  background: #ffc700;
-  width: 2rem;
-}
-
 .section-whyus {
   padding: 5rem 0;
   margin: 5rem auto;
@@ -965,7 +955,6 @@ ul {
 
 .section-whyus--card img {
   display: block;
-  margin-top: 4rem;
   margin-left: auto;
 }
 
@@ -1067,5 +1056,134 @@ ul {
 
 .section-courses h1 {
   margin: 5rem auto;
+}
+
+.section-courses .card {
+  min-height: 25rem;
+}
+
+.section-courses .card--up {
+  background-image: url(/img/courseCardBackground.png);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section-testimonials {
+  background: url(../../img/heroBackground.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 5rem 0;
+}
+
+.section-testimonials .title {
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.section-testimonials .title h1 {
+  position: relative;
+  display: inline-block;
+  z-index: 10;
+}
+
+.section-testimonials .title h1::before {
+  content: "";
+  background: url("../../img/quotes.svg");
+  background-size: cover;
+  color: #ffc700;
+  position: absolute;
+  height: 5rem;
+  width: 5rem;
+  top: -2rem;
+  z-index: 0;
+  left: -4rem;
+}
+
+.section-testimonials .card {
+  border-radius: 1rem;
+}
+
+.section-testimonials .card--up {
+  width: 100%;
+  border-radius: 1rem;
+  background: transparent;
+}
+
+.section-testimonials .card--up img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.section-testimonials .card--down p {
+  text-align: left;
+  font-size: 1.4rem;
+}
+
+.section-testimonials .card--down p img {
+  max-width: 2rem;
+  float: left;
+}
+
+.section-testimonials .card--down__profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-testimonials .card--down__profile img {
+  max-height: 5rem;
+  max-width: 5rem;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.section-testimonials .card--down__profile p {
+  margin: 0;
+}
+
+.section-testimonials .card--down__profile p:first-child {
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+.section-testimonials .card--down__profile p:last-child {
+  font-weight: 300;
+  font-size: 1.4rem;
+}
+
+.section-testimonials .card:hover .section-testimonials .card--down {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+}
+
+.section-testimonials .owl-stage {
+  margin-bottom: 25rem;
+}
+
+.section-testimonials .item {
+  border-radius: 1rem;
+}
+
+.section-testimonials .item .item-content {
+  background: #fff;
+  -webkit-box-shadow: 0 0 5px #0003;
+          box-shadow: 0 0 5px #0003;
+  border-radius: 1rem;
+}
+
+.section-testimonials .owl-stage .owl-item.active:first-child {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 /*# sourceMappingURL=main.css.map */

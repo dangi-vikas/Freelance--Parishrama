@@ -27,3 +27,21 @@
 .border-none {
   border: none !important;
 }
+
+.owl-dots {
+  text-align: center;
+
+  & .owl-dot {
+    height: 1rem;
+    width: 1rem;
+    margin: 5px;
+    background: $color-grey-dark !important;
+    border-radius: 5px;
+    transition: all 0.3s;
+
+    &.active {
+      background: $color-secondary !important;
+      width: 2rem;
+    }
+  }
+}
