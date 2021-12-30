@@ -1,15 +1,18 @@
 .footer {
-  height: 142rem;
-  background-color: #202439;
-  background-size: cover;
-  background-position: top;
-  position: relative;
-  padding: 1rem 7rem;
+  &__container {
+    height: 142rem;
+    background-color: #202439;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    padding: 1rem 7rem;
+  }
 
   &__top {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 3rem;
   }
 
   &__logo {
@@ -35,11 +38,16 @@
   }
 
   &__contact {
-    width: 41rem;
+    width: 45rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 
     &-container {
       display: flex;
       justify-content: space-between;
+      align-items: center;
+      margin-bottom: auto;
     }
 
     &--phone,
@@ -68,6 +76,76 @@
       p {
         font-size: 1.2rem;
       }
+    }
+  }
+
+  &__middle {
+    &--heading {
+      padding-left: 5rem;
+      padding-right: 5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: auto;
+    }
+  }
+
+  &__navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+
+    &-container {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+    }
+
+    &-item {
+      margin: 2rem 1.5rem;
+      padding: 1rem;
+      list-style: none;
+
+      & a {
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: $color-white;
+      }
+    }
+  }
+
+  &__bottom {
+    &--list {
+      &-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      &-item {
+        a {
+          font-size: 1.6rem;
+          font-weight: 400;
+          color: $color-white;
+        }
+      }
+    }
+  }
+
+  &__copyright {
+    height: 5rem;
+    background-color: #ffc700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p,
+    a {
+      font-size: 1.6rem;
+      font-weight: 400;
+      color: #202439;
+      text-align: center;
     }
   }
 }

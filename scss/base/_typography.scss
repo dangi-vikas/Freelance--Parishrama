@@ -63,6 +63,27 @@ body {
   font-size: 1.8rem;
   font-weight: 500;
   text-transform: uppercase;
+
+  &--yellow {
+    color: #ffc700;
+  }
+
+  &--white {
+    color: $color-white;
+  }
+}
+
+.heading-subtertiary {
+  font-size: 1.8rem;
+  font-weight: 500;
+
+  &--yellow {
+    color: #ffc700;
+  }
+
+  &--white {
+    color: $color-white;
+  }
 }
 
 .paragraph {

@@ -24,6 +24,10 @@ hr {
   border: 2px solid rgba(255, 255, 255, 0.2);
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -35,6 +39,33 @@ body {
   display: block;
   font-size: 42px;
   font-weight: 500;
+}
+
+.heading-tertiary {
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.heading-tertiary--yellow {
+  color: #ffc700;
+}
+
+.heading-tertiary--white {
+  color: #ffffff;
+}
+
+.heading-subtertiary {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.heading-subtertiary--yellow {
+  color: #ffc700;
+}
+
+.heading-subtertiary--white {
+  color: #ffffff;
 }
 
 .paragraph {
@@ -55,8 +86,16 @@ li {
   margin-bottom: 4rem !important;
 }
 
+.u-margin-bottom-small {
+  margin-bottom: 2rem !important;
+}
+
 .u-margin-top-big {
-  margin-top: 5rem rem !important;
+  margin-top: 5rem !important;
+}
+
+.u-margin-top-medium {
+  margin-top: 3rem !important;
 }
 
 .btn, .btn:link, .btn:visited {
@@ -170,7 +209,7 @@ li {
           transform: translateY(50%);
 }
 
-.footer {
+.footer__container {
   height: 142rem;
   background-color: #202439;
   background-size: cover;
@@ -189,6 +228,7 @@ li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 3rem;
 }
 
 .footer__logo {
@@ -219,7 +259,17 @@ li {
 }
 
 .footer__contact {
-  width: 41rem;
+  width: 45rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .footer__contact-container {
@@ -229,6 +279,10 @@ li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: auto;
 }
 
 .footer__contact--phone, .footer__contact--mail {
@@ -260,6 +314,96 @@ li {
 
 .footer__contact--location p {
   font-size: 1.2rem;
+}
+
+.footer__middle--heading {
+  padding-left: 5rem;
+  padding-right: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+}
+
+.footer__navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__navbar-container {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__navbar-item {
+  margin: 2rem 1.5rem;
+  padding: 1rem;
+  list-style: none;
+}
+
+.footer__navbar-item a {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.footer__bottom--list-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__bottom--list-item a {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.footer__copyright {
+  height: 5rem;
+  background-color: #ffc700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__copyright p,
+.footer__copyright a {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #202439;
+  text-align: center;
 }
 
 .header {
