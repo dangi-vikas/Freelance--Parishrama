@@ -763,9 +763,10 @@ ul {
 }
 
 .section-hero__content--cta-card {
+  width: 50%;
   padding: 1.5rem;
   margin-left: 2rem;
-  margin-right: 5rem;
+  margin-right: 3rem;
   background: #202439;
   color: #fff;
   text-align: center;
@@ -984,11 +985,11 @@ ul {
 }
 
 .section-main-carousel .main-carousel .owl-nav .owl-prev {
-  left: -2rem;
+  left: -1rem;
 }
 
 .section-main-carousel .main-carousel .owl-nav .owl-next {
-  right: -2rem;
+  right: -1rem;
 }
 
 .section-main-carousel .main-carousel .owl-nav .owl-prev,
@@ -1273,6 +1274,11 @@ ul {
 
 .section-testimonials .owl-stage {
   margin-bottom: 25rem;
+}
+
+.section-testimonials .owl-stage .owl-item.active:first-child {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .section-testimonials .item {
