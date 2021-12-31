@@ -311,6 +311,105 @@ ul {
           transform: translateY(60%);
 }
 
+.blog__card {
+  min-height: 21rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.blog__card--up {
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  background-size: cover;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  top: 0;
+  z-index: 5;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blog__card--up img {
+  height: 100%;
+}
+
+.blog__card--down {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  padding: 2rem;
+  background-color: #ffffff;
+}
+
+.blog__card--heading-small {
+  padding: 1px;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #373435;
+  text-transform: uppercase;
+}
+
+.blog__card--heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #373435;
+}
+
+.blog__card--text {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #373435;
+}
+
+.blog__card--user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2rem;
+}
+
+.blog__card--user-name {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #373435;
+  margin-bottom: 0rem;
+}
+
+.blog__card--user-date {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #373435;
+}
+
+.blog__card--user-img {
+  min-height: 1.4rem;
+}
+
+.blog__card--user img {
+  height: 100%;
+  margin-right: 2rem;
+}
+
 .footer__container {
   background-color: #202439;
   background-size: cover;
@@ -1295,5 +1394,13 @@ ul {
 .section-testimonials .owl-stage .owl-item.active:first-child {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+}
+
+.section-blogs {
+  margin-bottom: 25rem;
+}
+
+.section-blogs h1 {
+  margin: 5rem auto;
 }
 /*# sourceMappingURL=main.css.map */
