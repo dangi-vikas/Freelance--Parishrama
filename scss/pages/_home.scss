@@ -499,3 +499,11 @@
     transform: scale(1.2);
   }
 }
+
+.section-blogs {
+  margin-bottom: 25rem;
+
+  & h1 {
+    margin: 5rem auto;
+  }
+}
