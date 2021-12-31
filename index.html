@@ -21,22 +21,29 @@
 <body>
 
     <header class="header">
-        <div class="container header__container">
-            <div class="header__logo-container">
-                <img src="./img/Group 259.jpg" alt="Logo" , class="header__logo">
-            </div>
+        <div class="container">
+            <div class="nav">
+                <input type="checkbox" id="nav-check">
+                <div class="nav-header">
+                    <img src="./img/Group 259.jpg" alt="Logo" , class="header__logo">
+                </div>
+                <div class="nav-btn">
+                    <label for="nav-check">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                </div>
 
-            <div class="header__navbar-container">
-                <ul class="header__navbar">
-                    <li class="header__navbar-item"><a href="#">Home</a></li>
-                    <li class="header__navbar-item"><a href="#">About Us</a></li>
-                    <li class="header__navbar-item"><a href="#">Courses</a></li>
-                    <li class="header__navbar-item"><a href="#">Downloads</a></li>
-                    <li class="header__navbar-item"><a href="#">Hostel</a></li>
-                    <li class="header__navbar-item"><a href="#">Gallery</a></li>
-                </ul>
-
-                <a href="#" class="btn btn--grey-outline header__navbar-item mr-0">Apply Now</a>
+                <div class="nav-links">
+                    <a class="link" href="#">Home</a>
+                    <a class="link" href="#">About Us</a>
+                    <a class="link" href="#">Courses</a>
+                    <a class="link" href="#">Downloads</a>
+                    <a class="link" href="#">Hostel</a>
+                    <a class="link" href="#">Gallery</a>
+                    <a href="#" class="btn btn--grey-outline header__navbar-item mr-0">Apply Now</a>
+                </div>
             </div>
         </div>
     </header>
