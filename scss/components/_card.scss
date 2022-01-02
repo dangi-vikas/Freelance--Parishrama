@@ -39,8 +39,12 @@
   }
 
   &--down {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
     width: 90%;
-    height: auto;
     border-radius: 5px;
     padding: 2rem;
     background-color: #ffffff;
@@ -49,9 +53,11 @@
     bottom: -7rem;
     box-shadow: 0 1.5rem 4rem #0002;
     transition: all 0.5s;
+    text-align: center;
 
     &__textbox {
-      display: inline-block;
+      transform: scale(0);
+      display: block;
       position: relative;
       text-align: center;
     }
@@ -69,7 +75,11 @@
   }
 
   &:hover &--down {
-    transform: translateY(60%);
+    height: 100%;
+    bottom: -100%;
+    &__textbox {
+      transform: scale(1);
+    }
   }
 }
 

@@ -1,1018 +1,958 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/owl.carousel.css" />
-    <link rel="stylesheet" href="css/icon-font.css" />
-    <link rel="stylesheet" href="scss/main.css" />
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" />
 
-    <title>Parishrama</title>
-  </head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/owl.carousel.css" />
+  <link rel="stylesheet" href="css/icon-font.css" />
+  <link rel="stylesheet" href="scss/main.css" />
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
 
-  <body>
-    <header class="header">
+  <title>Parishrama</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="nav">
+        <input type="checkbox" id="nav-check" />
+        <div class="nav-header">
+          <img src="./img/Group 259.jpg" alt="Logo" , class="header__logo" />
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+
+        <div class="nav-links">
+          <a class="link" href="#">Home</a>
+          <a class="link" href="#">About Us</a>
+          <a class="link" href="#">Courses</a>
+          <a class="link" href="#">Downloads</a>
+          <a class="link" href="#">Hostel</a>
+          <a class="link" href="#">Gallery</a>
+          <a href="#" class="btn btn--grey-outline header__navbar-item mr-0">Apply Now</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section-hero" id="section-hero">
       <div class="container">
-        <div class="nav">
-          <input type="checkbox" id="nav-check" />
-          <div class="nav-header">
-            <img src="./img/Group 259.jpg" alt="Logo" , class="header__logo" />
-          </div>
-          <div class="nav-btn">
-            <label for="nav-check">
-              <span></span>
-              <span></span>
-              <span></span>
-            </label>
-          </div>
+        <div class="section-hero__container row">
+          <div class="section-hero__content col-sm-12 col-md-6 pb-4">
+            <div class="section-hero__content--header">
+              <h1 class="heading heading-primary">Admissions Open</h1>
 
-          <div class="nav-links">
-            <a class="link" href="#">Home</a>
-            <a class="link" href="#">About Us</a>
-            <a class="link" href="#">Courses</a>
-            <a class="link" href="#">Downloads</a>
-            <a class="link" href="#">Hostel</a>
-            <a class="link" href="#">Gallery</a>
-            <a href="#" class="btn btn--grey-outline header__navbar-item mr-0"
-              >Apply Now</a
-            >
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+                magnam explicabo dolore odio temporibus accusamus ducimus sed
+                fugiat aliquid et architecto eaque.
+              </p>
+            </div>
+
+            <div class="section-hero__content--cta">
+              <div class="section-hero__content--cta-card">
+                <p>NEET</p>
+                <p>Long Term Course</p>
+
+                <div class="strip">
+                  <p>New Batch Starts from</p>
+                  <p>January 15th, 2022</p>
+                </div>
+
+                <button class="btn btn--white-outline">Apply Now</button>
+              </div>
+              <div class="section-hero__content--cta-card">
+                <p>NEET</p>
+                <p>Crash Course</p>
+
+                <div class="strip">
+                  <p>New Batch Starts from</p>
+                  <p>January 16th, 2022</p>
+                </div>
+
+                <button class="btn btn--white-outline">Apply Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="section-hero__image col-sm-12 col-md-6">
+            <img src="./img/heroImage.png" alt="" />
           </div>
         </div>
       </div>
-    </header>
+    </section>
 
-    <main>
-      <section class="section-hero" id="section-hero">
-        <div class="container">
-          <div class="section-hero__container row">
-            <div class="section-hero__content col-sm-12 col-md-6 pb-4">
-              <div class="section-hero__content--header">
-                <h1 class="heading heading-primary">Admissions Open</h1>
-
-                <p class="paragraph">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
-                  magnam explicabo dolore odio temporibus accusamus ducimus sed
-                  fugiat aliquid et architecto eaque.
-                </p>
-              </div>
-
-              <div class="section-hero__content--cta">
-                <div class="section-hero__content--cta-card">
-                  <p>NEET</p>
-                  <p>Long Term Course</p>
-
-                  <div class="strip">
-                    <p>New Batch Starts from</p>
-                    <p>January 15th, 2022</p>
+    <section class="section-updates">
+      <div class="container">
+        <div class="section-updates--container row">
+          <div class="section-updates__important col-lg-6 col-md-12">
+            <div class="section-updates__important-header">
+              <span> </span>
+              <h3>Important Updates</h3>
+            </div>
+            <div class="section-updates__important-list-wrapper">
+              <ul>
+                <li>
+                  <div class="date">
+                    <p>29</p>
+                    <p>DEC 2021</p>
                   </div>
-
-                  <button class="btn btn--white-outline">Apply Now</button>
-                </div>
-                <div class="section-hero__content--cta-card">
-                  <p>NEET</p>
-                  <p>Crash Course</p>
-
-                  <div class="strip">
-                    <p>New Batch Starts from</p>
-                    <p>January 16th, 2022</p>
+                  <div class="details">
+                    <p>Admissions Open</p>
+                    <p>Parishrama NEET Long Term Course</p>
                   </div>
-
-                  <button class="btn btn--white-outline">Apply Now</button>
-                </div>
-              </div>
-            </div>
-            <div class="section-hero__image col-sm-12 col-md-6">
-              <img src="./img/heroImage.png" alt="" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section-updates">
-        <div class="container">
-          <div class="section-updates--container row">
-            <div class="section-updates__important col-lg-6 col-md-12">
-              <div class="section-updates__important-header">
-                <span> </span>
-                <h3>Important Updates</h3>
-              </div>
-              <div class="section-updates__important-list-wrapper">
-                <ul>
-                  <li>
-                    <div class="date">
-                      <p>29</p>
-                      <p>DEC 2021</p>
-                    </div>
-                    <div class="details">
-                      <p>Admissions Open</p>
-                      <p>Parishrama NEET Long Term Course</p>
-                    </div>
-                    <img src="./img/downloadIcon.svg" alt="" />
-                  </li>
-                  <li>
-                    <div class="date">
-                      <p>29</p>
-                      <p>DEC 2021</p>
-                    </div>
-                    <div class="details">
-                      <p>Admissions Open</p>
-                      <p>Parishrama NEET Long Term Course</p>
-                    </div>
-                    <img src="./img/downloadIcon.svg" alt="" />
-                  </li>
-                  <li>
-                    <div class="date">
-                      <p>29</p>
-                      <p>DEC 2021</p>
-                    </div>
-                    <div class="details">
-                      <p>Admissions Open</p>
-                      <p>Parishrama NEET Long Term Course</p>
-                    </div>
-                    <img src="./img/downloadIcon.svg" alt="" />
-                  </li>
-                  <li>
-                    <div class="date">
-                      <p>29</p>
-                      <p>DEC 2021</p>
-                    </div>
-                    <div class="details">
-                      <p>Admissions Open</p>
-                      <p>Parishrama NEET Long Term Course</p>
-                    </div>
-                    <img src="./img/downloadIcon.svg" alt="" />
-                  </li>
-                  <li>
-                    <div class="date">
-                      <p>29</p>
-                      <p>DEC 2021</p>
-                    </div>
-                    <div class="details">
-                      <p>Admissions Open</p>
-                      <p>Parishrama NEET Long Term Course</p>
-                    </div>
-                    <img src="./img/downloadIcon.svg" alt="" />
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="section-updates__latest col-lg-6 col-md-12">
-              <div class="section-updates__latest-header">
-                <span> </span>
-                <h3>Important Updates</h3>
-              </div>
-              <div class="section-updates__latest-list-wrapper">
-                <ul>
-                  <li>
-                    <div class="date">
-                      <p>29</p>
-                      <p>DEC 2021</p>
-                    </div>
-                    <div class="details">
-                      <p>Admissions Open</p>
-                      <p>Parishrama NEET Long Term Course</p>
-                    </div>
-                    <img src="./img/downloadIcon.svg" alt="" />
-                  </li>
-                  <li>
-                    <div class="date">
-                      <p>29</p>
-                      <p>DEC 2021</p>
-                    </div>
-                    <div class="details">
-                      <p>Admissions Open</p>
-                      <p>Parishrama NEET Long Term Course</p>
-                    </div>
-                    <img src="./img/downloadIcon.svg" alt="" />
-                  </li>
-                  <li>
-                    <div class="date">
-                      <p>29</p>
-                      <p>DEC 2021</p>
-                    </div>
-                    <div class="details">
-                      <p>Admissions Open</p>
-                      <p>Parishrama NEET Long Term Course</p>
-                    </div>
-                    <img src="./img/downloadIcon.svg" alt="" />
-                  </li>
-                  <li>
-                    <div class="date">
-                      <p>29</p>
-                      <p>DEC 2021</p>
-                    </div>
-                    <div class="details">
-                      <p>Admissions Open</p>
-                      <p>Parishrama NEET Long Term Course</p>
-                    </div>
-                    <img src="./img/downloadIcon.svg" alt="" />
-                  </li>
-                  <li>
-                    <div class="date">
-                      <p>29</p>
-                      <p>DEC 2021</p>
-                    </div>
-                    <div class="details">
-                      <p>Admissions Open</p>
-                      <p>Parishrama NEET Long Term Course</p>
-                    </div>
-                    <img src="./img/downloadIcon.svg" alt="" />
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section-main-carousel">
-        <div class="container">
-          <div class="owl-carousel main-carousel owl-theme">
-            <div class="item">
-              <div class="item-content">
-                <img src="./img/main-carousel.png" alt="" />
-              </div>
-            </div>
-            <div class="item">
-              <img src="./img/main-carousel.png" alt="" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section-whyus">
-        <div class="container">
-          <h2 class="heading-secondary">Why Us</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-            aliquam provident, nihil temporibus ducimus doloremque nam, ad illum
-            inventore molestiae soluta distinctio repudiandae deserunt laborum
-            ipsa, vero aspernatur maiores accusantium.
-          </p>
-
-          <div class="section-whyus--cards row">
-            <div class="section-whyus--card col-lg-4 col-md-6 col-sm-12">
-              <p>48</p>
-              <p>Expert Instructors</p>
-              <img src="./img/expertInstructors.svg" alt="" />
-            </div>
-            <div class="section-whyus--card col-lg-4 col-md-6 col-sm-12">
-              <p>600</p>
-              <p>Happy Students</p>
-              <img src="./img/happyStudents.svg" alt="" />
-            </div>
-            <div class="section-whyus--card col-lg-4 col-md-6 col-sm-12">
-              <p>876</p>
-              <p>Courses Completed</p>
-              <img src="./img/coursesCompleted.svg" alt="" />
-            </div>
-            <div class="section-whyus--card col-lg-4 col-md-6 col-sm-12">
-              <p>290</p>
-              <p>Ranks</p>
-              <img src="./img/ranks.svg" alt="" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section-courses" id="section-courses">
-        <div class="container">
-          <h1 class="text-center heading-primary">Courses</h1>
-
-          <div class="row">
-            <div class="col-lg-4 col-md-6 col-sm-12">
-              <div class="card border-none">
-                <div class="card--up">
-                  <div class="card--up__textbox">
-                    <p class="card--up__text">Parishrama</p>
-                    <p class="card--up__text">NEET Long Term Course</p>
+                  <img src="./img/downloadIcon.svg" alt="" />
+                </li>
+                <li>
+                  <div class="date">
+                    <p>29</p>
+                    <p>DEC 2021</p>
                   </div>
-                  <div class="card--up__icon--container">
-                    <img src="./img/book.svg" alt="book" />
+                  <div class="details">
+                    <p>Admissions Open</p>
+                    <p>Parishrama NEET Long Term Course</p>
                   </div>
-                </div>
-
-                <div class="card--down">
-                  <div class="card--down__textbox">
-                    <p class="card--down__text">
-                      At Parishrama, we understand that a long term
-                    </p>
-                    <a href="#" class="btn btn--grey-outline">Learn more</a>
+                  <img src="./img/downloadIcon.svg" alt="" />
+                </li>
+                <li>
+                  <div class="date">
+                    <p>29</p>
+                    <p>DEC 2021</p>
                   </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-sm-12">
-              <div class="card border-none">
-                <div class="card--up">
-                  <div class="card--up__textbox">
-                    <p class="card--up__text">Parishrama</p>
-                    <p class="card--up__text">NEET Crash Course</p>
+                  <div class="details">
+                    <p>Admissions Open</p>
+                    <p>Parishrama NEET Long Term Course</p>
                   </div>
-                  <div class="card--up__icon--container">
-                    <img src="./img/book.svg" alt="book" />
+                  <img src="./img/downloadIcon.svg" alt="" />
+                </li>
+                <li>
+                  <div class="date">
+                    <p>29</p>
+                    <p>DEC 2021</p>
                   </div>
-                </div>
-
-                <div class="card--down">
-                  <div class="card--down__textbox">
-                    <p class="card--down__text">
-                      At Parishrama, we understand that a long term
-                    </p>
-                    <a href="#" class="btn btn--grey-outline">Learn more</a>
+                  <div class="details">
+                    <p>Admissions Open</p>
+                    <p>Parishrama NEET Long Term Course</p>
                   </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-sm-12">
-              <div class="card border-none">
-                <div class="card--up">
-                  <div class="card--up__textbox">
-                    <p class="card--up__text">Parishrama</p>
-                    <p class="card--up__text">NEET Postal Course</p>
+                  <img src="./img/downloadIcon.svg" alt="" />
+                </li>
+                <li>
+                  <div class="date">
+                    <p>29</p>
+                    <p>DEC 2021</p>
                   </div>
-                  <div class="card--up__icon--container">
-                    <img src="./img/book.svg" alt="book" />
+                  <div class="details">
+                    <p>Admissions Open</p>
+                    <p>Parishrama NEET Long Term Course</p>
                   </div>
-                </div>
-
-                <div class="card--down">
-                  <div class="card--down__textbox">
-                    <p class="card--down__text">
-                      At Parishrama, we understand that a long term
-                    </p>
-                    <a href="#" class="btn btn--grey-outline">Learn more</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section-pp" id="section-pp">
-        <h2 class="heading-secondary title">Parishrama's Power</h2>
-        <div class="container section-pp__container row">
-          <div class="section-pp__item col-lg-4 col-md-6 col-sm-12">
-            <div class="section-pp__item-image">
-              <img src="./img/pp-expert-and-dedicated.svg" alt="" />
-            </div>
-            <div class="section-pp__item-text">
-              <p>Expert and Dedicated Faculty</p>
-            </div>
-          </div>
-          <div class="section-pp__item col-lg-4 col-md-6 col-sm-12">
-            <div class="section-pp__item-image">
-              <img src="./img/pp-motivational-talks.svg" alt="" />
-            </div>
-            <div class="section-pp__item-text">
-              <p>Motivational Talks by Experts</p>
-            </div>
-          </div>
-          <div class="section-pp__item col-lg-4 col-md-6 col-sm-12">
-            <div class="section-pp__item-image">
-              <img src="./img/pp-daily-and-weekly.svg" alt="" />
-            </div>
-            <div class="section-pp__item-text">
-              <p>Daily and Weekly Cumulative Tests</p>
-            </div>
-          </div>
-          <div class="section-pp__item col-lg-4 col-md-6 col-sm-12">
-            <div class="section-pp__item-image">
-              <img src="./img/pp-crystal-clear.svg" alt="" />
-            </div>
-            <div class="section-pp__item-text">
-              <p>Crystal Clear Teaching</p>
-            </div>
-          </div>
-          <div class="section-pp__item col-lg-4 col-md-6 col-sm-12">
-            <div class="section-pp__item-image">
-              <img src="./img/pp-one-on-one.svg" alt="" />
-            </div>
-            <div class="section-pp__item-text">
-              <p>One-on-One doubt clarification</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section-testimonials" id="section-testimonials">
-        <div class="container">
-          <div class="title">
-            <h1 class="text-center heading-primary">
-              STUDENT & PARENT TESTIMONIALS
-            </h1>
-          </div>
-          <div class="owl-carousel testimonials-carousel owl-theme">
-            <div class="item">
-              <div class="card border-none">
-                <div class="card--up">
-                  <img src="./img/carousel-testimonial.png" alt="" />
-                </div>
-
-                <div class="card--down">
-                  <div class="card--down__textbox">
-                    <p>
-                      <img src="./img/quotes.svg" alt="" /> PARISHRAMA focuses
-                      on the quality of education and clearing of concepts with
-                      a brilliant study study environment.
-                    </p>
-                  </div>
-                  <div class="card--down__profile">
-                    <img src="./img/user.png" alt="" />
-                    <div class="person">
-                      <p>Anaya Oberai</p>
-                      <p>NEET-UG 2021</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="card border-none">
-                <div class="card--up">
-                  <img src="./img/carousel-testimonial.png" alt="" />
-                </div>
-
-                <div class="card--down">
-                  <div class="card--down__textbox">
-                    <p>
-                      <img src="./img/quotes.svg" alt="" /> PARISHRAMA focuses
-                      on the quality of education and clearing of concepts with
-                      a brilliant study study environment.
-                    </p>
-                  </div>
-                  <div class="card--down__profile">
-                    <img src="./img/user.png" alt="" />
-                    <div class="person">
-                      <p>Anaya Oberai</p>
-                      <p>NEET-UG 2021</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="card border-none">
-                <div class="card--up">
-                  <img src="./img/carousel-testimonial.png" alt="" />
-                </div>
-
-                <div class="card--down">
-                  <div class="card--down__textbox">
-                    <p>
-                      <img src="./img/quotes.svg" alt="" /> PARISHRAMA focuses
-                      on the quality of education and clearing of concepts with
-                      a brilliant study study environment.
-                    </p>
-                  </div>
-                  <div class="card--down__profile">
-                    <img src="./img/user.png" alt="" />
-                    <div class="person">
-                      <p>Anaya Oberai</p>
-                      <p>NEET-UG 2021</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="card border-none">
-                <div class="card--up">
-                  <img src="./img/carousel-testimonial.png" alt="" />
-                </div>
-
-                <div class="card--down">
-                  <div class="card--down__textbox">
-                    <p>
-                      <img src="./img/quotes.svg" alt="" /> PARISHRAMA focuses
-                      on the quality of education and clearing of concepts with
-                      a brilliant study study environment.
-                    </p>
-                  </div>
-                  <div class="card--down__profile">
-                    <img src="./img/user.png" alt="" />
-                    <div class="person">
-                      <p>Anaya Oberai</p>
-                      <p>NEET-UG 2021</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="card border-none">
-                <div class="card--up">
-                  <img src="./img/carousel-testimonial.png" alt="" />
-                </div>
-
-                <div class="card--down">
-                  <div class="card--down__textbox">
-                    <p>
-                      <img src="./img/quotes.svg" alt="" /> PARISHRAMA focuses
-                      on the quality of education and clearing of concepts with
-                      a brilliant study study environment.
-                    </p>
-                  </div>
-                  <div class="card--down__profile">
-                    <img src="./img/user.png" alt="" />
-                    <div class="person">
-                      <p>Anaya Oberai</p>
-                      <p>NEET-UG 2021</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="card border-none">
-                <div class="card--up">
-                  <img src="./img/carousel-testimonial.png" alt="" />
-                </div>
-
-                <div class="card--down">
-                  <div class="card--down__textbox">
-                    <p>
-                      <img src="./img/quotes.svg" alt="" /> PARISHRAMA focuses
-                      on the quality of education and clearing of concepts with
-                      a brilliant study study environment.
-                    </p>
-                  </div>
-                  <div class="card--down__profile">
-                    <img src="./img/user.png" alt="" />
-                    <div class="person">
-                      <p>Anaya Oberai</p>
-                      <p>NEET-UG 2021</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="card border-none">
-                <div class="card--up">
-                  <img src="./img/carousel-testimonial.png" alt="" />
-                </div>
-
-                <div class="card--down">
-                  <div class="card--down__textbox">
-                    <p>
-                      <img src="./img/quotes.svg" alt="" /> PARISHRAMA focuses
-                      on the quality of education and clearing of concepts with
-                      a brilliant study study environment.
-                    </p>
-                  </div>
-                  <div class="card--down__profile">
-                    <img src="./img/user.png" alt="" />
-                    <div class="person">
-                      <p>Anaya Oberai</p>
-                      <p>NEET-UG 2021</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="card border-none">
-                <div class="card--up">
-                  <img src="./img/carousel-testimonial.png" alt="" />
-                </div>
-
-                <div class="card--down">
-                  <div class="card--down__textbox">
-                    <p>
-                      <img src="./img/quotes.svg" alt="" /> PARISHRAMA focuses
-                      on the quality of education and clearing of concepts with
-                      a brilliant study study environment.
-                    </p>
-                  </div>
-                  <div class="card--down__profile">
-                    <img src="./img/user.png" alt="" />
-                    <div class="person">
-                      <p>Anaya Oberai</p>
-                      <p>NEET-UG 2021</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section-blogs" id="section-blogs">
-        <div class="container">
-          <h1 class="text-center heading-primary">Our Blogs</h1>
-
-          <div class="row">
-            <div class="col-lg-4 col-md-6 col-sm-12">
-              <div class="blog__card">
-                <div class="blog__card--up">
-                  <img src="/img/BlogImage1.png" alt="image" />
-                </div>
-                <div class="blog__card--down">
-                  <p class="blog__card--heading-small">Education</p>
-                  <p class="blog__card--heading">
-                    Lorem ipsum dolor sit amet, consettur sadipsc elitr, sed
-                    diam nonumy eirmod
-                  </p>
-                  <p class="blog__card--text">
-                    Lorem ipsum dolor sit amet, consettur sadipscing elitr, sed
-                    diam nonum eirmod tempor invidunt ut labore et dolore magna
-                    aliquyam erat, sed dia voluptua. At vero eos et accusam et
-                    justo duo dolores tempor invidunt ut labore et dolore magna
-                  </p>
-                  <div class="blog__card--user">
-                    <img
-                      src="img/user.png"
-                      alt="user"
-                      class="blog-card--user-image"
-                    />
-                    <div class="blog__card--user-info">
-                      <p class="blog__card--user-name">Anaya Oberoi</p>
-                      <p class="blog__card--user-date">January 06, 2022</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-sm-12">
-              <div class="blog__card">
-                <div class="blog__card--up">
-                  <img src="/img/BlogImage2.png" alt="image" />
-                </div>
-                <div class="blog__card--down">
-                  <p class="blog__card--heading-small">Admissions</p>
-                  <p class="blog__card--heading">
-                    Lorem ipsum dolor sit amet, consettur sadipsc elitr, sed
-                    diam nonumy eirmod
-                  </p>
-                  <p class="blog__card--text">
-                    Lorem ipsum dolor sit amet, consettur sadipscing elitr, sed
-                    diam nonum eirmod tempor invidunt ut labore et dolore magna
-                    aliquyam erat, sed dia voluptua. At vero eos et accusam et
-                    justo duo dolores tempor invidunt ut labore et dolore magna
-                  </p>
-                  <div class="blog__card--user">
-                    <img
-                      src="img/user.png"
-                      alt="user"
-                      class="blog-card--user-image"
-                    />
-                    <div class="blog__card--user-info">
-                      <p class="blog__card--user-name">Anaya Oberoi</p>
-                      <p class="blog__card--user-date">January 06, 2022</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-sm-12">
-              <div class="blog__card">
-                <div class="blog__card--up">
-                  <img src="/img/BlogImage3.png" alt="image" />
-                </div>
-                <div class="blog__card--down">
-                  <p class="blog__card--heading-small">NEET</p>
-                  <p class="blog__card--heading">
-                    Lorem ipsum dolor sit amet, consettur sadipsc elitr, sed
-                    diam nonumy eirmod
-                  </p>
-                  <p class="blog__card--text">
-                    Lorem ipsum dolor sit amet, consettur sadipscing elitr, sed
-                    diam nonum eirmod tempor invidunt ut labore et dolore magna
-                    aliquyam erat, sed dia voluptua. At vero eos et accusam et
-                    justo duo dolores tempor invidunt ut labore et dolore magna
-                  </p>
-                  <div class="blog__card--user">
-                    <img
-                      src="img/user.png"
-                      alt="user"
-                      class="blog-card--user-image"
-                    />
-                    <div class="blog__card--user-info">
-                      <p class="blog__card--user-name">Anaya Oberoi</p>
-                      <p class="blog__card--user-date">January 06, 2022</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="footer__container">
-        <div class="footer__top">
-          <div class="footer__logo-container">
-            <img src="/img/footerLogo.png" alt="" class="footer__logo" />
-            <div class="footer__logo--icon-container">
-              <img src="/img/fbIcon.svg" alt="fb" />
-              <img src="/img/twitterIcon.svg" alt="twitter" />
-              <img src="/img/youtubeIcon.svg" alt="youtube" />
-            </div>
-          </div>
-          <div class="footer__contact">
-            <div class="footer__contact-container">
-              <div class="footer__contact--phone">
-                <img
-                  src="/img/phoneIcon.png"
-                  alt="phone"
-                  class="footer__contact--icon"
-                />
-                <p class="footer__contact--text">080-45912222</p>
-              </div>
-
-              <div class="footer__contact--mail">
-                <img
-                  src="/img/mailIcon.png"
-                  alt="mail"
-                  class="footer__contact--icon"
-                />
-                <p class="footer__contact--text">
-                  info@parishramaneetacademy.com
-                </p>
-              </div>
-            </div>
-
-            <div class="footer__contact--location">
-              <img
-                src="/img/locationIcon.svg"
-                alt="mail"
-                class="footer__contact--icon"
-              />
-              <p class="footer__contact--text">
-                Parishrama NEET Academy, Omkar Hills Road, Srinivasapura, Dr.
-                Vishnuvardan Road, towards Uttarahalli Main Road, Bengaluru -
-                560060
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <hr />
-
-        <div class="footer__middle">
-          <div class="footer__navigation">
-            <h3
-              class="
-                heading-tertiary heading-tertiary--yellow
-                u-margin-bottom-small
-              "
-            >
-              Quick Links
-            </h3>
-            <div class="footer__navbar-container">
-              <ul class="footer__navbar">
-                <li class="footer__navbar-item"><a href="#">Home</a></li>
-                <li class="footer__navbar-item"><a href="#">About Us</a></li>
-                <li class="footer__navbar-item"><a href="#">Hostel</a></li>
-                <li class="footer__navbar-item"><a href="#">Gallery</a></li>
-                <li class="footer__navbar-item"><a href="#">Sitemap</a></li>
-                <li class="footer__navbar-item footer__navbar-item--yellow">
-                  <a href="#">About NEET</a>
+                  <img src="./img/downloadIcon.svg" alt="" />
                 </li>
               </ul>
             </div>
           </div>
+          <div class="section-updates__latest col-lg-6 col-md-12">
+            <div class="section-updates__latest-header">
+              <span> </span>
+              <h3>Important Updates</h3>
+            </div>
+            <div class="section-updates__latest-list-wrapper">
+              <ul>
+                <li>
+                  <div class="date">
+                    <p>29</p>
+                    <p>DEC 2021</p>
+                  </div>
+                  <div class="details">
+                    <p>Admissions Open</p>
+                    <p>Parishrama NEET Long Term Course</p>
+                  </div>
+                  <img src="./img/downloadIcon.svg" alt="" />
+                </li>
+                <li>
+                  <div class="date">
+                    <p>29</p>
+                    <p>DEC 2021</p>
+                  </div>
+                  <div class="details">
+                    <p>Admissions Open</p>
+                    <p>Parishrama NEET Long Term Course</p>
+                  </div>
+                  <img src="./img/downloadIcon.svg" alt="" />
+                </li>
+                <li>
+                  <div class="date">
+                    <p>29</p>
+                    <p>DEC 2021</p>
+                  </div>
+                  <div class="details">
+                    <p>Admissions Open</p>
+                    <p>Parishrama NEET Long Term Course</p>
+                  </div>
+                  <img src="./img/downloadIcon.svg" alt="" />
+                </li>
+                <li>
+                  <div class="date">
+                    <p>29</p>
+                    <p>DEC 2021</p>
+                  </div>
+                  <div class="details">
+                    <p>Admissions Open</p>
+                    <p>Parishrama NEET Long Term Course</p>
+                  </div>
+                  <img src="./img/downloadIcon.svg" alt="" />
+                </li>
+                <li>
+                  <div class="date">
+                    <p>29</p>
+                    <p>DEC 2021</p>
+                  </div>
+                  <div class="details">
+                    <p>Admissions Open</p>
+                    <p>Parishrama NEET Long Term Course</p>
+                  </div>
+                  <img src="./img/downloadIcon.svg" alt="" />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="footer-newsletter">
-            <h3
-              class="
-                heading-tertiary heading-tertiary--white
-                u-margin-bottom-small
-              "
-            >
-              subscribe to our newsletters
-            </h3>
+    <section class="section-main-carousel">
+      <div class="container">
+        <div class="owl-carousel main-carousel owl-theme">
+          <div class="item">
+            <div class="item-content">
+              <img src="./img/main-carousel.png" alt="" />
+            </div>
+          </div>
+          <div class="item">
+            <img src="./img/main-carousel.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <div class="footer__search--container">
-              <div class="footer__search">
-                <p class="footer__search--text">Email Address</p>
-                <a href="#" class="btn-search">Subscribe</a>
+    <section class="section-whyus">
+      <div class="container">
+        <h2 class="heading-secondary">Why Us</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+          aliquam provident, nihil temporibus ducimus doloremque nam, ad illum
+          inventore molestiae soluta distinctio repudiandae deserunt laborum
+          ipsa, vero aspernatur maiores accusantium.
+        </p>
+
+        <div class="section-whyus--cards row">
+          <div class="section-whyus--card col-lg-4 col-md-6 col-sm-12">
+            <p>48</p>
+            <p>Expert Instructors</p>
+            <img src="./img/expertInstructors.svg" alt="" />
+          </div>
+          <div class="section-whyus--card col-lg-4 col-md-6 col-sm-12">
+            <p>600</p>
+            <p>Happy Students</p>
+            <img src="./img/happyStudents.svg" alt="" />
+          </div>
+          <div class="section-whyus--card col-lg-4 col-md-6 col-sm-12">
+            <p>876</p>
+            <p>Courses Completed</p>
+            <img src="./img/coursesCompleted.svg" alt="" />
+          </div>
+          <div class="section-whyus--card col-lg-4 col-md-6 col-sm-12">
+            <p>290</p>
+            <p>Ranks</p>
+            <img src="./img/ranks.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-courses" id="section-courses">
+      <div class="container">
+        <h1 class="text-center heading-primary">Courses</h1>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card border-none">
+              <div class="card--up">
+                <div class="card--up__textbox">
+                  <p class="card--up__text">Parishrama</p>
+                  <p class="card--up__text">NEET Long Term Course</p>
+                </div>
+                <div class="card--up__icon--container">
+                  <img src="./img/book.svg" alt="book" />
+                </div>
+              </div>
+
+              <div class="card--down">
+                <div class="card--down__textbox">
+                  <p class="card--down__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam nisi mollitia molestiae dolore
+                    nostrum libero nemo inventore eius odio omnis eligendi reprehenderit esse.
+                  </p>
+                </div>
+                <a href="#" class="btn btn--grey-outline">Learn more</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card border-none">
+              <div class="card--up">
+                <div class="card--up__textbox">
+                  <p class="card--up__text">Parishrama</p>
+                  <p class="card--up__text">NEET Long Term Course</p>
+                </div>
+                <div class="card--up__icon--container">
+                  <img src="./img/book.svg" alt="book" />
+                </div>
+              </div>
+
+              <div class="card--down">
+                <div class="card--down__textbox">
+                  <p class="card--down__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam nisi mollitia molestiae dolore
+                    nostrum libero nemo inventore eius odio omnis eligendi reprehenderit esse.
+                  </p>
+                </div>
+                <a href="#" class="btn btn--grey-outline">Learn more</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card border-none">
+              <div class="card--up">
+                <div class="card--up__textbox">
+                  <p class="card--up__text">Parishrama</p>
+                  <p class="card--up__text">NEET Long Term Course</p>
+                </div>
+                <div class="card--up__icon--container">
+                  <img src="./img/book.svg" alt="book" />
+                </div>
+              </div>
+
+              <div class="card--down">
+                <div class="card--down__textbox">
+                  <p class="card--down__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam nisi mollitia molestiae dolore
+                    nostrum libero nemo inventore eius odio omnis eligendi reprehenderit esse.
+                  </p>
+                </div>
+                <a href="#" class="btn btn--grey-outline">Learn more</a>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <hr />
+    <section class="section-pp" id="section-pp">
+      <h2 class="heading-secondary title">Parishrama's Power</h2>
+      <div class="container section-pp__container row">
+        <div class="section-pp__item col-lg-4 col-md-6 col-sm-12">
+          <div class="section-pp__item-image">
+            <img src="./img/pp-expert-and-dedicated.svg" alt="" />
+          </div>
+          <div class="section-pp__item-text">
+            <p>Expert and Dedicated Faculty</p>
+          </div>
+        </div>
+        <div class="section-pp__item col-lg-4 col-md-6 col-sm-12">
+          <div class="section-pp__item-image">
+            <img src="./img/pp-motivational-talks.svg" alt="" />
+          </div>
+          <div class="section-pp__item-text">
+            <p>Motivational Talks by Experts</p>
+          </div>
+        </div>
+        <div class="section-pp__item col-lg-4 col-md-6 col-sm-12">
+          <div class="section-pp__item-image">
+            <img src="./img/pp-daily-and-weekly.svg" alt="" />
+          </div>
+          <div class="section-pp__item-text">
+            <p>Daily and Weekly Cumulative Tests</p>
+          </div>
+        </div>
+        <div class="section-pp__item col-lg-4 col-md-6 col-sm-12">
+          <div class="section-pp__item-image">
+            <img src="./img/pp-crystal-clear.svg" alt="" />
+          </div>
+          <div class="section-pp__item-text">
+            <p>Crystal Clear Teaching</p>
+          </div>
+        </div>
+        <div class="section-pp__item col-lg-4 col-md-6 col-sm-12">
+          <div class="section-pp__item-image">
+            <img src="./img/pp-one-on-one.svg" alt="" />
+          </div>
+          <div class="section-pp__item-text">
+            <p>One-on-One doubt clarification</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <div class="footer__bottom">
-          <h3
-            class="
-              heading-tertiary heading-tertiary--yellow
-              u-margin-bottom-big
-            "
-          >
-            Downloads
-          </h3>
+    <section class="section-testimonials" id="section-testimonials">
+      <div class="container">
+        <div class="title">
+          <h1 class="text-center heading-primary">
+            STUDENT & PARENT TESTIMONIALS
+          </h1>
+        </div>
+        <div class="owl-carousel testimonials-carousel owl-theme">
+          <div class="item">
+            <div class="card border-none">
+              <div class="card--up">
+                <img src="./img/carousel-testimonial.png" alt="" />
+              </div>
 
-          <h4
-            class="
-              heading-subtertiary heading-subtertiary--yellow
-              u-margin-bottom-small
-            "
-          >
-            Biology
-          </h4>
-          <div class="footer__bottom--list-container u-margin-bottom-big">
-            <ul class="footer__bottom--list">
-              <li class="footer__bottom--list-item">
-                <a href="#">B-01-QP-NEET-2020-BIOLOGY MODEL PAPER-01</a>
-              </li>
-              <li class="footer__bottom--list-item">
-                <a href="#"
-                  >B-01-ANS-NEET2020-HINTS & SOLUTIONS-BIOLOGY-MODEL PAPER-01</a
-                >
-              </li>
-              <li class="footer__bottom--list-item">
-                <a href="#">B-02-QP-NEET2020-MODEL PAPER-02</a>
-              </li>
-              <li class="footer__bottom--list-item">
-                <a href="#">B-02-ANS-NEET2020-BIO-MODEL PAPER-02</a>
-              </li>
-              <li class="footer__bottom--list-item">
-                <a href="#">B-03-QP-NEET2020-BIO-MODEL PAPER-03</a>
-              </li>
-              <li class="footer__bottom--list-item">
-                <a href="#">B-03-ANS-HINTS & SOLUTIONS-BIO MODEL PAPER</a>
-              </li>
-            </ul>
+              <div class="card--down">
+                <div class="card--down__textbox">
+                  <p>
+                    <img src="./img/quotes.svg" alt="" /> PARISHRAMA focuses
+                    on the quality of education and clearing of concepts with
+                    a brilliant study study environment.
+                  </p>
+                </div>
+                <div class="card--down__profile">
+                  <img src="./img/user.png" alt="" />
+                  <div class="person">
+                    <p>Anaya Oberai</p>
+                    <p>NEET-UG 2021</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card border-none">
+              <div class="card--up">
+                <img src="./img/carousel-testimonial.png" alt="" />
+              </div>
 
-            <ul class="footer__bottom--list">
-              <li class="footer__bottom--list-item">
-                <a href="#">B-04-QP-NEET2020-MODEL PAPER-04</a>
-              </li>
-              <li class="footer__bottom--list-item">
-                <a href="#"
-                  >B-04-ANS-HINTS & SOLUTIONS-NEET2020-MODEL PAPER-04</a
-                >
-              </li>
-              <li class="footer__bottom--list-item">
-                <a href="#">B-05-QP-NEET2020-BIO-MODEL PAPER-05</a>
-              </li>
-              <li class="footer__bottom--list-item">
-                <a href="#"
-                  >B-05-ANS-HINTS & SOLUTIONS-NEET-2020 BIO-MODEL PAPER</a
-                >
-              </li>
-              <li class="footer__bottom--list-item">
-                <a href="#">B-06-QP-NEET2020-BIO-MODEL PAPER-06</a>
-              </li>
-              <li class="footer__bottom--list-item">
-                <a href="#">B-06-ANS-NEET2020-BIO-MODEL PAPER-06</a>
-              </li>
-            </ul>
+              <div class="card--down">
+                <div class="card--down__textbox">
+                  <p>
+                    <img src="./img/quotes.svg" alt="" /> PARISHRAMA focuses
+                    on the quality of education and clearing of concepts with
+                    a brilliant study study environment.
+                  </p>
+                </div>
+                <div class="card--down__profile">
+                  <img src="./img/user.png" alt="" />
+                  <div class="person">
+                    <p>Anaya Oberai</p>
+                    <p>NEET-UG 2021</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card border-none">
+              <div class="card--up">
+                <img src="./img/carousel-testimonial.png" alt="" />
+              </div>
+
+              <div class="card--down">
+                <div class="card--down__textbox">
+                  <p>
+                    <img src="./img/quotes.svg" alt="" /> PARISHRAMA focuses
+                    on the quality of education and clearing of concepts with
+                    a brilliant study study environment.
+                  </p>
+                </div>
+                <div class="card--down__profile">
+                  <img src="./img/user.png" alt="" />
+                  <div class="person">
+                    <p>Anaya Oberai</p>
+                    <p>NEET-UG 2021</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card border-none">
+              <div class="card--up">
+                <img src="./img/carousel-testimonial.png" alt="" />
+              </div>
+
+              <div class="card--down">
+                <div class="card--down__textbox">
+                  <p>
+                    <img src="./img/quotes.svg" alt="" /> PARISHRAMA focuses
+                    on the quality of education and clearing of concepts with
+                    a brilliant study study environment.
+                  </p>
+                </div>
+                <div class="card--down__profile">
+                  <img src="./img/user.png" alt="" />
+                  <div class="person">
+                    <p>Anaya Oberai</p>
+                    <p>NEET-UG 2021</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card border-none">
+              <div class="card--up">
+                <img src="./img/carousel-testimonial.png" alt="" />
+              </div>
+
+              <div class="card--down">
+                <div class="card--down__textbox">
+                  <p>
+                    <img src="./img/quotes.svg" alt="" /> PARISHRAMA focuses
+                    on the quality of education and clearing of concepts with
+                    a brilliant study study environment.
+                  </p>
+                </div>
+                <div class="card--down__profile">
+                  <img src="./img/user.png" alt="" />
+                  <div class="person">
+                    <p>Anaya Oberai</p>
+                    <p>NEET-UG 2021</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card border-none">
+              <div class="card--up">
+                <img src="./img/carousel-testimonial.png" alt="" />
+              </div>
+
+              <div class="card--down">
+                <div class="card--down__textbox">
+                  <p>
+                    <img src="./img/quotes.svg" alt="" /> PARISHRAMA focuses
+                    on the quality of education and clearing of concepts with
+                    a brilliant study study environment.
+                  </p>
+                </div>
+                <div class="card--down__profile">
+                  <img src="./img/user.png" alt="" />
+                  <div class="person">
+                    <p>Anaya Oberai</p>
+                    <p>NEET-UG 2021</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card border-none">
+              <div class="card--up">
+                <img src="./img/carousel-testimonial.png" alt="" />
+              </div>
+
+              <div class="card--down">
+                <div class="card--down__textbox">
+                  <p>
+                    <img src="./img/quotes.svg" alt="" /> PARISHRAMA focuses
+                    on the quality of education and clearing of concepts with
+                    a brilliant study study environment.
+                  </p>
+                </div>
+                <div class="card--down__profile">
+                  <img src="./img/user.png" alt="" />
+                  <div class="person">
+                    <p>Anaya Oberai</p>
+                    <p>NEET-UG 2021</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card border-none">
+              <div class="card--up">
+                <img src="./img/carousel-testimonial.png" alt="" />
+              </div>
+
+              <div class="card--down">
+                <div class="card--down__textbox">
+                  <p>
+                    <img src="./img/quotes.svg" alt="" /> PARISHRAMA focuses
+                    on the quality of education and clearing of concepts with
+                    a brilliant study study environment.
+                  </p>
+                </div>
+                <div class="card--down__profile">
+                  <img src="./img/user.png" alt="" />
+                  <div class="person">
+                    <p>Anaya Oberai</p>
+                    <p>NEET-UG 2021</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-blogs" id="section-blogs">
+      <div class="container">
+        <h1 class="text-center heading-primary">Our Blogs</h1>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="blog__card">
+              <div class="blog__card--up">
+                <img src="/img/BlogImage1.png" alt="image" />
+              </div>
+              <div class="blog__card--down">
+                <p class="blog__card--heading-small">Education</p>
+                <p class="blog__card--heading">
+                  Lorem ipsum dolor sit amet, consettur sadipsc elitr, sed
+                  diam nonumy eirmod
+                </p>
+                <p class="blog__card--text">
+                  Lorem ipsum dolor sit amet, consettur sadipscing elitr, sed
+                  diam nonum eirmod tempor invidunt ut labore et dolore magna
+                  aliquyam erat, sed dia voluptua. At vero eos et accusam et
+                  justo duo dolores tempor invidunt ut labore et dolore magna
+                </p>
+                <div class="blog__card--user">
+                  <img src="img/user.png" alt="user" class="blog-card--user-image" />
+                  <div class="blog__card--user-info">
+                    <p class="blog__card--user-name">Anaya Oberoi</p>
+                    <p class="blog__card--user-date">January 06, 2022</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <h4
-            class="
-              heading-subtertiary heading-subtertiary--yellow
-              u-margin-bottom-small
-            "
-          >
-            Chemistry
-          </h4>
-          <div class="footer__bottom--list-container u-margin-bottom-big">
-            <ul class="footer__bottom--list">
-              <li class="footer__bottom--list-item">
-                <a href="#">B-01-QP-NEET-2020-BIOLOGY MODEL PAPER-01</a>
-              </li>
-              <li class="footer__bottom--list-item">
-                <a href="#"
-                  >B-01-ANS-NEET2020-HINTS & SOLUTIONS-BIOLOGY-MODEL PAPER-01</a
-                >
-              </li>
-              <li class="footer__bottom--list-item">
-                <a href="#">B-02-QP-NEET2020-MODEL PAPER-02</a>
-              </li>
-              <li class="footer__bottom--list-item">
-                <a href="#">B-02-ANS-NEET2020-BIO-MODEL PAPER-02</a>
-              </li>
-              <li class="footer__bottom--list-item">
-                <a href="#">B-03-QP-NEET2020-BIO-MODEL PAPER-03</a>
-              </li>
-              <li class="footer__bottom--list-item">
-                <a href="#">B-03-ANS-HINTS & SOLUTIONS-BIO MODEL PAPER</a>
-              </li>
-            </ul>
-
-            <ul class="footer__bottom--list">
-              <li class="footer__bottom--list-item">
-                <a href="#">B-04-QP-NEET2020-MODEL PAPER-04</a>
-              </li>
-              <li class="footer__bottom--list-item">
-                <a href="#"
-                  >B-04-ANS-HINTS & SOLUTIONS-NEET2020-MODEL PAPER-04</a
-                >
-              </li>
-              <li class="footer__bottom--list-item">
-                <a href="#">B-05-QP-NEET2020-BIO-MODEL PAPER-05</a>
-              </li>
-              <li class="footer__bottom--list-item">
-                <a href="#"
-                  >B-05-ANS-HINTS & SOLUTIONS-NEET-2020 BIO-MODEL PAPER</a
-                >
-              </li>
-              <li class="footer__bottom--list-item">
-                <a href="#">B-06-QP-NEET2020-BIO-MODEL PAPER-06</a>
-              </li>
-              <li class="footer__bottom--list-item">
-                <a href="#">B-06-ANS-NEET2020-BIO-MODEL PAPER-06</a>
-              </li>
-            </ul>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="blog__card">
+              <div class="blog__card--up">
+                <img src="/img/BlogImage2.png" alt="image" />
+              </div>
+              <div class="blog__card--down">
+                <p class="blog__card--heading-small">Admissions</p>
+                <p class="blog__card--heading">
+                  Lorem ipsum dolor sit amet, consettur sadipsc elitr, sed
+                  diam nonumy eirmod
+                </p>
+                <p class="blog__card--text">
+                  Lorem ipsum dolor sit amet, consettur sadipscing elitr, sed
+                  diam nonum eirmod tempor invidunt ut labore et dolore magna
+                  aliquyam erat, sed dia voluptua. At vero eos et accusam et
+                  justo duo dolores tempor invidunt ut labore et dolore magna
+                </p>
+                <div class="blog__card--user">
+                  <img src="img/user.png" alt="user" class="blog-card--user-image" />
+                  <div class="blog__card--user-info">
+                    <p class="blog__card--user-name">Anaya Oberoi</p>
+                    <p class="blog__card--user-date">January 06, 2022</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <h4
-            class="
-              heading-subtertiary heading-subtertiary--yellow
-              u-margin-bottom-small
-            "
-          >
-            Physics
-          </h4>
-          <div class="footer__bottom--list-container">
-            <ul class="footer__bottom--list">
-              <li class="footer__bottom--list-item">
-                <a href="#">B-01-QP-NEET-2020-BIOLOGY MODEL PAPER-01</a>
-              </li>
-              <li class="footer__bottom--list-item">
-                <a href="#"
-                  >B-01-ANS-NEET2020-HINTS & SOLUTIONS-BIOLOGY-MODEL PAPER-01</a
-                >
-              </li>
-              <li class="footer__bottom--list-item">
-                <a href="#">B-02-QP-NEET2020-MODEL PAPER-02</a>
-              </li>
-              <li class="footer__bottom--list-item">
-                <a href="#">B-02-ANS-NEET2020-BIO-MODEL PAPER-02</a>
-              </li>
-              <li class="footer__bottom--list-item">
-                <a href="#">B-03-QP-NEET2020-BIO-MODEL PAPER-03</a>
-              </li>
-              <li class="footer__bottom--list-item">
-                <a href="#">B-03-ANS-HINTS & SOLUTIONS-BIO MODEL PAPER</a>
-              </li>
-            </ul>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="blog__card">
+              <div class="blog__card--up">
+                <img src="/img/BlogImage3.png" alt="image" />
+              </div>
+              <div class="blog__card--down">
+                <p class="blog__card--heading-small">NEET</p>
+                <p class="blog__card--heading">
+                  Lorem ipsum dolor sit amet, consettur sadipsc elitr, sed
+                  diam nonumy eirmod
+                </p>
+                <p class="blog__card--text">
+                  Lorem ipsum dolor sit amet, consettur sadipscing elitr, sed
+                  diam nonum eirmod tempor invidunt ut labore et dolore magna
+                  aliquyam erat, sed dia voluptua. At vero eos et accusam et
+                  justo duo dolores tempor invidunt ut labore et dolore magna
+                </p>
+                <div class="blog__card--user">
+                  <img src="img/user.png" alt="user" class="blog-card--user-image" />
+                  <div class="blog__card--user-info">
+                    <p class="blog__card--user-name">Anaya Oberoi</p>
+                    <p class="blog__card--user-date">January 06, 2022</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-            <ul class="footer__bottom--list">
-              <li class="footer__bottom--list-item">
-                <a href="#">B-04-QP-NEET2020-MODEL PAPER-04</a>
-              </li>
-              <li class="footer__bottom--list-item">
-                <a href="#"
-                  >B-04-ANS-HINTS & SOLUTIONS-NEET2020-MODEL PAPER-04</a
-                >
-              </li>
-              <li class="footer__bottom--list-item">
-                <a href="#">B-05-QP-NEET2020-BIO-MODEL PAPER-05</a>
-              </li>
-              <li class="footer__bottom--list-item">
-                <a href="#"
-                  >B-05-ANS-HINTS & SOLUTIONS-NEET-2020 BIO-MODEL PAPER</a
-                >
-              </li>
-              <li class="footer__bottom--list-item">
-                <a href="#">B-06-QP-NEET2020-BIO-MODEL PAPER-06</a>
-              </li>
-              <li class="footer__bottom--list-item">
-                <a href="#">B-06-ANS-NEET2020-BIO-MODEL PAPER-06</a>
-              </li>
-              s
-            </ul>
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__top">
+        <div class="footer__logo-container">
+          <img src="/img/footerLogo.png" alt="" class="footer__logo" />
+          <div class="footer__logo--icon-container">
+            <img src="/img/fbIcon.svg" alt="fb" />
+            <img src="/img/twitterIcon.svg" alt="twitter" />
+            <img src="/img/youtubeIcon.svg" alt="youtube" />
+          </div>
+        </div>
+        <div class="footer__contact">
+          <div class="footer__contact-container">
+            <div class="footer__contact--phone">
+              <img src="/img/phoneIcon.png" alt="phone" class="footer__contact--icon" />
+              <p class="footer__contact--text">080-45912222</p>
+            </div>
+
+            <div class="footer__contact--mail">
+              <img src="/img/mailIcon.png" alt="mail" class="footer__contact--icon" />
+              <p class="footer__contact--text">
+                info@parishramaneetacademy.com
+              </p>
+            </div>
+          </div>
+
+          <div class="footer__contact--location">
+            <img src="/img/locationIcon.svg" alt="mail" class="footer__contact--icon" />
+            <p class="footer__contact--text">
+              Parishrama NEET Academy, Omkar Hills Road, Srinivasapura, Dr.
+              Vishnuvardan Road, towards Uttarahalli Main Road, Bengaluru -
+              560060
+            </p>
           </div>
         </div>
       </div>
 
-      <div class="footer__copyright">
-        <p class="footer__copyright--text">
-          Copyright &copy; <a href="#">Parishrama Neet Academy</a> Website by:
-          <a href="#">Mass Designs</a>
-        </p>
-      </div>
-    </footer>
+      <hr />
 
-    <script src="js/jquery.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="script.js"></script>
-  </body>
+      <div class="footer__middle">
+        <div class="footer__navigation">
+          <h3 class="
+                heading-tertiary heading-tertiary--yellow
+                u-margin-bottom-small
+              ">
+            Quick Links
+          </h3>
+          <div class="footer__navbar-container">
+            <ul class="footer__navbar">
+              <li class="footer__navbar-item"><a href="#">Home</a></li>
+              <li class="footer__navbar-item"><a href="#">About Us</a></li>
+              <li class="footer__navbar-item"><a href="#">Hostel</a></li>
+              <li class="footer__navbar-item"><a href="#">Gallery</a></li>
+              <li class="footer__navbar-item"><a href="#">Sitemap</a></li>
+              <li class="footer__navbar-item footer__navbar-item--yellow">
+                <a href="#">About NEET</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-newsletter">
+          <h3 class="
+                heading-tertiary heading-tertiary--white
+                u-margin-bottom-small
+              ">
+            subscribe to our newsletters
+          </h3>
+
+          <div class="footer__search--container">
+            <div class="footer__search">
+              <p class="footer__search--text">Email Address</p>
+              <a href="#" class="btn-search">Subscribe</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="footer__bottom">
+        <h3 class="
+              heading-tertiary heading-tertiary--yellow
+              u-margin-bottom-big
+            ">
+          Downloads
+        </h3>
+
+        <h4 class="
+              heading-subtertiary heading-subtertiary--yellow
+              u-margin-bottom-small
+            ">
+          Biology
+        </h4>
+        <div class="footer__bottom--list-container u-margin-bottom-big">
+          <ul class="footer__bottom--list">
+            <li class="footer__bottom--list-item">
+              <a href="#">B-01-QP-NEET-2020-BIOLOGY MODEL PAPER-01</a>
+            </li>
+            <li class="footer__bottom--list-item">
+              <a href="#">B-01-ANS-NEET2020-HINTS & SOLUTIONS-BIOLOGY-MODEL PAPER-01</a>
+            </li>
+            <li class="footer__bottom--list-item">
+              <a href="#">B-02-QP-NEET2020-MODEL PAPER-02</a>
+            </li>
+            <li class="footer__bottom--list-item">
+              <a href="#">B-02-ANS-NEET2020-BIO-MODEL PAPER-02</a>
+            </li>
+            <li class="footer__bottom--list-item">
+              <a href="#">B-03-QP-NEET2020-BIO-MODEL PAPER-03</a>
+            </li>
+            <li class="footer__bottom--list-item">
+              <a href="#">B-03-ANS-HINTS & SOLUTIONS-BIO MODEL PAPER</a>
+            </li>
+          </ul>
+
+          <ul class="footer__bottom--list">
+            <li class="footer__bottom--list-item">
+              <a href="#">B-04-QP-NEET2020-MODEL PAPER-04</a>
+            </li>
+            <li class="footer__bottom--list-item">
+              <a href="#">B-04-ANS-HINTS & SOLUTIONS-NEET2020-MODEL PAPER-04</a>
+            </li>
+            <li class="footer__bottom--list-item">
+              <a href="#">B-05-QP-NEET2020-BIO-MODEL PAPER-05</a>
+            </li>
+            <li class="footer__bottom--list-item">
+              <a href="#">B-05-ANS-HINTS & SOLUTIONS-NEET-2020 BIO-MODEL PAPER</a>
+            </li>
+            <li class="footer__bottom--list-item">
+              <a href="#">B-06-QP-NEET2020-BIO-MODEL PAPER-06</a>
+            </li>
+            <li class="footer__bottom--list-item">
+              <a href="#">B-06-ANS-NEET2020-BIO-MODEL PAPER-06</a>
+            </li>
+          </ul>
+        </div>
+
+        <h4 class="
+              heading-subtertiary heading-subtertiary--yellow
+              u-margin-bottom-small
+            ">
+          Chemistry
+        </h4>
+        <div class="footer__bottom--list-container u-margin-bottom-big">
+          <ul class="footer__bottom--list">
+            <li class="footer__bottom--list-item">
+              <a href="#">B-01-QP-NEET-2020-BIOLOGY MODEL PAPER-01</a>
+            </li>
+            <li class="footer__bottom--list-item">
+              <a href="#">B-01-ANS-NEET2020-HINTS & SOLUTIONS-BIOLOGY-MODEL PAPER-01</a>
+            </li>
+            <li class="footer__bottom--list-item">
+              <a href="#">B-02-QP-NEET2020-MODEL PAPER-02</a>
+            </li>
+            <li class="footer__bottom--list-item">
+              <a href="#">B-02-ANS-NEET2020-BIO-MODEL PAPER-02</a>
+            </li>
+            <li class="footer__bottom--list-item">
+              <a href="#">B-03-QP-NEET2020-BIO-MODEL PAPER-03</a>
+            </li>
+            <li class="footer__bottom--list-item">
+              <a href="#">B-03-ANS-HINTS & SOLUTIONS-BIO MODEL PAPER</a>
+            </li>
+          </ul>
+
+          <ul class="footer__bottom--list">
+            <li class="footer__bottom--list-item">
+              <a href="#">B-04-QP-NEET2020-MODEL PAPER-04</a>
+            </li>
+            <li class="footer__bottom--list-item">
+              <a href="#">B-04-ANS-HINTS & SOLUTIONS-NEET2020-MODEL PAPER-04</a>
+            </li>
+            <li class="footer__bottom--list-item">
+              <a href="#">B-05-QP-NEET2020-BIO-MODEL PAPER-05</a>
+            </li>
+            <li class="footer__bottom--list-item">
+              <a href="#">B-05-ANS-HINTS & SOLUTIONS-NEET-2020 BIO-MODEL PAPER</a>
+            </li>
+            <li class="footer__bottom--list-item">
+              <a href="#">B-06-QP-NEET2020-BIO-MODEL PAPER-06</a>
+            </li>
+            <li class="footer__bottom--list-item">
+              <a href="#">B-06-ANS-NEET2020-BIO-MODEL PAPER-06</a>
+            </li>
+          </ul>
+        </div>
+
+        <h4 class="
+              heading-subtertiary heading-subtertiary--yellow
+              u-margin-bottom-small
+            ">
+          Physics
+        </h4>
+        <div class="footer__bottom--list-container">
+          <ul class="footer__bottom--list">
+            <li class="footer__bottom--list-item">
+              <a href="#">B-01-QP-NEET-2020-BIOLOGY MODEL PAPER-01</a>
+            </li>
+            <li class="footer__bottom--list-item">
+              <a href="#">B-01-ANS-NEET2020-HINTS & SOLUTIONS-BIOLOGY-MODEL PAPER-01</a>
+            </li>
+            <li class="footer__bottom--list-item">
+              <a href="#">B-02-QP-NEET2020-MODEL PAPER-02</a>
+            </li>
+            <li class="footer__bottom--list-item">
+              <a href="#">B-02-ANS-NEET2020-BIO-MODEL PAPER-02</a>
+            </li>
+            <li class="footer__bottom--list-item">
+              <a href="#">B-03-QP-NEET2020-BIO-MODEL PAPER-03</a>
+            </li>
+            <li class="footer__bottom--list-item">
+              <a href="#">B-03-ANS-HINTS & SOLUTIONS-BIO MODEL PAPER</a>
+            </li>
+          </ul>
+
+          <ul class="footer__bottom--list">
+            <li class="footer__bottom--list-item">
+              <a href="#">B-04-QP-NEET2020-MODEL PAPER-04</a>
+            </li>
+            <li class="footer__bottom--list-item">
+              <a href="#">B-04-ANS-HINTS & SOLUTIONS-NEET2020-MODEL PAPER-04</a>
+            </li>
+            <li class="footer__bottom--list-item">
+              <a href="#">B-05-QP-NEET2020-BIO-MODEL PAPER-05</a>
+            </li>
+            <li class="footer__bottom--list-item">
+              <a href="#">B-05-ANS-HINTS & SOLUTIONS-NEET-2020 BIO-MODEL PAPER</a>
+            </li>
+            <li class="footer__bottom--list-item">
+              <a href="#">B-06-QP-NEET2020-BIO-MODEL PAPER-06</a>
+            </li>
+            <li class="footer__bottom--list-item">
+              <a href="#">B-06-ANS-NEET2020-BIO-MODEL PAPER-06</a>
+            </li>
+            s
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__copyright">
+      <p class="footer__copyright--text">
+        Copyright &copy; <a href="#">Parishrama Neet Academy</a> Website by:
+        <a href="#">Mass Designs</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/jquery.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
 </html>

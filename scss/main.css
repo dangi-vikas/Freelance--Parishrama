@@ -275,8 +275,20 @@ ul {
 }
 
 .card--down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 90%;
-  height: auto;
   border-radius: 5px;
   padding: 2rem;
   background-color: #ffffff;
@@ -287,10 +299,13 @@ ul {
           box-shadow: 0 1.5rem 4rem #0002;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  text-align: center;
 }
 
 .card--down__textbox {
-  display: inline-block;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  display: block;
   position: relative;
   text-align: center;
 }
@@ -307,8 +322,13 @@ ul {
 }
 
 .card:hover .card--down {
-  -webkit-transform: translateY(60%);
-          transform: translateY(60%);
+  height: 100%;
+  bottom: -100%;
+}
+
+.card:hover .card--down__textbox {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .blog__card {
@@ -1343,6 +1363,7 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
 }
 
 .section-testimonials .card--down__profile img {
@@ -1397,7 +1418,7 @@ ul {
 }
 
 .section-blogs {
-  margin-bottom: 25rem;
+  margin: 5rem;
 }
 
 .section-blogs h1 {
