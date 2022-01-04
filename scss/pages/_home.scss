@@ -591,3 +591,40 @@
     text-align: center;
   }
 }
+
+.section-founder {
+  padding: 5rem;
+  padding-top: 10rem;
+  margin: 5rem auto;
+  background: linear-gradient(
+    0deg,
+    $color-primary -48.73%,
+    $color-primary 81.72%
+  );
+
+  background-size: cover;
+  clip-path: ellipse(100% 95% at 48% 100%);
+
+  &__text {
+    & > h1 {
+      font-size: 3.2rem;
+      color: $color-white;
+    }
+
+    & > h3 {
+      font-size: 2.4rem;
+      font-weight: 300;
+      color: $color-white;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+    }
+
+    & > p {
+      color: $color-white;
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+}

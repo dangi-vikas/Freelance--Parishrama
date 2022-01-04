@@ -1510,4 +1510,36 @@ ul {
   max-width: 91rem;
   text-align: center;
 }
+
+.section-founder {
+  padding: 5rem;
+  padding-top: 10rem;
+  margin: 5rem auto;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(-48.73%, #202439), color-stop(81.72%, #202439));
+  background: linear-gradient(0deg, #202439 -48.73%, #202439 81.72%);
+  background-size: cover;
+  -webkit-clip-path: ellipse(100% 95% at 48% 100%);
+          clip-path: ellipse(100% 95% at 48% 100%);
+}
+
+.section-founder__text > h1 {
+  font-size: 3.2rem;
+  color: #ffffff;
+}
+
+.section-founder__text > h3 {
+  font-size: 2.4rem;
+  font-weight: 300;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.section-founder__text > p {
+  color: #ffffff;
+}
+
+.section-founder img {
+  width: 100%;
+}
 /*# sourceMappingURL=main.css.map */
