@@ -578,10 +578,6 @@
         background: $color-secondary;
       }
     }
-
-    &--features {
-      font-weight: 700;
-    }
   }
 
   &__text-container {
@@ -627,4 +623,31 @@
   img {
     width: 100%;
   }
+}
+
+.section-features {
+  margin: 4rem;
+  margin-bottom: 10rem;
+
+  &__text {
+    padding: 3rem;
+  }
+
+  & > h1 {
+    font-weight: 700;
+    position: relative;
+  }
+
+  & h1::after {
+    display: block;
+    content: "";
+    position: absolute;
+    right: 10%;
+    width: 13%;
+    height: 4px;
+    background: $color-secondary;
+  }
+}
+
+.section-salient {
 }
