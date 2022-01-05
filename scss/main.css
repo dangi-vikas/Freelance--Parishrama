@@ -1500,10 +1500,6 @@ ul {
   background: #ffc700;
 }
 
-.section-about__heading--features {
-  font-weight: 700;
-}
-
 .section-about__text-container {
   margin: 1rem;
   padding: 1rem 3rem;
@@ -1541,5 +1537,112 @@ ul {
 
 .section-founder img {
   width: 100%;
+}
+
+.section-features {
+  margin: 4rem;
+  margin-bottom: 10rem;
+}
+
+.section-features__container {
+  padding: 0.5rem;
+  width: 100%;
+  height: 100%;
+  background: url(/img/aboutHeroBackground.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.section-features__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-features__quotes {
+  height: 1.1rem;
+}
+
+.section-features__quotes--open {
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.section-features__quotes--close {
+  margin-left: 0.5rem;
+  margin-top: 0.5rem;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.section-features__text {
+  padding: 3rem;
+}
+
+.section-features__text p {
+  line-height: 2.2rem;
+}
+
+.section-features > h1 {
+  font-weight: 700;
+  position: relative;
+}
+
+.section-features h1::after {
+  display: block;
+  content: "";
+  position: absolute;
+  right: 14%;
+  width: 13%;
+  height: 4px;
+  background: #ffc700;
+}
+
+.section-salient {
+  margin: 4rem;
+  width: 100%;
+}
+
+.section-salient__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section-salient__text {
+  margin-left: 12rem;
+  padding: 2rem;
+  width: 60%;
+}
+
+.section-salient h1 {
+  font-size: 3.6rem;
+}
+
+.section-salient p {
+  font-weight: 400;
+  position: relative;
+  line-height: 1.8rem;
+}
+
+.section-salient p::before {
+  content: "";
+  background-image: url(/img/bullet.svg);
+  height: 1.6rem;
+  width: 1.6rem;
+  background-size: cover;
+  position: absolute;
+  z-index: 0;
+  left: -3rem;
 }
 /*# sourceMappingURL=main.css.map */
