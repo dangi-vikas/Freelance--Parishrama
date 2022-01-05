@@ -6,7 +6,7 @@
     position: relative;
     padding: 1rem 7rem;
 
-    @include respond(tab-land) {
+    @include respond(laptop) {
       padding: 1rem 3rem;
     }
   }
@@ -17,7 +17,7 @@
     justify-content: space-between;
     margin: 2rem;
 
-    @include respond(tab-port) {
+    @include respond(laptop) {
       flex-direction: column;
     }
   }
@@ -30,7 +30,7 @@
       width: 100%;
       max-width: 20rem;
 
-      @include respond(tab-port) {
+      @include respond(laptop) {
         margin-bottom: 2rem;
       }
     }
@@ -90,7 +90,7 @@
     display: flex;
     justify-content: space-between;
 
-    @include respond(tab-land) {
+    @include respond(laptop) {
       flex-direction: column;
     }
   }
@@ -100,7 +100,7 @@
     justify-content: space-between;
     align-items: center;
 
-    @include respond(tab-land) {
+    @include respond(laptop) {
       margin-bottom: 4rem;
     }
 
@@ -108,7 +108,7 @@
       list-style: none;
       margin-right: 5rem;
 
-      @include respond(tab-land) {
+      @include respond(laptop) {
         margin-right: auto;
       }
 
@@ -158,7 +158,7 @@
         justify-content: space-between;
         margin: auto;
 
-        @include respond(tab-port) {
+        @include respond(laptop) {
           flex-direction: column;
         }
       }

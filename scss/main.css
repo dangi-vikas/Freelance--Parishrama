@@ -218,7 +218,7 @@ ul {
   color: #202439;
 }
 
-@media only screen and (max-width: 75em) {
+@media only screen and (max-width: 62em) {
   .btn-search, .btn-search:link, .btn-search:visited {
     padding: 0.5rem 3rem;
     border-radius: 1rem;
@@ -457,7 +457,7 @@ ul {
   margin: 2rem;
 }
 
-@media only screen and (max-width: 56.25em) {
+@media only screen and (max-width: 75em) {
   .footer__top {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -476,7 +476,7 @@ ul {
   max-width: 20rem;
 }
 
-@media only screen and (max-width: 56.25em) {
+@media only screen and (max-width: 75em) {
   .footer__logo-container {
     margin-bottom: 2rem;
   }
@@ -645,7 +645,7 @@ ul {
   margin: auto;
 }
 
-@media only screen and (max-width: 56.25em) {
+@media only screen and (max-width: 75em) {
   .footer__bottom--list-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1437,12 +1437,11 @@ ul {
 }
 
 .section-hero-about__content {
-  margin: 5rem;
   height: 100%;
 }
 
 .section-hero-about__content--header {
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 
 .section-hero-about__content--header > h1 {
@@ -1451,6 +1450,7 @@ ul {
 
 .section-hero-about__content--header > p {
   color: #ffffff;
+  line-height: 2.2rem;
 }
 
 .section-hero-about__content--header h1:after {
@@ -1595,15 +1595,18 @@ ul {
   display: block;
   content: "";
   position: absolute;
-  right: 14%;
+  right: 10%;
   width: 13%;
   height: 4px;
   background: #ffc700;
 }
 
 .section-salient {
-  margin: 4rem;
   width: 100%;
+  background: url(/img/salientBackground.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 4rem;
 }
 
 .section-salient__container {
@@ -1620,13 +1623,15 @@ ul {
 }
 
 .section-salient__text {
-  margin-left: 12rem;
   padding: 2rem;
-  width: 60%;
 }
 
 .section-salient h1 {
   font-size: 3.6rem;
+}
+
+.section-salient h1::after {
+  color: #202439;
 }
 
 .section-salient p {
@@ -1644,5 +1649,202 @@ ul {
   position: absolute;
   z-index: 0;
   left: -3rem;
+}
+
+.section-hero-courses {
+  background: url(/img/coursesHeroImage.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.section-hero-courses__container {
+  width: 100%;
+}
+
+.section-hero-courses__content {
+  margin-top: 5rem;
+  height: 100%;
+  margin-bottom: 25rem;
+}
+
+.section-hero-courses__content--header {
+  margin-bottom: 3rem;
+}
+
+.section-hero-courses__content--header > h1 {
+  color: #ffffff;
+}
+
+.section-hero-courses__content--header h1:after {
+  margin-bottom: 3rem;
+  display: block;
+  content: "";
+  width: 20%;
+  height: 5px;
+  background: #ffc700;
+}
+
+.section-about-courses {
+  margin-top: 4rem;
+  padding: 2rem;
+  background: url(/img/coursesAboutBackground.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.section-about-courses p {
+  line-height: 2.4rem;
+}
+
+.section-courses-courses {
+  padding: 4rem;
+}
+
+.section-courses-courses .title {
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.section-courses-courses .title h1 {
+  position: relative;
+  display: inline-block;
+  z-index: 10;
+}
+
+.section-courses-courses .title h1::before {
+  content: "";
+  background: url("../../img/quotes.svg");
+  background-size: cover;
+  color: #ffc700;
+  position: absolute;
+  height: 5rem;
+  width: 5rem;
+  top: -2rem;
+  z-index: 0;
+  left: -4rem;
+}
+
+.section-courses-courses__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2rem;
+  -webkit-box-shadow: 0 0 5px #0003;
+          box-shadow: 0 0 5px #0003;
+  border-radius: 0.5rem;
+}
+
+@media only screen and (max-width: 48em) {
+  .section-courses-courses__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.section-courses-courses__text {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media only screen and (max-width: 48em) {
+  .section-courses-courses__text {
+    width: 100%;
+  }
+}
+
+.section-courses-courses__text p {
+  font-weight: 400;
+  line-height: 2rem;
+  position: relative;
+}
+
+@media only screen and (max-width: 36em) {
+  .section-courses-courses__text p {
+    margin-left: 2rem;
+  }
+}
+
+.section-courses-courses__text p::before {
+  content: "";
+  background-image: url(/img/bullet.svg);
+  height: 1.6rem;
+  width: 1.6rem;
+  background-size: cover;
+  position: absolute;
+  left: -3rem;
+}
+
+@media only screen and (max-width: 36em) {
+  .section-courses-courses__text p::before {
+    left: -2.5rem;
+  }
+}
+
+.section-courses-courses__image {
+  background: url("/img/courseCardBackground.png");
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  background-size: cover;
+  position: relative;
+  padding: 2rem;
+  left: -4rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+}
+
+@media only screen and (max-width: 48em) {
+  .section-courses-courses__image {
+    left: 0;
+    margin-bottom: 2rem;
+  }
+}
+
+.section-courses-courses__image-text {
+  padding: 2rem 0rem;
+}
+
+.section-courses-courses__image-text p {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 2.8rem;
+  margin-bottom: 0;
+}
+
+.section-courses-courses__icon {
+  margin-left: 80%;
+  display: inline-block;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-bottom: 2rem;
+}
+
+.section-courses-courses__icon img {
+  height: 100%;
+}
+
+.section-detail-courses {
+  padding: 4rem;
+}
+
+.section-detail-courses p {
+  font-weight: 300;
+  color: #373435;
+  line-height: 2rem;
 }
 /*# sourceMappingURL=main.css.map */

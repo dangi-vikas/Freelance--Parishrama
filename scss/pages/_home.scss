@@ -526,11 +526,10 @@
   }
 
   &__content {
-    margin: 5rem;
     height: 100%;
 
     &--header {
-      margin-bottom: 3rem;
+      margin-bottom: 5rem;
 
       & > h1 {
         color: $color-primary;
@@ -538,6 +537,7 @@
 
       & > p {
         color: $color-white;
+        line-height: 2.2rem;
       }
 
       & h1:after {
@@ -674,7 +674,7 @@
     display: block;
     content: "";
     position: absolute;
-    right: 14%;
+    right: 10%;
     width: 13%;
     height: 4px;
     background: $color-secondary;
@@ -682,8 +682,11 @@
 }
 
 .section-salient {
-  margin: 4rem;
   width: 100%;
+  background: url(/img/salientBackground.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 4rem;
 
   &__container {
     display: flex;
@@ -692,13 +695,15 @@
   }
 
   &__text {
-    margin-left: 12rem;
     padding: 2rem;
-    width: 60%;
   }
 
   h1 {
     font-size: 3.6rem;
+
+    &::after {
+      color: $color-primary;
+    }
   }
 
   p {
@@ -716,5 +721,180 @@
     position: absolute;
     z-index: 0;
     left: -3rem;
+  }
+}
+
+.section-hero-courses {
+  background: url(/img/coursesHeroImage.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__container {
+    width: 100%;
+  }
+
+  &__content {
+    margin-top: 5rem;
+    height: 100%;
+    margin-bottom: 25rem;
+
+    &--header {
+      margin-bottom: 3rem;
+
+      & > h1 {
+        color: $color-white;
+      }
+
+      & h1:after {
+        margin-bottom: 3rem;
+        display: block;
+        content: "";
+        width: 20%;
+        height: 5px;
+        background: $color-secondary;
+      }
+    }
+  }
+}
+
+.section-about-courses {
+  margin-top: 4rem;
+  padding: 2rem;
+  background: url(/img/coursesAboutBackground.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  // width: 80%;
+  // display: flex;
+  // justify-content: center;
+
+  p {
+    line-height: 2.4rem;
+  }
+}
+
+.section-courses-courses {
+  padding: 4rem;
+  // width: 100%;
+  // display: flex;
+  // justify-content: center;
+
+  & .title {
+    margin: 2rem auto;
+    text-align: center;
+
+    & h1 {
+      position: relative;
+      display: inline-block;
+      z-index: 10;
+
+      &::before {
+        content: "";
+        background: url("../../img/quotes.svg");
+        background-size: cover;
+        color: $color-secondary;
+        position: absolute;
+        height: 5rem;
+        width: 5rem;
+        top: -2rem;
+        z-index: 0;
+        left: -4rem;
+      }
+    }
+  }
+
+  &__container {
+    display: flex;
+    padding: 2rem;
+    box-shadow: 0 0 5px #0003;
+    border-radius: 0.5rem;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+  }
+
+  &__text {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    @include respond(tab-port) {
+      width: 100%;
+    }
+
+    p {
+      font-weight: 400;
+      line-height: 2rem;
+      position: relative;
+
+      @include respond(phone) {
+        margin-left: 2rem;
+      }
+    }
+
+    & p::before {
+      content: "";
+      background-image: url(/img/bullet.svg);
+      height: 1.6rem;
+      width: 1.6rem;
+      background-size: cover;
+      position: absolute;
+      left: -3rem;
+
+      @include respond(phone) {
+        left: -2.5rem;
+      }
+    }
+  }
+
+  &__image {
+    background: url("/img/courseCardBackground.png");
+    backface-visibility: hidden;
+    background-size: cover;
+    position: relative;
+    padding: 2rem;
+    left: -4rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+
+    @include respond(tab-port) {
+      left: 0;
+      margin-bottom: 2rem;
+    }
+
+    &-text {
+      padding: 2rem 0rem;
+
+      p {
+        color: $color-white;
+        font-weight: 500;
+        font-size: 2.8rem;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__icon {
+    margin-left: 80%;
+    display: inline-block;
+    align-self: flex-end;
+    margin-bottom: 2rem;
+
+    img {
+      height: 100%;
+    }
+  }
+}
+
+.section-detail-courses {
+  padding: 4rem;
+
+  p {
+    font-weight: 300;
+    color: $color-grey-dark;
+    line-height: 2rem;
   }
 }
