@@ -883,6 +883,10 @@
     align-self: flex-end;
     margin-bottom: 2rem;
 
+    @include respond(phone) {
+      margin-left: 70%;
+    }
+
     img {
       height: 100%;
     }
@@ -896,5 +900,59 @@
     font-weight: 300;
     color: $color-grey-dark;
     line-height: 2rem;
+  }
+}
+
+.section-hero-long-courses {
+  background: url(/img/LongCoursesHeroImage.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+
+  &__container {
+    width: 100%;
+  }
+
+  &__content {
+    padding: 2rem;
+
+    &--icon {
+      display: inline-block;
+      margin-top: 5%;
+      margin-left: 90%;
+      display: inline-block;
+      align-self: flex-end;
+      margin-bottom: 2rem;
+      width: 12rem;
+      height: 8rem;
+
+      @include respond(phone) {
+        margin-left: 70%;
+      }
+
+      img {
+        height: 100%;
+      }
+    }
+
+    &--header {
+      margin-top: 10%;
+      margin-bottom: 3rem;
+
+      & > h1 {
+        color: $color-white;
+        font-size: 4.8rem;
+        font-weight: 500;
+      }
+
+      & h1:after {
+        margin-bottom: 3rem;
+        display: block;
+        content: "";
+        width: 30%;
+        height: 5px;
+        background: $color-secondary;
+      }
+    }
   }
 }

@@ -1834,6 +1834,12 @@ ul {
   margin-bottom: 2rem;
 }
 
+@media only screen and (max-width: 36em) {
+  .section-courses-courses__icon {
+    margin-left: 70%;
+  }
+}
+
 .section-courses-courses__icon img {
   height: 100%;
 }
@@ -1846,5 +1852,62 @@ ul {
   font-weight: 300;
   color: #373435;
   line-height: 2rem;
+}
+
+.section-hero-long-courses {
+  background: url(/img/LongCoursesHeroImage.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.section-hero-long-courses__container {
+  width: 100%;
+}
+
+.section-hero-long-courses__content {
+  padding: 2rem;
+}
+
+.section-hero-long-courses__content--icon {
+  display: inline-block;
+  margin-top: 5%;
+  margin-left: 90%;
+  display: inline-block;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-bottom: 2rem;
+  width: 12rem;
+  height: 8rem;
+}
+
+@media only screen and (max-width: 36em) {
+  .section-hero-long-courses__content--icon {
+    margin-left: 70%;
+  }
+}
+
+.section-hero-long-courses__content--icon img {
+  height: 100%;
+}
+
+.section-hero-long-courses__content--header {
+  margin-top: 10%;
+  margin-bottom: 3rem;
+}
+
+.section-hero-long-courses__content--header > h1 {
+  color: #ffffff;
+  font-size: 4.8rem;
+  font-weight: 500;
+}
+
+.section-hero-long-courses__content--header h1:after {
+  margin-bottom: 3rem;
+  display: block;
+  content: "";
+  width: 30%;
+  height: 5px;
+  background: #ffc700;
 }
 /*# sourceMappingURL=main.css.map */
