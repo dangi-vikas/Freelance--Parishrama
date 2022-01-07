@@ -1068,3 +1068,116 @@
     background: $color-secondary;
   }
 }
+
+.section-hero-contact {
+  background: url(../img/contactHeroImage.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__container {
+    width: 100%;
+  }
+
+  &__content {
+    margin-top: 15rem;
+    height: 100%;
+    margin-bottom: 20rem;
+
+    &--header {
+      margin-bottom: 3rem;
+
+      & > h1 {
+        color: $color-white;
+      }
+
+      & h1:after {
+        margin-bottom: 3rem;
+        display: block;
+        content: "";
+        width: 20%;
+        height: 5px;
+        background: $color-secondary;
+      }
+    }
+  }
+}
+
+.section-form-contact {
+  width: 100%;
+
+  &__container {
+    padding: 8rem 8rem 4rem 8rem;
+    margin: 4rem;
+    margin-top: 8rem;
+    width: 85%;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+
+    @include respond(tab-port) {
+      padding: 4rem 4rem 2rem 4rem;
+    }
+  }
+
+  &__header {
+    padding: 1rem 3rem;
+    background-color: $color-primary;
+    border-radius: 0.5rem;
+    position: absolute;
+    top: -3rem;
+
+    h1 {
+      color: $color-white;
+      font-size: 3.2rem;
+
+      @include respond(tab-port) {
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  &__detail-wrapper {
+    display: flex;
+
+    @include respond(tab-port) {
+      flex-wrap: wrap;
+    }
+  }
+
+  & &__detail:not(:last-child) {
+    margin-right: 4rem;
+
+    @include respond(tab-port) {
+      margin-right: 0;
+      margin-bottom: 3rem;
+    }
+  }
+
+  & &__address,
+  & &__message {
+    padding-bottom: 4rem;
+  }
+
+  &__line {
+    width: 100%;
+    margin-bottom: 3rem;
+
+    input {
+      padding: 1rem;
+      width: 100%;
+      size: $text;
+      font-weight: 400;
+      border-radius: 4px;
+      color: rgba($color-primary, 0.3);
+      border: 1px solid rgba($color-primary, 0.3);
+    }
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+}
