@@ -7,6 +7,12 @@
 
   &__container {
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    & > div {
+      width: 100%;
+    }
   }
 
   &__content {
@@ -23,46 +29,70 @@
         height: 5px;
         background: $color-secondary;
       }
+
+      & .paragraph {
+        max-width: 40rem;
+      }
     }
 
     &--cta {
-      display: flex;
-      align-items: center;
+      display: inline-block;
+      &-container {
+        display: flex;
+        align-items: center;
+      }
 
       &-card {
-        width: 50%;
+        width: 15rem;
         padding: 1.5rem;
-        margin-left: 2rem;
-        margin-right: 3rem;
-        background: $color-primary;
+        margin: 1rem;
+        background: #202439;
         color: #fff;
         text-align: center;
         border-radius: 1rem;
 
+        &:first-child {
+          margin-right: 8rem;
+        }
+
         & > p {
           color: #fff;
+          margin: 0;
           font-weight: 400;
-          margin: 5px auto;
-          font-size: $text;
+          font-size: $text-small;
         }
 
         & .strip {
           position: relative;
-          border-radius: 5px;
-          margin: 2rem auto;
-          left: -3rem;
+          border-radius: 0.5rem 0.5rem 0.5rem 0;
+          margin: 1rem auto;
+          left: -2.5rem;
           padding: 1rem;
-          width: calc(100% + 6rem);
+          width: calc(100% + 5rem);
           background: $color-secondary;
           box-shadow: 4px 4px 10px #0003;
+
+          &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: -1rem;
+            left: 0;
+            border-right: 0px solid transparent;
+            border-left: 1rem solid transparent;
+            border-top: 1rem solid $color-secondary-dark;
+            height: 1rem;
+            width: 1rem;
+          }
 
           & > p {
             color: $color-primary;
             line-height: 1.2;
-            font-size: $text-small;
+            margin: 0;
+            font-size: $text-extra-smaller;
 
             &:last-child {
-              font-size: $text-big;
+              font-size: $text-small;
               font-weight: 500;
             }
           }
@@ -70,6 +100,26 @@
 
         & button {
           width: 100%;
+          font-size: $text-extra-small;
+        }
+      }
+    }
+
+    &--contact {
+      text-align: center;
+      margin: 1rem auto;
+      & p {
+        font-size: $text-small;
+        color: $color-primary;
+      }
+
+      & a {
+        font-weight: 500;
+        font-size: $text;
+        padding: 0.5rem 3rem !important;
+
+        & img {
+          margin-right: 1rem;
         }
       }
     }
@@ -1066,5 +1116,32 @@
     width: 60%;
     height: 5px;
     background: $color-secondary;
+  }
+}
+
+@media (max-width: 960px) {
+  .section-hero {
+    &__container {
+      flex-direction: column;
+      align-items: center;
+
+      & .heading-primary {
+        display: inline-block;
+        margin: auto;
+      }
+      & .paragraph {
+        margin: auto;
+      }
+
+      & > div {
+        width: 100%;
+        text-align: center;
+      }
+    }
+    &__image img {
+      width: 100%;
+      max-width: 50rem;
+      margin: auto;
+    }
   }
 }
