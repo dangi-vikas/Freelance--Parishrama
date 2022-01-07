@@ -639,6 +639,14 @@ ul {
 }
 
 .footer__search--btn {
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 500;
+  background-color: #ffc700;
+  cursor: pointer;
+  color: #202439;
   position: absolute;
   top: 0.75rem;
   right: 0.75rem;
@@ -2110,3 +2118,7 @@ ul {
   background: #ffc700;
 }
 /*# sourceMappingURL=main.css.map */
+
+.section-features .card {
+  background-image: url(../img/courseCardBackground.png);
+}
