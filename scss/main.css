@@ -721,6 +721,10 @@ ul {
   position: relative;
 }
 
+.header .container {
+  display: flex;
+}
+
 .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
