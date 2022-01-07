@@ -616,16 +616,7 @@ ul {
 }
 
 .footer__search {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 0.5rem;
+  position: relative;
 }
 
 .footer__search--container {
@@ -636,10 +627,31 @@ ul {
 }
 
 .footer__search--text {
-  padding-left: 2rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 1rem;
   font-size: 1.6rem;
+  width: 100%;
+  border-radius: 5px;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.3);
+}
+
+.footer__search--btn {
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 500;
+  background-color: #ffc700;
+  cursor: pointer;
+  color: #202439;
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  border: none;
+  outline: none;
 }
 
 .footer__bottom {
@@ -1765,6 +1777,32 @@ ul {
   border-radius: 0.5rem;
 }
 
+@media only screen and (max-width: 78em) {
+  .section-courses-courses__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .section-courses {
+    margin-bottom: 5rem;
+  }
+
+  .section-courses .card {
+    margin-bottom: 28rem;
+  }
+
+  .section-courses .card .card--down {
+    height: 100%;
+    bottom: -100%;
+  }
+
+  .section-courses .card .card--down__textbox {
+    transform: scale(1);
+  }
+}
+
 @media only screen and (max-width: 48em) {
   .section-courses-courses__container {
     -webkit-box-orient: vertical;
@@ -2080,3 +2118,7 @@ ul {
   background: #ffc700;
 }
 /*# sourceMappingURL=main.css.map */
+
+.section-features .card {
+  background-image: url(../img/courseCardBackground.png);
+}
