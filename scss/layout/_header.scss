@@ -2,12 +2,11 @@
   height: 10rem;
   background-size: cover;
   background-position: top;
-  position: relative;
+  position: sticky;
 
-  &__container {
+  & .container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
   }
 
   &__logo {
