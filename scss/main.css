@@ -620,7 +620,6 @@ ul {
 }
 
 .footer__search--container {
-  min-width: 42rem;
   height: 4rem;
   background-color: #ffffff;
   border-radius: 0.5rem;
