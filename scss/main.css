@@ -350,6 +350,7 @@ ul {
 
 .blog__card {
   min-height: 21rem;
+  margin: 1rem auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
