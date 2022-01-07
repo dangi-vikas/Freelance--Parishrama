@@ -1247,6 +1247,7 @@ ul {
   color: #ffc700;
   font-size: 4.8rem;
   height: auto;
+  margin-bottom: 0;
 }
 
 .section-whyus--card img {
