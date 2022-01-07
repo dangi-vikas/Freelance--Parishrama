@@ -923,7 +923,7 @@ ul {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  min-width: 38rem;
+  min-width: 42rem;
   margin: auto;
 }
 
