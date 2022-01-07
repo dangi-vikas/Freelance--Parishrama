@@ -136,9 +136,17 @@
 
 .section-updates {
   margin: 5rem auto;
+  &__container {
+    justify-content: space-between;
+
+    & > div {
+      margin: 2rem;
+    }
+  }
 
   &__important,
   &__latest {
+    min-width: 40rem;
     &-header {
       display: flex;
       align-items: center;
