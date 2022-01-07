@@ -1599,8 +1599,7 @@ ul {
 }
 
 .section-features {
-  margin: 4rem;
-  margin-bottom: 10rem;
+  padding: 5rem 0;
   background: url(../img/aboutHeroBackground.svg);
   background-size: cover;
   background-repeat: no-repeat;
