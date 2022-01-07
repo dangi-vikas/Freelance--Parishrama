@@ -668,6 +668,10 @@ ul {
   margin: auto;
 }
 
+.footer__bottom--list:not(:last-child) {
+  margin-right: 1rem;
+}
+
 @media only screen and (max-width: 75em) {
   .footer__bottom--list-container {
     -webkit-box-orient: vertical;
@@ -677,8 +681,13 @@ ul {
   }
 }
 
+.footer__bottom--list-item {
+  margin-bottom: 1rem;
+}
+
 .footer__bottom--list-item a {
   font-size: 1.6rem;
+  line-height: 1.2;
   font-weight: 400;
   color: #ffffff;
 }
