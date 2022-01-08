@@ -2358,12 +2358,12 @@ ul {
 
 .section-hero-contact__container {
   width: 100%;
+  height: 65vh;
 }
 
 .section-hero-contact__content {
-  margin-top: 15rem;
+  margin-top: 10rem;
   height: 100%;
-  margin-bottom: 20rem;
 }
 
 .section-hero-contact__content--header {
@@ -2389,7 +2389,7 @@ ul {
 
 .section-form-contact__container {
   padding: 8rem 8rem 4rem 8rem;
-  margin: 4rem;
+  margin: 8rem 4rem 4rem 4rem;
   margin-top: 8rem;
   width: 85%;
   -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
@@ -2413,7 +2413,9 @@ ul {
 
 @media only screen and (max-width: 48em) {
   .section-form-contact__container {
-    padding: 4rem 4rem 2rem 4rem;
+    width: 100%;
+    margin: 6rem 2rem 2rem 2rem;
+    padding: 4rem 2rem 2rem 2rem;
   }
 }
 
@@ -2482,6 +2484,104 @@ ul {
 
 .section-form-contact p {
   font-size: 1.2rem;
+}
+
+.section-map-contact {
+  width: 100%;
+  padding: 2rem 2rem 2rem 15rem;
+}
+
+@media only screen and (max-width: 48em) {
+  .section-map-contact {
+    padding: 2rem;
+  }
+}
+
+.section-map-contact__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+@media only screen and (max-width: 48em) {
+  .section-map-contact__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.section-map-contact__details-container {
+  padding: 2rem;
+  max-width: 42rem;
+  border-radius: 1rem;
+  position: absolute;
+  left: -12rem;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  z-index: 5;
+  background-color: #ffffff;
+}
+
+@media only screen and (max-width: 48em) {
+  .section-map-contact__details-container {
+    position: relative;
+    max-width: 100%;
+    left: 0;
+    margin-bottom: 2rem;
+  }
+}
+
+.section-map-contact__details:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+.section-map-contact__details h3 {
+  font-size: 2.8rem;
+  display: contents;
+}
+
+.section-map-contact__details img {
+  width: 2.3rem;
+  height: 2.8rem;
+  vertical-align: bottom;
+  margin-right: 1.6rem;
+}
+
+.section-map-contact__details p {
+  margin-left: 4.4rem;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+.section-map-contact__map {
+  width: 100%;
+  height: 45rem;
+  z-index: 0;
+}
+
+.section-map-contact__map html
+> body
+:first-child
+:first-child
+> .gm-style
+:nth-child(4)
+:first-child {
+  right: 0 !important;
+}
+
+.section-map-contact__map .gm-style {
+  right: 0 !important;
+}
+
+.section-map-contact__map-container {
+  width: 100%;
 }
 
 @media (max-width: 960px) {
