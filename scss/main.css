@@ -582,6 +582,10 @@ ul {
           justify-content: space-between;
 }
 
+.footer__middle > div {
+  width: 100%;
+}
+
 @media only screen and (max-width: 75em) {
   .footer__middle {
     -webkit-box-orient: vertical;
@@ -595,9 +599,8 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -611,7 +614,11 @@ ul {
 
 .footer__navbar-item {
   list-style: none;
-  margin-right: 5rem;
+  padding: 1rem;
+}
+
+.footer__navbar-item:not(:last-child) {
+  margin-right: 3rem;
 }
 
 @media only screen and (max-width: 75em) {
@@ -641,7 +648,7 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0.5rem;
+  position: relative;
 }
 
 .footer__search--container {
@@ -650,10 +657,18 @@ ul {
 }
 
 .footer__search--text {
-  padding-left: 2rem;
+  padding: 1rem;
   font-size: 1.6rem;
   font-weight: 400;
+  width: 100%;
+  border-radius: 1rem;
   color: rgba(0, 0, 0, 0.3);
+}
+
+.footer__search--btn {
+  position: absolute;
+  background: #ffc700;
+  right: 1rem;
 }
 
 .footer__bottom {
@@ -667,6 +682,8 @@ ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: auto;
 }
 
@@ -1268,6 +1285,16 @@ ul {
   border-radius: 1rem;
   -webkit-box-shadow: 10px 10px 5px #0003;
           box-shadow: 10px 10px 5px #0003;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .section-whyus--card p {
