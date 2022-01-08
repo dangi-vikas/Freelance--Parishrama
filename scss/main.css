@@ -2127,6 +2127,106 @@ ul {
   line-height: 2.4rem;
 }
 
+.section-about-long-courses .owl-carousel {
+  padding: 1rem;
+}
+
+.section-about-long-courses .owl-item {
+  text-align: center;
+  padding: 1rem;
+}
+
+.section-about-long-courses .owl-dots {
+  position: absolute;
+  bottom: 4rem;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0px);
+          transform: translate(-50%, 0px);
+}
+
+.section-about-long-courses .owl-nav {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section-about-long-courses .owl-nav .owl-next {
+  right: 3rem;
+}
+
+.section-about-long-courses .owl-nav .owl-prev {
+  left: 3rem;
+}
+
+.section-about-long-courses .owl-nav .owl-prev,
+.section-about-long-courses .owl-nav .owl-next {
+  position: relative;
+  height: 5rem;
+  width: 5rem;
+  font-size: 4rem;
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #ffc700 !important;
+  -webkit-box-shadow: 0 0 5px #0003;
+          box-shadow: 0 0 5px #0003;
+}
+
+.section-about-long-courses .owl-nav .owl-prev span,
+.section-about-long-courses .owl-nav .owl-next span {
+  margin-top: -5px;
+  font-size: 4.2rem;
+  color: #555;
+}
+
+.section-about-long-courses .item {
+  width: auto;
+  padding: 2rem 4rem;
+  padding-bottom: 6rem;
+  text-align: center;
+  -webkit-box-shadow: 0 0 1rem #0003;
+          box-shadow: 0 0 1rem #0003;
+}
+
+.section-about-long-courses .item h3 {
+  display: inline-block;
+  margin: 2rem auto;
+  font-size: 3.2rem;
+  position: relative;
+}
+
+.section-about-long-courses .item h3::after {
+  right: 0;
+  display: block;
+  position: absolute;
+  right: 0;
+  content: "";
+  width: 50%;
+  height: 5px;
+  background: #ffc700;
+}
+
+.section-about-long-courses .item img {
+  max-width: 22rem;
+  margin: auto;
+}
+
 .section-scholarship-long-courses {
   padding: 5rem;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(-48.73%, #202439), color-stop(81.72%, #202439));
