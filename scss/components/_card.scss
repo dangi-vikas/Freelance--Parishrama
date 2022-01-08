@@ -84,19 +84,6 @@
   }
 }
 
-.card {
-  min-height: 25rem;
-  margin-bottom: 28rem;
-
-  &--up {
-    background-image: url("/img/courseCardBackground.png");
-
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-between;
-  }
-}
-
 @media (max-width: 990px) {
   .card--down {
     height: 100%;

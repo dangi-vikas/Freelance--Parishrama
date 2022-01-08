@@ -366,25 +366,6 @@ ul {
           transform: scale(1);
 }
 
-.card {
-  min-height: 25rem;
-  margin-bottom: 28rem;
-}
-
-.card--up {
-  background-image: url("/img/courseCardBackground.png");
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 @media (max-width: 990px) {
   .card--down {
     height: 100%;
@@ -1482,6 +1463,25 @@ ul {
 
 .section-courses h1 {
   margin: 5rem auto;
+}
+
+.section-courses .card {
+  min-height: 25rem;
+  margin-bottom: 28rem;
+}
+
+.section-courses .card--up {
+  background-image: url("/img/courseCardBackground.png");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .section-testimonials {
