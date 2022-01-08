@@ -1411,7 +1411,7 @@
 
 .section-map-contact {
   width: 100%;
-  padding: 2rem 2rem 2rem 15rem;
+  padding: 2rem 15rem 2rem 2rem;
 
   @include respond(tab-port) {
     padding: 2rem;
@@ -1433,7 +1433,7 @@
     max-width: 42rem;
     border-radius: 1rem;
     position: absolute;
-    left: -12rem;
+    right: -12rem;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
     z-index: 5;
     background-color: $color-white;

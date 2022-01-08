@@ -847,6 +847,7 @@ ul {
   font-weight: 400;
   color: #202439;
   text-align: center;
+  margin: 0;
 }
 
 .header {
@@ -2636,7 +2637,7 @@ ul {
 
 .section-map-contact {
   width: 100%;
-  padding: 2rem 2rem 2rem 15rem;
+  padding: 2rem 15rem 2rem 2rem;
 }
 
 @media only screen and (max-width: 48em) {
@@ -2670,7 +2671,7 @@ ul {
   max-width: 42rem;
   border-radius: 1rem;
   position: absolute;
-  left: -12rem;
+  right: -12rem;
   -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
           box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   z-index: 5;
