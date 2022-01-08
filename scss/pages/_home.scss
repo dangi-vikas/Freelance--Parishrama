@@ -321,9 +321,9 @@
 .section-whyus {
   padding: 5rem 0;
   margin: 5rem auto;
-  background: linear-gradient(159.17deg, #ffc700aa 33.66%, #ffc700dd 81.72%);
+  background: url(/img/whyUsBackground.svg);
   background-size: cover;
-  clip-path: ellipse(100% 55% at 48% 44%);
+  background-position: center;
   text-align: center;
 
   & p {
@@ -938,6 +938,8 @@
     padding: 2rem;
     box-shadow: 0 0 5px #0003;
     border-radius: 0.5rem;
+    max-width: 110rem;
+    margin: auto;
 
     @include respond(tab-port) {
       flex-direction: column;
@@ -992,6 +994,7 @@
     position: relative;
     padding: 2rem;
     left: -4rem;
+    min-width: 36rem;
     border-radius: 0.5rem;
     overflow: hidden;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);

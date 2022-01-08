@@ -1402,10 +1402,9 @@ ul {
 .section-whyus {
   padding: 5rem 0;
   margin: 5rem auto;
-  background: linear-gradient(159.17deg, #ffc700aa 33.66%, #ffc700dd 81.72%);
+  background: url(/img/whyUsBackground.svg);
   background-size: cover;
-  -webkit-clip-path: ellipse(100% 55% at 48% 44%);
-          clip-path: ellipse(100% 55% at 48% 44%);
+  background-position: center;
   text-align: center;
 }
 
@@ -2070,6 +2069,8 @@ ul {
   -webkit-box-shadow: 0 0 5px #0003;
           box-shadow: 0 0 5px #0003;
   border-radius: 0.5rem;
+  max-width: 110rem;
+  margin: auto;
 }
 
 @media only screen and (max-width: 48em) {
@@ -2147,6 +2148,7 @@ ul {
   position: relative;
   padding: 2rem;
   left: -4rem;
+  min-width: 36rem;
   border-radius: 0.5rem;
   overflow: hidden;
   -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
