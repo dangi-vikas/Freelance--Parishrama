@@ -473,19 +473,6 @@
   & h1 {
     margin: 5rem auto;
   }
-
-  & .card {
-    min-height: 25rem;
-    margin-bottom: 28rem;
-
-    &--up {
-      background-image: url("/img/courseCardBackground.png");
-
-      display: flex;
-      flex-direction: column-reverse;
-      justify-content: space-between;
-    }
-  }
 }
 
 .section-testimonials {
@@ -718,21 +705,21 @@
 }
 
 .section-features {
-  margin: 4rem;
-  margin-bottom: 10rem;
+  padding: 2rem 0;
+  background: url(/img/aboutHeroBackground.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
 
   &__container {
     padding: 0.5rem;
     width: 100%;
     height: 100%;
-    background: url(/img/aboutHeroBackground.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
   }
 
   &__header {
     display: flex;
     justify-content: center;
+    margin: 2rem auto;
   }
 
   &__quotes {
@@ -752,24 +739,51 @@
 
   &__text {
     padding: 3rem;
+
     p {
       line-height: 2.2rem;
+    }
+  }
+
+  & .card {
+    &--up__text {
+      & > p {
+        font-size: 2.8rem;
+        text-align: center;
+        margin: 0;
+      }
+
+      .section-courses__content--contact {
+        text-align: center;
+
+        & p {
+          margin: 0;
+          margin-top: 5px;
+          font-size: $text;
+        }
+
+        & a > img {
+          height: 2rem;
+          margin-right: 1rem;
+        }
+      }
     }
   }
 
   & > h1 {
     font-weight: 700;
     position: relative;
-  }
+    margin: 2rem auto;
 
-  & h1::after {
-    display: block;
-    content: "";
-    position: absolute;
-    right: 10%;
-    width: 13%;
-    height: 4px;
-    background: $color-secondary;
+    &::after {
+      display: block;
+      content: "";
+      position: absolute;
+      right: 10%;
+      width: 13%;
+      height: 4px;
+      background: $color-secondary;
+    }
   }
 }
 
@@ -802,17 +816,19 @@
     font-weight: 400;
     position: relative;
     line-height: 1.8rem;
-  }
+    padding-left: 3rem;
+    margin-bottom: 2rem;
 
-  & p::before {
-    content: "";
-    background-image: url(/img/bullet.svg);
-    height: 1.6rem;
-    width: 1.6rem;
-    background-size: cover;
-    position: absolute;
-    z-index: 0;
-    left: -3rem;
+    &::before {
+      content: "";
+      background-image: url(/img/bullet.svg);
+      height: 1.7rem;
+      width: 1.7rem;
+      background-size: cover;
+      position: absolute;
+      z-index: 0;
+      left: 0;
+    }
   }
 }
 
@@ -1061,6 +1077,91 @@
     font-weight: 400;
     line-height: 2.4rem;
   }
+
+  & .owl-carousel {
+    padding: 1rem;
+  }
+
+  & .owl-item {
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .owl-dots {
+    position: absolute;
+    bottom: 4rem;
+    left: 50%;
+    transform: translate(-50%, 0px);
+  }
+
+  & .owl-nav {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    & .owl-next {
+      right: 3rem;
+    }
+
+    & .owl-prev {
+      left: 3rem;
+    }
+
+    & .owl-prev,
+    & .owl-next {
+      position: relative;
+      height: 5rem;
+      width: 5rem;
+      font-size: 4rem;
+      border-radius: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: $color-secondary !important;
+      box-shadow: 0 0 5px #0003;
+
+      & span {
+        margin-top: -5px;
+        font-size: 4.2rem;
+        color: #555;
+      }
+    }
+  }
+
+  & .item {
+    width: auto;
+    padding: 2rem 4rem;
+    padding-bottom: 6rem;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0 0 1rem #0003;
+
+    & h3 {
+      display: inline-block;
+      margin: 2rem auto;
+      font-size: 3.2rem;
+      position: relative;
+
+      &::after {
+        right: 0;
+        display: block;
+        position: absolute;
+        right: 0;
+        content: "";
+        width: 50%;
+        height: 5px;
+        background: #ffc700;
+      }
+    }
+    & img {
+      max-width: 22rem;
+      margin: auto;
+    }
+  }
 }
 
 .section-scholarship-long-courses {
@@ -1141,8 +1242,7 @@
 }
 
 .section-more-long-courses {
-  padding: 4rem;
-  margin-bottom: 20rem;
+  padding: 2rem 0;
   width: 100%;
 
   &__container {
@@ -1154,15 +1254,16 @@
   h1 {
     font-size: 3.2rem;
     padding: 2rem;
-  }
+    margin: 2rem auto;
 
-  & h1:after {
-    margin-bottom: 3rem;
-    display: block;
-    content: "";
-    width: 60%;
-    height: 5px;
-    background: $color-secondary;
+    &:after {
+      margin-bottom: 3rem;
+      display: block;
+      content: "";
+      width: 60%;
+      height: 5px;
+      background: $color-secondary;
+    }
   }
 }
 
