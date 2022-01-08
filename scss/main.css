@@ -743,7 +743,7 @@ ul {
 }
 
 .header {
-  height: 8rem;
+  height: 10rem;
   background-size: cover;
   background-position: top;
   background: #fff;
@@ -1605,6 +1605,13 @@ ul {
   background: url(/img/aboutHeroImage.png);
   background-size: cover;
   background-repeat: no-repeat;
+  min-height: 65vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 5rem;
 }
 
@@ -1831,6 +1838,7 @@ ul {
   background: url(/img/coursesHeroImage.png);
   background-size: cover;
   background-repeat: no-repeat;
+  min-height: 65vh;
 }
 
 .section-hero-courses__container {
@@ -1838,9 +1846,7 @@ ul {
 }
 
 .section-hero-courses__content {
-  margin-top: 5rem;
-  height: 100%;
-  margin-bottom: 25rem;
+  margin-top: 6rem;
 }
 
 .section-hero-courses__content--header {
@@ -2042,16 +2048,26 @@ ul {
 }
 
 .section-hero-long-courses__content {
+  min-height: 65vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 2rem;
 }
 
 .section-hero-long-courses__content--icon {
-  display: inline-block;
-  margin-top: 5%;
-  margin-left: 90%;
-  display: inline-block;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  display: block;
+  text-align: right;
+  margin-top: 5rem;
+  margin-right: 0;
+  margin-left: auto;
   margin-bottom: 2rem;
   width: 12rem;
   height: 8rem;
