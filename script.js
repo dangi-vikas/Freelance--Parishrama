@@ -1,3 +1,13 @@
+$(document).on("scroll", function () {
+  if
+    ($(document).scrollTop() > 100) {
+    $("#header").addClass("header-fixed");
+  }
+  else {
+    $("#header").removeClass("header-fixed");
+  }
+});
+
 $('.owl-carousel.main-carousel').owlCarousel({
   loop: true,
   margin: 10,

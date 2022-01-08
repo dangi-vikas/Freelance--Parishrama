@@ -743,11 +743,21 @@ ul {
 }
 
 .header {
-  height: 10rem;
+  height: 8rem;
   background-size: cover;
   background-position: top;
-  position: -webkit-sticky;
-  position: sticky;
+  background: #fff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  z-index: 999;
+}
+
+.header-fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  -webkit-box-shadow: 0 0 1rem #0003;
+          box-shadow: 0 0 1rem #0003;
 }
 
 .header .container {

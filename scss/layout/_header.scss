@@ -1,8 +1,17 @@
 .header {
-  height: 10rem;
+  height: 8rem;
   background-size: cover;
   background-position: top;
-  position: sticky;
+  background: #fff;
+  transition: all 0.3s;
+  z-index: 999;
+
+  &-fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 0 1rem #0003;
+  }
 
   & .container {
     display: flex;
