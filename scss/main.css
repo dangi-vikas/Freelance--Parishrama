@@ -24,6 +24,24 @@ html {
   font-size: 62.5%;
 }
 
+@media only screen and (max-width: 62em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media only screen and (max-width: 48em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1452,11 +1470,11 @@ ul {
   background: url(../../img/heroBackground.svg);
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 5rem 0;
+  padding: 2rem 0;
 }
 
 .section-testimonials .title {
-  margin: 2rem auto;
+  margin: 3rem auto;
   text-align: center;
 }
 
@@ -1541,7 +1559,7 @@ ul {
 }
 
 .section-testimonials .owl-stage {
-  margin-bottom: 25rem;
+  margin-bottom: 28rem;
 }
 
 .section-testimonials .owl-stage .owl-item.active:first-child {
