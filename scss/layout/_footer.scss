@@ -11,6 +11,10 @@
     }
   }
 
+  &-newsletter {
+    max-width: 55rem;
+  }
+
   &__top {
     display: flex;
     align-items: center;
@@ -49,7 +53,7 @@
   }
 
   &__contact {
-    max-width: 42rem;
+    max-width: 55rem;
 
     &-container {
       display: flex;
@@ -70,7 +74,7 @@
     }
 
     &--text {
-      font-size: $text-small;
+      font-size: $text;
       font-weight: 400;
       color: $color-white;
     }
@@ -80,7 +84,7 @@
       display: flex;
 
       p {
-        font-size: $text-extra-small;
+        font-size: $text;
       }
     }
   }
@@ -101,7 +105,7 @@
 
   &__navbar {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     align-items: center;
 
     @include respond(laptop) {
