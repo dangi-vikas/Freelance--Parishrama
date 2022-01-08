@@ -816,17 +816,19 @@
     font-weight: 400;
     position: relative;
     line-height: 1.8rem;
-  }
+    padding-left: 3rem;
+    margin-bottom: 2rem;
 
-  & p::before {
-    content: "";
-    background-image: url(/img/bullet.svg);
-    height: 1.6rem;
-    width: 1.6rem;
-    background-size: cover;
-    position: absolute;
-    z-index: 0;
-    left: -3rem;
+    &::before {
+      content: "";
+      background-image: url(/img/bullet.svg);
+      height: 1.7rem;
+      width: 1.7rem;
+      background-size: cover;
+      position: absolute;
+      z-index: 0;
+      left: 0;
+    }
   }
 }
 
