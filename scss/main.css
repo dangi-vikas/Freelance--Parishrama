@@ -72,6 +72,8 @@ hr {
 
 a {
   text-decoration: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 p {
@@ -718,6 +720,12 @@ ul {
   font-size: 1.6rem;
   font-weight: 400;
   color: #ffffff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.footer__bottom--list-item a:hover {
+  color: #ffc700;
 }
 
 .footer__copyright {
