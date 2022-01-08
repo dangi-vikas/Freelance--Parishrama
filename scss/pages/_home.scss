@@ -485,6 +485,10 @@
       flex-direction: column-reverse;
       justify-content: space-between;
     }
+
+    &--down {
+      z-index: 0;
+    }
   }
 }
 
@@ -758,26 +762,36 @@
     }
   }
 
-  & .card {
-    &--up__text {
-      & > p {
-        font-size: 2.8rem;
-        text-align: center;
-        margin: 0;
-      }
+  & .admission-card {
+    min-height: 25rem;
+    margin-bottom: 28rem;
 
-      .section-courses__content--contact {
-        text-align: center;
+    &--up {
+      background-image: url("/img/courseCardBackground.png");
 
-        & p {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: space-between;
+      &__text {
+        & > p {
+          font-size: 2.8rem;
+          text-align: center;
           margin: 0;
-          margin-top: 5px;
-          font-size: $text;
         }
 
-        & a > img {
-          height: 2rem;
-          margin-right: 1rem;
+        .section-courses__content--contact {
+          text-align: center;
+
+          & p {
+            margin: 0;
+            margin-top: 5px;
+            font-size: $text;
+          }
+
+          & a > img {
+            height: 2rem;
+            margin-right: 1rem;
+          }
         }
       }
     }
@@ -821,7 +835,7 @@
     font-size: 3.6rem;
 
     &::after {
-      color: $color-primary;
+      background: $color-primary;
     }
   }
 

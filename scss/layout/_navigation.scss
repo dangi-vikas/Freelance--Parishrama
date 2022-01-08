@@ -30,13 +30,14 @@
 
 .nav > .nav-links > a.link {
   display: inline-block;
-  padding: 13px 10px 13px 10px;
+  padding: 1rem;
   text-decoration: none;
   color: $color-primary;
+  border-bottom: 2px solid transparent;
 }
 
 .nav > .nav-links > a.link:hover {
-  background-color: #efefef;
+  border-bottom: 2px solid $color-secondary;
 }
 
 .nav > #nav-check {
