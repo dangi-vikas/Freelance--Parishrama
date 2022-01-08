@@ -2,12 +2,20 @@
   height: 10rem;
   background-size: cover;
   background-position: top;
-  position: relative;
+  background: #fff;
+  transition: all 0.3s;
+  z-index: 999;
 
-  &__container {
+  &-fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 0 1rem #0003;
+  }
+
+  & .container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
   }
 
   &__logo {

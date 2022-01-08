@@ -18,7 +18,7 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header" id="header">
     <div class="container">
       <div class="nav">
         <input type="checkbox" id="nav-check" />
@@ -265,23 +265,31 @@
 
         <div class="section-whyus--cards row">
           <div class="section-whyus--card col-lg-4 col-md-6 col-sm-12">
-            <p>48</p>
-            <p>Expert Instructors</p>
+            <div class="section-whyus--card-header">
+              <p>48</p>
+              <p>Expert Instructors</p>
+            </div>
             <img src="./img/expertInstructors.svg" alt="" />
           </div>
           <div class="section-whyus--card col-lg-4 col-md-6 col-sm-12">
-            <p>2000+</p>
-            <p>Happy Students</p>
+            <div class="section-whyus--card-header">
+              <p>2000+</p>
+              <p>Happy Students</p>
+            </div>
             <img src="./img/happyStudents.svg" alt="" />
           </div>
           <div class="section-whyus--card col-lg-4 col-md-6 col-sm-12">
-            <p>5000</p>
-            <p>Hours Invested Every year</p>
+            <div class="section-whyus--card-header">
+              <p>5000</p>
+              <p>Hours Invested Every year</p>
+            </div>
             <img src="./img/coursesCompleted.svg" alt="" />
           </div>
           <div class="section-whyus--card col-lg-4 col-md-6 col-sm-12">
-            <p>80%</p>
-            <p>Rank Percentage</p>
+            <div class="section-whyus--card-header">
+              <p>80%</p>
+              <p>Rank Percentage</p>
+            </div>
             <img src="./img/ranks.svg" alt="" />
           </div>
         </div>
@@ -290,7 +298,7 @@
 
     <section class="section-courses" id="section-courses">
       <div class="container">
-        <h1 class="text-center heading-primary">Courses</h1>
+        <h1 class="text-center heading-secondary">Courses</h1>
 
         <div class="row">
           <div class="col-lg-4 col-md-6 col-sm-12">
@@ -368,46 +376,67 @@
     </section>
 
     <section class="section-pp" id="section-pp">
-      <h2 class="heading-secondary title">Parishrama's Power</h2>
-      <div class="container section-pp__container row">
-        <div class="section-pp__item col-lg-4 col-md-6 col-sm-12">
-          <div class="section-pp__item-image">
-            <img src="./img/pp-expert-and-dedicated.svg" alt="" />
+      <div class="container">
+        <h2 class="heading-secondary title">Parishrama's Power</h2>
+
+        <h4 class="heading-bigger text-yellow text-center">Parishrama Neet Academy is the place where dreams are made!
+        </h4>
+        <p class="description">
+          Our strength comes from the success of the students. Thousands of students have been enlightened with
+          knowledge
+          before
+          and a thousand more to go, but our vision and grit stays strong throughout the journey.
+        </p>
+        <div class="container section-pp__container">
+          <div class="section-pp__item">
+            <div class="section-pp__item-content">
+              <div class="section-pp__item-image">
+                <img src="./img/pp-expert-and-dedicated.svg" alt="" />
+              </div>
+              <div class="section-pp__item-text">
+                <p>Special Attention To Diet and Rest</p>
+              </div>
+            </div>
           </div>
-          <div class="section-pp__item-text">
-            <p>Special Attention To Diet and Rest</p>
+          <div class="section-pp__item">
+            <div class="section-pp__item-content">
+              <div class="section-pp__item-image">
+                <img src="./img/pp-motivational-talks.svg" alt="" />
+              </div>
+              <div class="section-pp__item-text">
+                <p>Motivational Talks by Experts</p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="section-pp__item col-lg-4 col-md-6 col-sm-12">
-          <div class="section-pp__item-image">
-            <img src="./img/pp-motivational-talks.svg" alt="" />
+          <div class="section-pp__item">
+            <div class="section-pp__item-content">
+              <div class="section-pp__item-image">
+                <img src="./img/pp-daily-and-weekly.svg" alt="" />
+              </div>
+              <div class="section-pp__item-text">
+                <p>Daily and Weekly Cumulative Tests</p>
+              </div>
+            </div>
           </div>
-          <div class="section-pp__item-text">
-            <p>Motivational Talks by Experts</p>
+          <div class="section-pp__item">
+            <div class="section-pp__item-content">
+              <div class="section-pp__item-image">
+                <img src="./img/pp-crystal-clear.svg" alt="" />
+              </div>
+              <div class="section-pp__item-text">
+                <p>Crystal Clear Teaching</p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="section-pp__item col-lg-4 col-md-6 col-sm-12">
-          <div class="section-pp__item-image">
-            <img src="./img/pp-daily-and-weekly.svg" alt="" />
-          </div>
-          <div class="section-pp__item-text">
-            <p>Daily and Weekly Cumulative Tests</p>
-          </div>
-        </div>
-        <div class="section-pp__item col-lg-4 col-md-6 col-sm-12">
-          <div class="section-pp__item-image">
-            <img src="./img/pp-crystal-clear.svg" alt="" />
-          </div>
-          <div class="section-pp__item-text">
-            <p>Crystal Clear Teaching</p>
-          </div>
-        </div>
-        <div class="section-pp__item col-lg-4 col-md-6 col-sm-12">
-          <div class="section-pp__item-image">
-            <img src="./img/pp-one-on-one.svg" alt="" />
-          </div>
-          <div class="section-pp__item-text">
-            <p>One-on-One doubt clarification</p>
+          <div class="section-pp__item">
+            <div class="section-pp__item-content">
+              <div class="section-pp__item-image">
+                <img src="./img/pp-one-on-one.svg" alt="" />
+              </div>
+              <div class="section-pp__item-text">
+                <p>One-on-One doubt clarification</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -416,7 +445,7 @@
     <section class="section-testimonials" id="section-testimonials">
       <div class="container">
         <div class="title">
-          <h1 class="text-center heading-primary">
+          <h1 class="text-center heading-secondary">
             STUDENT & PARENT TESTIMONIALS
           </h1>
         </div>
@@ -619,7 +648,7 @@
 
     <section class="section-blogs" id="section-blogs">
       <div class="container">
-        <h1 class="text-center heading-primary">Our Blogs</h1>
+        <h1 class="text-center heading-secondary">Our Blogs</h1>
 
         <div class="row">
           <div class="col-lg-4 col-md-6 col-sm-12">
@@ -782,7 +811,7 @@
           <div class="footer__search--container">
             <div class="footer__search">
               <input type="text" class="footer__search--text" placeholder="Email Address">
-              <button type="button" class="footer__search--btn">Subscribe</button>
+              <button type="button" class="footer__search--btn btn">Subscribe</button>
             </div>
           </div>
         </div>

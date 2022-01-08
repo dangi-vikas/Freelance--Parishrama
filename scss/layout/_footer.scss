@@ -90,6 +90,10 @@
     display: flex;
     justify-content: space-between;
 
+    & > div {
+      width: 100%;
+    }
+
     @include respond(laptop) {
       flex-direction: column;
     }
@@ -97,7 +101,7 @@
 
   &__navbar {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
 
     @include respond(laptop) {
@@ -106,7 +110,11 @@
 
     &-item {
       list-style: none;
-      margin-right: 5rem;
+      padding: 1rem;
+
+      &:not(:last-child) {
+        margin-right: 3rem;
+      }
 
       @include respond(laptop) {
         margin-right: auto;
@@ -131,20 +139,26 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    padding: 0.5rem;
+    position: relative;
 
     &--container {
-      min-width: 42rem;
       height: 4rem;
       border-radius: 0.5rem;
     }
 
     &--text {
-      padding-left: 2rem;
+      padding: 1rem;
       font-size: $text;
       font-weight: 400;
+      width: 100%;
+      border-radius: 1rem;
       color: rgba($color-black, 0.3);
+    }
+
+    &--btn {
+      position: absolute;
+      background: $color-secondary;
+      right: 0.75rem;
     }
   }
 
@@ -155,6 +169,7 @@
       &-container {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         margin: auto;
 
         @include respond(laptop) {
@@ -167,6 +182,11 @@
           font-size: $text;
           font-weight: 400;
           color: $color-white;
+          transition: all 0.3s;
+
+          &:hover {
+            color: $color-secondary;
+          }
         }
       }
     }
