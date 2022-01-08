@@ -1471,7 +1471,7 @@ ul {
 }
 
 .section-courses .card--up {
-  background-image: url(/img/courseCardBackground.png);
+  background-image: url("/img/courseCardBackground.png");
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
