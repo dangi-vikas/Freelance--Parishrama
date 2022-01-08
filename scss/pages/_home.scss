@@ -1535,13 +1535,12 @@
 
 .section-downloads-download {
   &__container {
-    display: flex;
-    // justify-content: center;
     padding: 4rem;
-  }
+    width: 100%;
 
-  &-item {
-    width: 80%;
+    @include respond(tab-port) {
+      padding: 2rem;
+    }
 
     & > h3 {
       font-size: 2.8rem;
@@ -1555,11 +1554,24 @@
       height: 5px;
       background: $color-secondary;
     }
+  }
+
+  &__wrapper {
+    display: flex;
+
+    @include respond(tab-port) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &-item {
+    width: 100%;
+    // position: relative;
 
     &-box {
       width: 100%;
       box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
-      padding: 4rem 2rem;
+      padding: 3rem 2rem;
       border-radius: 2rem;
 
       &:not(:last-child) {
@@ -1606,7 +1618,7 @@
         justify-content: space-between;
 
         & a,
-        & p {
+        & > p {
           color: $color-primary;
           font-size: $text;
           font-weight: 500;
@@ -1644,6 +1656,7 @@
 
     &-link {
       display: flex;
+      margin-left: 2rem;
       align-items: center;
 
       & > img {
@@ -1654,12 +1667,47 @@
   }
 
   &-new {
-    background-image: url("/img/newIcon.svg");
-    width: 5rem;
+    background-color: $color-secondary;
+    border-radius: 5px;
 
-    & p {
+    & > p {
       font-size: 1.2rem;
       font-weight: 500;
+    }
+  }
+
+  &-jumpto {
+    position: relative;
+    height: 100%;
+    &__container {
+      display: flex;
+      flex-direction: column;
+      padding: 0 2rem;
+      margin-left: 3rem;
+      // position: fixed;
+
+      @include respond(tab-port) {
+        margin: 0rem 0rem 3rem 0rem;
+      }
+
+      & a {
+        padding: 0.5rem;
+        font-size: $text;
+        font-weight: 500;
+        color: $color-black;
+        position: relative;
+      }
+
+      & a::before {
+        content: "";
+        position: absolute;
+        background-image: url(/img/triangleBullet.svg);
+        background-size: cover;
+        left: -1rem;
+        top: 1rem;
+        height: 1.2rem;
+        width: 0.6rem;
+      }
     }
   }
 }
