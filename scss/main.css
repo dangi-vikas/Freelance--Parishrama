@@ -686,7 +686,7 @@ ul {
 .footer__search--btn {
   position: absolute;
   background: #ffc700;
-  right: 1rem;
+  right: 0.75rem;
 }
 
 .footer__bottom {
