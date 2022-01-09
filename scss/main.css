@@ -2731,12 +2731,18 @@ ul {
   background-color: #ffffff;
 }
 
+@media only screen and (max-width: 62em) {
+  .section-map-contact__details-container {
+    max-width: 35rem;
+  }
+}
+
 @media only screen and (max-width: 48em) {
   .section-map-contact__details-container {
     position: relative;
     max-width: 100%;
     left: 0;
-    margin-bottom: 2rem;
+    margin: 2rem 0;
   }
 }
 
@@ -2768,18 +2774,10 @@ ul {
   z-index: 0;
 }
 
-.section-map-contact__map html
-> body
-:first-child
-:first-child
-> .gm-style
-:nth-child(4)
-:first-child {
-  right: 0 !important;
-}
-
-.section-map-contact__map .gm-style {
-  right: 0 !important;
+@media only screen and (max-width: 48em) {
+  .section-map-contact__map {
+    height: auto;
+  }
 }
 
 .section-map-contact__map-container {

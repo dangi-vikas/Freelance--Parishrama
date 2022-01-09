@@ -1449,11 +1449,15 @@
     z-index: 5;
     background-color: $color-white;
 
+    @include respond(tab-land) {
+      max-width: 35rem;
+    }
+
     @include respond(tab-port) {
       position: relative;
       max-width: 100%;
       left: 0;
-      margin-bottom: 2rem;
+      margin: 2rem 0;
     }
   }
 
@@ -1486,20 +1490,24 @@
     height: 45rem;
     z-index: 0;
 
-    &
-      html
-      > body
-      :first-child
-      :first-child
-      > .gm-style
-      :nth-child(4)
-      :first-child {
-      right: 0 !important;
+    @include respond(tab-port) {
+      height: auto;
     }
 
-    & .gm-style {
-      right: 0 !important;
-    }
+    // &
+    //   html
+    //   > body
+    //   :first-child
+    //   :first-child
+    //   > .gm-style
+    //   :nth-child(4)
+    //   :first-child {
+    //   right: 0 !important;
+    // }
+
+    // & .gm-style {
+    //   right: 0 !important;
+    // }
 
     &-container {
       width: 100%;
