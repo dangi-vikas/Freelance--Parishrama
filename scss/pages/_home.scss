@@ -321,7 +321,7 @@
 .section-whyus {
   padding: 5rem 0;
   margin: 5rem auto;
-  background: url(/img/whyUsBackground.svg);
+  background: url(../../img/whyUsBackground.svg);
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -367,7 +367,7 @@
 .section-pp {
   padding: 5rem 0;
   margin: 5rem auto;
-  background: url(/img/pp-background.svg) no-repeat;
+  background: url(../../img/pp-background.svg) no-repeat;
   background-size: cover;
   background-position: center;
 
@@ -479,7 +479,7 @@
     margin-bottom: 28rem;
 
     &--up {
-      background-image: url("/img/courseCardBackground.png");
+      background-image: url(../../img/courseCardBackground.png);
 
       display: flex;
       flex-direction: column-reverse;
@@ -509,7 +509,7 @@
 
       &::before {
         content: "";
-        background: url("../../img/quotes.svg");
+        background: url(../../img/quotes.svg);
         background-size: cover;
         color: $color-secondary;
         position: absolute;
@@ -609,7 +609,7 @@
 }
 
 .section-hero-about {
-  background: url(/img/aboutHeroImage.png);
+  background: url(../../img/aboutHeroImage.png);
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 65vh;
@@ -738,7 +738,7 @@
 
 .section-features {
   padding: 2rem 0;
-  background: url(/img/aboutHeroBackground.svg);
+  background: url(../../img/aboutHeroBackground.svg);
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -799,8 +799,7 @@
     margin-bottom: 28rem;
 
     &--up {
-      background-image: url("/img/courseCardBackground.png");
-
+      background-image: url(../../img/courseCardBackground.png);
       display: flex;
       flex-direction: column-reverse;
       justify-content: space-between;
@@ -848,7 +847,7 @@
 
 .section-salient {
   width: 100%;
-  background: url(/img/salientBackground.png);
+  background: url(../../img/salientBackground.png);
   background-size: cover;
   background-repeat: no-repeat;
   padding: 4rem;
@@ -880,7 +879,7 @@
 
     &::before {
       content: "";
-      background-image: url(/img/bullet.svg);
+      background-image: url(../../img/bullet.svg);
       height: 1.7rem;
       width: 1.7rem;
       background-size: cover;
@@ -892,7 +891,7 @@
 }
 
 .section-hero-courses {
-  background: url(/img/coursesHeroImage.png);
+  background: url(../../img/coursesHeroImage.png);
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 65vh;
@@ -926,7 +925,7 @@
 .section-about-courses {
   margin-top: 4rem;
   padding: 2rem;
-  background: url(/img/coursesAboutBackground.svg);
+  background: url(../../img/coursesAboutBackground.svg);
   background-size: cover;
   background-repeat: no-repeat;
   // width: 80%;
@@ -1006,7 +1005,7 @@
 
     & p::before {
       content: "";
-      background-image: url(/img/bullet.svg);
+      background-image: url(../../img/bullet.svg);
       height: 1.6rem;
       width: 1.6rem;
       background-size: cover;
@@ -1020,7 +1019,7 @@
   }
 
   &__image {
-    background: url("/img/courseCardBackground.png");
+    background: url("../../img/courseCardBackground.png");
     backface-visibility: hidden;
     background-size: cover;
     position: relative;
@@ -1075,7 +1074,7 @@
 }
 
 .section-hero-long-courses {
-  background: url(/img/LongCoursesHeroImage.png);
+  background: url(../../img/LongCoursesHeroImage.png);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -1313,7 +1312,7 @@
 
   & p:not(:last-child)::before {
     content: "";
-    background-image: url(/img/whiteBullet.svg);
+    background-image: url(../../img/whiteBullet.svg);
     color: $color-white;
     height: 1.6rem;
     width: 1.6rem;
@@ -1350,7 +1349,7 @@
 }
 
 .section-hero-contact {
-  background: url(/img/contactHeroImage.png);
+  background: url(../../img/contactHeroImage.png);
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -1587,7 +1586,7 @@
 }
 
 .section-hero-download {
-  background: url(/img/downloadHeroImage.png);
+  background: url(../../img/downloadHeroImage.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1799,7 +1798,7 @@
       & a::before {
         content: "";
         position: absolute;
-        background-image: url(/img/triangleBullet.svg);
+        background-image: url(../../img/triangleBullet.svg);
         background-size: cover;
         left: -1rem;
         top: 1rem;
