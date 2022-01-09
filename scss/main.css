@@ -1824,16 +1824,23 @@ ul {
   text-align: center;
 }
 
-.section-about__heading--intro {
-  font-weight: 500;
+.section-about__heading span {
+  position: relative;
 }
 
-.section-about__heading--intro::after {
-  display: block;
+.section-about__heading span::after {
+  display: inline-block;
+  position: absolute;
+  top: 100%;
   content: "";
-  width: 20%;
+  width: 70%;
   height: 4px;
   background: #ffc700;
+  left: 0;
+}
+
+.section-about__heading--intro {
+  font-weight: 500;
 }
 
 .section-about__text-container {
@@ -1906,6 +1913,23 @@ ul {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 2rem auto;
+}
+
+.section-features__header h1,
+.section-features__header span {
+  font-weight: 700;
+  position: relative;
+}
+
+.section-features__header span::after {
+  display: inline-block;
+  position: absolute;
+  top: 100%;
+  content: "";
+  width: 100%;
+  height: 4px;
+  background: #ffc700;
+  left: 0;
 }
 
 .section-features__quotes {
@@ -2413,15 +2437,19 @@ ul {
   position: relative;
 }
 
-.section-about-long-courses .item h3::after {
-  right: 0;
-  display: block;
+.section-about-long-courses .item span {
+  position: relative;
+}
+
+.section-about-long-courses .item span::after {
+  display: inline-block;
   position: absolute;
-  right: 0;
+  top: 100%;
   content: "";
-  width: 50%;
-  height: 5px;
+  width: 110%;
+  height: 4px;
   background: #ffc700;
+  right: 0;
 }
 
 .section-about-long-courses .item img {
@@ -2464,15 +2492,19 @@ ul {
   position: relative;
 }
 
-.section-scholarship-long-courses h1:after {
-  right: 0;
-  display: block;
+.section-scholarship-long-courses span {
+  position: relative;
+}
+
+.section-scholarship-long-courses span::after {
+  display: inline-block;
   position: absolute;
-  left: 85%;
+  top: 100%;
   content: "";
-  width: 15%;
-  height: 5px;
+  width: 80%;
+  height: 4px;
   background: #ffc700;
+  right: 0;
 }
 
 .section-scholarship-long-courses h4 {
@@ -2864,15 +2896,22 @@ ul {
 
 .section-downloads-download__container > h3 {
   font-size: 2.8rem;
+  margin-bottom: 7rem;
 }
 
-.section-downloads-download__container > h3:after {
-  margin-bottom: 7rem;
-  display: block;
+.section-downloads-download__container span {
+  position: relative;
+}
+
+.section-downloads-download__container span::after {
+  display: inline-block;
+  position: absolute;
+  top: 100%;
   content: "";
-  width: 10%;
-  height: 5px;
+  width: 70%;
+  height: 4px;
   background: #ffc700;
+  left: 0;
 }
 
 .section-downloads-download__wrapper {

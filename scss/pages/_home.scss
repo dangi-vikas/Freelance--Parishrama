@@ -663,16 +663,23 @@
     color: $color-black;
     text-align: center;
 
+    & span {
+      position: relative;
+    }
+
+    & span::after {
+      display: inline-block;
+      position: absolute;
+      top: 100%;
+      content: "";
+      width: 70%;
+      height: 4px;
+      background: $color-secondary;
+      left: 0;
+    }
+
     &--intro {
       font-weight: 500;
-
-      &::after {
-        display: block;
-        content: "";
-        width: 20%;
-        height: 4px;
-        background: $color-secondary;
-      }
     }
   }
 
@@ -745,6 +752,23 @@
     display: flex;
     justify-content: center;
     margin: 2rem auto;
+
+    & h1,
+    span {
+      font-weight: 700;
+      position: relative;
+    }
+
+    & span::after {
+      display: inline-block;
+      position: absolute;
+      top: 100%;
+      content: "";
+      width: 100%;
+      height: 4px;
+      background: $color-secondary;
+      left: 0;
+    }
   }
 
   &__quotes {
@@ -1184,17 +1208,33 @@
       font-size: 3.2rem;
       position: relative;
 
-      &::after {
-        right: 0;
-        display: block;
-        position: absolute;
-        right: 0;
-        content: "";
-        width: 50%;
-        height: 5px;
-        background: #ffc700;
-      }
+      // &::after {
+      //   right: 0;
+      //   display: block;
+      //   position: absolute;
+      //   right: 0;
+      //   content: "";
+      //   width: 50%;
+      //   height: 5px;
+      //   background: #ffc700;
+      // }
     }
+
+    & span {
+      position: relative;
+    }
+
+    & span::after {
+      display: inline-block;
+      position: absolute;
+      top: 100%;
+      content: "";
+      width: 110%;
+      height: 4px;
+      background: $color-secondary;
+      right: 0;
+    }
+
     & img {
       max-width: 22rem;
       margin: auto;
@@ -1230,15 +1270,19 @@
     position: relative;
   }
 
-  & h1:after {
-    right: 0;
-    display: block;
+  & span {
+    position: relative;
+  }
+
+  & span::after {
+    display: inline-block;
     position: absolute;
-    left: 85%;
+    top: 100%;
     content: "";
-    width: 15%;
-    height: 5px;
+    width: 80%;
+    height: 4px;
     background: $color-secondary;
+    right: 0;
   }
 
   h4 {
@@ -1590,15 +1634,22 @@
 
     & > h3 {
       font-size: 2.8rem;
+      margin-bottom: 7rem;
     }
 
-    & > h3:after {
-      margin-bottom: 7rem;
-      display: block;
+    & span {
+      position: relative;
+    }
+
+    & span::after {
+      display: inline-block;
+      position: absolute;
+      top: 100%;
       content: "";
-      width: 10%;
-      height: 5px;
+      width: 70%;
+      height: 4px;
       background: $color-secondary;
+      left: 0;
     }
   }
 
