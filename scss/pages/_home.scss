@@ -694,8 +694,16 @@
     $color-primary 81.72%
   );
 
+  & .heading-tertiary {
+    font-size: 3.2rem;
+  }
+
   background-size: cover;
   clip-path: ellipse(100% 95% at 48% 100%);
+
+  & .row {
+    align-items: center;
+  }
 
   &__text {
     & > h1 {
