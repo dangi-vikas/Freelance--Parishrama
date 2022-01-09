@@ -59,12 +59,13 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
+      padding-top: 3rem;
     }
 
     &--phone,
     &--mail {
       display: flex;
-      margin-top: 3rem;
     }
 
     &--icon {
