@@ -86,3 +86,11 @@ $(function () {
 
   $(window).on("scroll", reset);
 });
+
+
+$(".card").hover(
+  function () {
+    $("#activecard").removeClass("card--down-active");
+    $("#activecardtext").removeClass("card--down__textbox-active");
+  }
+);

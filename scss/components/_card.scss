@@ -253,3 +253,13 @@
     }
   }
 }
+
+.card--down__textbox-active {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.card--down-active {
+  height: 100%;
+  bottom: -100%;
+}

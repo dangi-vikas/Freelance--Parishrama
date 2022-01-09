@@ -576,6 +576,16 @@ ul {
   margin-right: 2rem;
 }
 
+.card--down__textbox-active {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.card--down-active {
+  height: 100%;
+  bottom: -100%;
+}
+
 .footer__container {
   background-color: #202439;
   background-size: cover;
