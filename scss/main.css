@@ -2902,11 +2902,11 @@ ul {
   margin-bottom: 7rem;
 }
 
-.section-downloads-download__container span {
+.section-downloads-download__container > h3 > span {
   position: relative;
 }
 
-.section-downloads-download__container span::after {
+.section-downloads-download__container > h3 > span::after {
   display: inline-block;
   position: absolute;
   top: 100%;
@@ -3033,6 +3033,11 @@ ul {
   width: 1.6rem;
 }
 
+.section-downloads-download-item-detail p > span {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
 .section-downloads-download-item-link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3051,19 +3056,14 @@ ul {
 .section-downloads-download-new {
   background-color: #ffc700;
   border-radius: 5px;
+  padding: 0 2px;
 }
 
-.section-downloads-download-new > p {
-  font-size: 1.2rem;
-  font-weight: 500;
-}
-
-.section-downloads-download-jumpto {
-  position: relative;
+.section-downloads-download .section-downloads-download-jumpto {
   height: 100%;
 }
 
-.section-downloads-download-jumpto__container {
+.section-downloads-download .section-downloads-download-jumpto__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3076,12 +3076,12 @@ ul {
 }
 
 @media only screen and (max-width: 48em) {
-  .section-downloads-download-jumpto__container {
+  .section-downloads-download .section-downloads-download-jumpto__container {
     margin: 0rem 0rem 3rem 0rem;
   }
 }
 
-.section-downloads-download-jumpto__container a {
+.section-downloads-download .section-downloads-download-jumpto__container a {
   padding: 0.5rem;
   font-size: 1.6rem;
   font-weight: 500;
@@ -3089,7 +3089,7 @@ ul {
   position: relative;
 }
 
-.section-downloads-download-jumpto__container a::before {
+.section-downloads-download .section-downloads-download-jumpto__container a::before {
   content: "";
   position: absolute;
   background-image: url(/img/triangleBullet.svg);

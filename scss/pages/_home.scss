@@ -1638,11 +1638,11 @@
       margin-bottom: 7rem;
     }
 
-    & span {
+    & > h3 > span {
       position: relative;
     }
 
-    & span::after {
+    & > h3 > span::after {
       display: inline-block;
       position: absolute;
       top: 100%;
@@ -1750,6 +1750,11 @@
         height: $text;
         width: $text;
       }
+
+      & p > span {
+        font-size: 1.2rem;
+        font-weight: 500;
+      }
     }
 
     &-link {
@@ -1767,22 +1772,17 @@
   &-new {
     background-color: $color-secondary;
     border-radius: 5px;
-
-    & > p {
-      font-size: 1.2rem;
-      font-weight: 500;
-    }
+    padding: 0 2px;
   }
 
-  &-jumpto {
-    position: relative;
+  & &-jumpto {
     height: 100%;
+
     &__container {
       display: flex;
       flex-direction: column;
       padding: 0 2rem;
       margin-left: 3rem;
-      // position: fixed;
 
       @include respond(tab-port) {
         margin: 0rem 0rem 3rem 0rem;
