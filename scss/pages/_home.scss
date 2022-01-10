@@ -1754,6 +1754,23 @@
       & p > span {
         font-size: 1.2rem;
         font-weight: 500;
+        padding: 0.25rem 0.75rem;
+        background-color: $color-secondary;
+        position: relative;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+
+        &::after {
+          content: "";
+          position: absolute;
+          height: 100%;
+          display: block;
+          right: -1rem;
+          top: 0;
+          background-color: transparent;
+          border: solid 8px $color-secondary;
+          border-right: solid 8px transparent;
+        }
       }
     }
 
@@ -1769,11 +1786,14 @@
     }
   }
 
-  &-new {
-    background-color: $color-secondary;
-    border-radius: 5px;
-    padding: 0 2px;
-  }
+  // &-new {
+  //   width: 20px;
+  //   background-color: transparent;
+  //   border: solid 8px $color-secondary;
+  //   border-right: solid 15px transparent;
+  //   border-top-left-radius: 3px;
+  //   border-bottom-left-radius: 3px;
+  // }
 
   & &-jumpto {
     height: 100%;
