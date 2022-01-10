@@ -1085,6 +1085,7 @@ ul {
 
 .section-hero__content {
   height: 100%;
+  padding-left: 4rem;
 }
 
 .section-hero__content--header {
