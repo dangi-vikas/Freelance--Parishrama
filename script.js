@@ -63,7 +63,7 @@ $(function () {
         },
       };
       $(props.from).animate(props.to, {
-        duration: 1000 * 2,
+        duration: 1000 * 3,
         step: function (now, fx) {
           $(el).text(Math.ceil(now));
         },
@@ -87,10 +87,7 @@ $(function () {
   $(window).on("scroll", reset);
 });
 
-
-$(".card").hover(
-  function () {
-    $("#activecard").removeClass("card--down-active");
-    $("#activecardtext").removeClass("card--down__textbox-active");
-  }
-);
+$(".card").hover(function () {
+  $("#activecard").removeClass("card--down-active");
+  $("#activecardtext").removeClass("card--down__textbox-active");
+});
