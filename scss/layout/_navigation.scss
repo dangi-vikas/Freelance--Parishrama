@@ -36,7 +36,8 @@
   border-bottom: 2px solid transparent;
 }
 
-.nav > .nav-links > a.link:hover {
+.nav > .nav-links > a.link:hover,
+.nav > .nav-links > a.link.active {
   border-bottom: 2px solid $color-secondary;
 }
 
