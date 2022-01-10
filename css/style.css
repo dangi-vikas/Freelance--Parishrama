@@ -3289,6 +3289,28 @@ ul {
   width: 1.6rem;
 }
 
+.section-downloads-download-item-detail p > span {
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 0.25rem 0.75rem;
+  background-color: #ffc700;
+  position: relative;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.section-downloads-download-item-detail p > span::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  display: block;
+  right: -1rem;
+  top: 0;
+  background-color: transparent;
+  border: solid 8px #ffc700;
+  border-right: solid 8px transparent;
+}
+
 .section-downloads-download-item-link {
   display: -webkit-box;
   display: -ms-flexbox;
