@@ -3292,7 +3292,7 @@ ul {
 .section-downloads-download-item-detail p > span {
   font-size: 1.2rem;
   font-weight: 500;
-  padding: 0.25rem 0.75rem;
+  padding: 0.25rem 1rem;
   background-color: #ffc700;
   position: relative;
   border-top-left-radius: 3px;
@@ -3307,8 +3307,8 @@ ul {
   right: -1rem;
   top: 0;
   background-color: transparent;
-  border: solid 8px #ffc700;
-  border-right: solid 8px transparent;
+  border: solid 0.7rem #ffc700;
+  border-right: solid 0.8rem transparent;
 }
 
 .section-downloads-download-item-link {
