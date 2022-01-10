@@ -1,451 +1,368 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/owl.carousel.css" />
-    <link rel="stylesheet" href="css/icon-font.css" />
-    <link rel="stylesheet" href="scss/main.css" />
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" />
 
-    <title>Parishrama</title>
-  </head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/owl.carousel.css" />
+  <link rel="stylesheet" href="css/icon-font.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
 
-  <body>
-    <header class="header" id="header">
+  <title>Parishrama</title>
+</head>
+
+<body>
+  <header class="header" id="header">
+    <div class="container">
+      <div class="nav">
+        <input type="checkbox" id="nav-check" />
+        <div class="nav-header">
+          <img src="./img/Group 259.jpg" alt="Logo" , class="header__logo" />
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+
+        <div class="nav-links">
+          <a class="link" href="/">Home</a>
+          <a class="link" href="/about.html">About Us</a>
+          <a class="link" href="/courses.html">Courses</a>
+          <a class="link" href="/download.html">Downloads</a>
+          <a class="link" href="#">Hostel</a>
+          <a class="link" href="#">Gallery</a>
+          <a href="#" class="btn btn--blue-outline header__navbar-item mr-0">Apply Now <img src="img/iconRightArrow.svg"
+              alt="" /></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section-hero-contact" id="section-hero-contact">
       <div class="container">
-        <div class="nav">
-          <input type="checkbox" id="nav-check" />
-          <div class="nav-header">
-            <img src="./img/Group 259.jpg" alt="Logo" , class="header__logo" />
-          </div>
-          <div class="nav-btn">
-            <label for="nav-check">
-              <span></span>
-              <span></span>
-              <span></span>
-            </label>
-          </div>
-
-          <div class="nav-links">
-            <a class="link" href="/">Home</a>
-            <a class="link" href="/about.html">About Us</a>
-            <a class="link" href="/courses.html">Courses</a>
-            <a class="link" href="/download.html">Downloads</a>
-            <a class="link" href="#">Hostel</a>
-            <a class="link" href="#">Gallery</a>
-            <a href="#" class="btn btn--blue-outline header__navbar-item mr-0"
-              >Apply Now <img src="img/iconRightArrow.svg" alt=""
-            /></a>
+        <div class="section-hero-contact__container row">
+          <div class="section-hero-contact__content pb-4">
+            <div class="section-hero-contact__content--header">
+              <h1 class="heading heading-primary px-lg-5">CONTACT US</h1>
+            </div>
           </div>
         </div>
       </div>
-    </header>
+    </section>
 
-    <main>
-      <section class="section-hero-contact" id="section-hero-contact">
-        <div class="container">
-          <div class="section-hero-contact__container row">
-            <div class="section-hero-contact__content pb-4">
-              <div class="section-hero-contact__content--header">
-                <h1 class="heading heading-primary px-lg-5">CONTACT US</h1>
-              </div>
-            </div>
+    <section class="section-form-contact" id="section-form-contact">
+      <div class="container d-flex justify-content-center">
+        <div class="section-form-contact__container reveal fade-left-slow">
+          <div class="section-form-contact__header">
+            <h1 class="heading-subtertiary heading">
+              Get In Touch With Us !
+            </h1>
+          </div>
+          <div class="section-form-contact__line section-form-contact__detail-wrapper">
+            <input type="text" class="section-form-contact__detail" placeholder="First Name" />
+            <input type="text" class="section-form-contact__detail" placeholder="Last Name" />
+          </div>
+          <div class="section-form-contact__line section-form-contact__detail-wrapper">
+            <input type="text" class="section-form-contact__detail" placeholder="Mobile Number" />
+            <input type="text" class="section-form-contact__detail" placeholder="Email" />
+          </div>
+          <div class="section-form-contact__line">
+            <input type="text" class="section-form-contact__address" placeholder="Address" />
+          </div>
+          <div class="section-form-contact__line">
+            <input type="text" class="section-form-contact__message" placeholder="Write your message" />
+          </div>
+          <a href="#" class="btn btn-search mb-3 px-lg-5">Pay Now</a>
+          <p>
+            You will be charged a fees of ₹500/- to be eligible for a call
+            back.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-map-contact">
+      <div class="container section-map-contact__container">
+        <div class="section-map-contact__details-container reveal fade-right">
+          <div class="section-map-contact__details">
+            <img src="./img/locationContactIcon.svg" />
+            <h3 class="heading heading-subtertiary">Center</h3>
+            <p>
+              Parishrama NEET Academy, Omkar Hills Road, Srinivasapura, Dr.
+              Vishnuvardan Road, towards Uttarahalli Main Road Bengaluru -
+              560060
+            </p>
+          </div>
+
+          <div class="section-map-contact__details">
+            <img src="./img/mailIcon.svg" />
+            <h3 class="heading heading-subtertiary">Mail Us</h3>
+            <p>info@parishramaneetacademy.com</p>
+          </div>
+
+          <div class="section-map-contact__details">
+            <img src="./img/phoneIcon.svg" />
+            <h3 class="heading heading-subtertiary">Call Us</h3>
+            <p>080 4591 2222</p>
           </div>
         </div>
-      </section>
 
-      <section class="section-form-contact" id="section-form-contact">
-        <div class="container d-flex justify-content-center">
-          <div class="section-form-contact__container reveal fade-left-slow">
-            <div class="section-form-contact__header">
-              <h1 class="heading-subtertiary heading">
-                Get In Touch With Us !
-              </h1>
+        <div class="section-map-contact__map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d22320.367637865336!2d77.50216102207094!3d12.897954565772398!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae39c510924769%3A0x4d077af2275538d9!2sParishrama%20NEET%20Academy!5e0!3m2!1sen!2sin!4v1641633414148!5m2!1sen!2sin"
+            allowfullscreen="" loading="lazy" class="section-map-contact__map"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__top">
+        <div class="footer__logo-container">
+          <img src="./img/footerLogo.png" alt="" class="footer__logo" />
+          <div class="footer__logo--icon-container">
+            <img src="./img/fbIcon.svg" alt="fb" />
+            <img src="./img/twitterIcon.svg" alt="twitter" />
+            <img src="./img/youtubeIcon.svg" alt="youtube" />
+          </div>
+        </div>
+        <div class="footer__contact">
+          <div class="footer__contact-container">
+            <div class="footer__contact--phone">
+              <img src="./img/phoneIcon.png" alt="phone" class="footer__contact--icon" />
+              <p class="footer__contact--text">080-45912222</p>
             </div>
-            <div
-              class="section-form-contact__line section-form-contact__detail-wrapper"
-            >
-              <input
-                type="text"
-                class="section-form-contact__detail"
-                placeholder="First Name"
-              />
-              <input
-                type="text"
-                class="section-form-contact__detail"
-                placeholder="Last Name"
-              />
+
+            <div class="footer__contact--mail">
+              <img src="./img/mailIcon.png" alt="mail" class="footer__contact--icon" />
+              <p class="footer__contact--text">
+                info@parishramaneetacademy.com
+              </p>
             </div>
-            <div
-              class="section-form-contact__line section-form-contact__detail-wrapper"
-            >
-              <input
-                type="text"
-                class="section-form-contact__detail"
-                placeholder="Mobile Number"
-              />
-              <input
-                type="text"
-                class="section-form-contact__detail"
-                placeholder="Email"
-              />
-            </div>
-            <div class="section-form-contact__line">
-              <input
-                type="text"
-                class="section-form-contact__address"
-                placeholder="Address"
-              />
-            </div>
-            <div class="section-form-contact__line">
-              <input
-                type="text"
-                class="section-form-contact__message"
-                placeholder="Write your message"
-              />
-            </div>
-            <a href="#" class="btn btn-search mb-3 px-lg-5">Pay Now</a>
-            <p>
-              You will be charged a fees of ₹500/- to be eligible for a call
-              back.
+          </div>
+
+          <div class="footer__contact--location">
+            <img src="./img/locationIcon.svg" alt="mail" class="footer__contact--icon" />
+            <p class="footer__contact--text">
+              Parishrama NEET Academy, Omkar Hills Road, Srinivasapura, Dr.
+              Vishnuvardan Road, towards Uttarahalli Main Road, Bengaluru -
+              560060
             </p>
           </div>
         </div>
-      </section>
+      </div>
 
-      <section class="section-map-contact">
-        <div class="container section-map-contact__container">
-          <div class="section-map-contact__details-container reveal fade-right">
-            <div class="section-map-contact__details">
-              <img src="./img/locationContactIcon.svg" />
-              <h3 class="heading heading-subtertiary">Center</h3>
-              <p>
-                Parishrama NEET Academy, Omkar Hills Road, Srinivasapura, Dr.
-                Vishnuvardan Road, towards Uttarahalli Main Road Bengaluru -
-                560060
-              </p>
-            </div>
+      <hr />
 
-            <div class="section-map-contact__details">
-              <img src="./img/mailIcon.svg" />
-              <h3 class="heading heading-subtertiary">Mail Us</h3>
-              <p>info@parishramaneetacademy.com</p>
-            </div>
-
-            <div class="section-map-contact__details">
-              <img src="./img/phoneIcon.svg" />
-              <h3 class="heading heading-subtertiary">Call Us</h3>
-              <p>080 4591 2222</p>
-            </div>
-          </div>
-
-          <div class="section-map-contact__map-container">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d22320.367637865336!2d77.50216102207094!3d12.897954565772398!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae39c510924769%3A0x4d077af2275538d9!2sParishrama%20NEET%20Academy!5e0!3m2!1sen!2sin!4v1641633414148!5m2!1sen!2sin"
-              allowfullscreen=""
-              loading="lazy"
-              class="section-map-contact__map"
-            ></iframe>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="footer__container">
-        <div class="footer__top">
-          <div class="footer__logo-container">
-            <img src="./img/footerLogo.png" alt="" class="footer__logo" />
-            <div class="footer__logo--icon-container">
-              <img src="./img/fbIcon.svg" alt="fb" />
-              <img src="./img/twitterIcon.svg" alt="twitter" />
-              <img src="./img/youtubeIcon.svg" alt="youtube" />
-            </div>
-          </div>
-          <div class="footer__contact">
-            <div class="footer__contact-container">
-              <div class="footer__contact--phone">
-                <img
-                  src="./img/phoneIcon.png"
-                  alt="phone"
-                  class="footer__contact--icon"
-                />
-                <p class="footer__contact--text">080-45912222</p>
-              </div>
-
-              <div class="footer__contact--mail">
-                <img
-                  src="./img/mailIcon.png"
-                  alt="mail"
-                  class="footer__contact--icon"
-                />
-                <p class="footer__contact--text">
-                  info@parishramaneetacademy.com
-                </p>
-              </div>
-            </div>
-
-            <div class="footer__contact--location">
-              <img
-                src="./img/locationIcon.svg"
-                alt="mail"
-                class="footer__contact--icon"
-              />
-              <p class="footer__contact--text">
-                Parishrama NEET Academy, Omkar Hills Road, Srinivasapura, Dr.
-                Vishnuvardan Road, towards Uttarahalli Main Road, Bengaluru -
-                560060
-              </p>
-            </div>
+      <div class="footer__middle">
+        <div class="footer__navigation">
+          <h3 class="heading-tertiary heading-tertiary--yellow u-margin-bottom-small">
+            Quick Links
+          </h3>
+          <div class="footer__navbar-container">
+            <ul class="footer__navbar">
+              <li class="footer__navbar-item"><a href="#">Home</a></li>
+              <li class="footer__navbar-item"><a href="#">About Us</a></li>
+              <li class="footer__navbar-item"><a href="#">Hostel</a></li>
+              <li class="footer__navbar-item"><a href="#">Gallery</a></li>
+              <li class="footer__navbar-item"><a href="#">Sitemap</a></li>
+              <li class="footer__navbar-item footer__navbar-item--yellow">
+                <a href="#">About NEET</a>
+              </li>
+            </ul>
           </div>
         </div>
 
-        <hr />
-
-        <div class="footer__middle">
-          <div class="footer__navigation">
-            <h3
-              class="heading-tertiary heading-tertiary--yellow u-margin-bottom-small"
-            >
-              Quick Links
-            </h3>
-            <div class="footer__navbar-container">
-              <ul class="footer__navbar">
-                <li class="footer__navbar-item"><a href="#">Home</a></li>
-                <li class="footer__navbar-item"><a href="#">About Us</a></li>
-                <li class="footer__navbar-item"><a href="#">Hostel</a></li>
-                <li class="footer__navbar-item"><a href="#">Gallery</a></li>
-                <li class="footer__navbar-item"><a href="#">Sitemap</a></li>
-                <li class="footer__navbar-item footer__navbar-item--yellow">
-                  <a href="#">About NEET</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="footer-newsletter">
-            <h3
-              class="heading-tertiary heading-tertiary--white u-margin-bottom-small"
-            >
-              subscribe to our newsletters
-            </h3>
-
-            <div class="footer__search--container">
-              <div class="footer__search">
-                <input
-                  type="text"
-                  class="footer__search--text"
-                  placeholder="Email Address"
-                />
-                <button type="button" class="footer__search--btn btn">
-                  Subscribe
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <hr />
-
-        <div class="footer__bottom">
-          <h3
-            class="heading-tertiary heading-tertiary--yellow u-margin-bottom-big"
-          >
-            Downloads
+        <div class="footer-newsletter">
+          <h3 class="heading-tertiary heading-tertiary--white u-margin-bottom-small">
+            subscribe to our newsletters
           </h3>
 
-          <h4
-            class="heading-subtertiary heading-subtertiary--yellow u-margin-bottom-small"
-          >
-            Biology
-          </h4>
-          <div class="footer__bottom--list-container u-margin-bottom-big">
-            <ul class="footer__bottom--list">
-              <li class="footer__bottom--list-item">
-                <a href="#">B-01-QP-NEET-2020-BIOLOGY MODEL PAPER-01</a>
-              </li>
-              <li class="footer__bottom--list-item">
-                <a href="#"
-                  >B-01-ANS-NEET2020-HINTS & SOLUTIONS-BIOLOGY-MODEL PAPER-01</a
-                >
-              </li>
-              <li class="footer__bottom--list-item">
-                <a href="#">B-02-QP-NEET2020-MODEL PAPER-02</a>
-              </li>
-              <li class="footer__bottom--list-item">
-                <a href="#">B-02-ANS-NEET2020-BIO-MODEL PAPER-02</a>
-              </li>
-              <li class="footer__bottom--list-item">
-                <a href="#">B-03-QP-NEET2020-BIO-MODEL PAPER-03</a>
-              </li>
-              <li class="footer__bottom--list-item">
-                <a href="#">B-03-ANS-HINTS & SOLUTIONS-BIO MODEL PAPER</a>
-              </li>
-            </ul>
-
-            <ul class="footer__bottom--list">
-              <li class="footer__bottom--list-item">
-                <a href="#">B-04-QP-NEET2020-MODEL PAPER-04</a>
-              </li>
-              <li class="footer__bottom--list-item">
-                <a href="#"
-                  >B-04-ANS-HINTS & SOLUTIONS-NEET2020-MODEL PAPER-04</a
-                >
-              </li>
-              <li class="footer__bottom--list-item">
-                <a href="#">B-05-QP-NEET2020-BIO-MODEL PAPER-05</a>
-              </li>
-              <li class="footer__bottom--list-item">
-                <a href="#"
-                  >B-05-ANS-HINTS & SOLUTIONS-NEET-2020 BIO-MODEL PAPER</a
-                >
-              </li>
-              <li class="footer__bottom--list-item">
-                <a href="#">B-06-QP-NEET2020-BIO-MODEL PAPER-06</a>
-              </li>
-              <li class="footer__bottom--list-item">
-                <a href="#">B-06-ANS-NEET2020-BIO-MODEL PAPER-06</a>
-              </li>
-            </ul>
-          </div>
-
-          <h4
-            class="heading-subtertiary heading-subtertiary--yellow u-margin-bottom-small"
-          >
-            Chemistry
-          </h4>
-          <div class="footer__bottom--list-container u-margin-bottom-big">
-            <ul class="footer__bottom--list">
-              <li class="footer__bottom--list-item">
-                <a href="#">B-01-QP-NEET-2020-BIOLOGY MODEL PAPER-01</a>
-              </li>
-              <li class="footer__bottom--list-item">
-                <a href="#"
-                  >B-01-ANS-NEET2020-HINTS & SOLUTIONS-BIOLOGY-MODEL PAPER-01</a
-                >
-              </li>
-              <li class="footer__bottom--list-item">
-                <a href="#">B-02-QP-NEET2020-MODEL PAPER-02</a>
-              </li>
-              <li class="footer__bottom--list-item">
-                <a href="#">B-02-ANS-NEET2020-BIO-MODEL PAPER-02</a>
-              </li>
-              <li class="footer__bottom--list-item">
-                <a href="#">B-03-QP-NEET2020-BIO-MODEL PAPER-03</a>
-              </li>
-              <li class="footer__bottom--list-item">
-                <a href="#">B-03-ANS-HINTS & SOLUTIONS-BIO MODEL PAPER</a>
-              </li>
-            </ul>
-
-            <ul class="footer__bottom--list">
-              <li class="footer__bottom--list-item">
-                <a href="#">B-04-QP-NEET2020-MODEL PAPER-04</a>
-              </li>
-              <li class="footer__bottom--list-item">
-                <a href="#"
-                  >B-04-ANS-HINTS & SOLUTIONS-NEET2020-MODEL PAPER-04</a
-                >
-              </li>
-              <li class="footer__bottom--list-item">
-                <a href="#">B-05-QP-NEET2020-BIO-MODEL PAPER-05</a>
-              </li>
-              <li class="footer__bottom--list-item">
-                <a href="#"
-                  >B-05-ANS-HINTS & SOLUTIONS-NEET-2020 BIO-MODEL PAPER</a
-                >
-              </li>
-              <li class="footer__bottom--list-item">
-                <a href="#">B-06-QP-NEET2020-BIO-MODEL PAPER-06</a>
-              </li>
-              <li class="footer__bottom--list-item">
-                <a href="#">B-06-ANS-NEET2020-BIO-MODEL PAPER-06</a>
-              </li>
-            </ul>
-          </div>
-
-          <h4
-            class="heading-subtertiary heading-subtertiary--yellow u-margin-bottom-small"
-          >
-            Physics
-          </h4>
-          <div class="footer__bottom--list-container">
-            <ul class="footer__bottom--list">
-              <li class="footer__bottom--list-item">
-                <a href="#">B-01-QP-NEET-2020-BIOLOGY MODEL PAPER-01</a>
-              </li>
-              <li class="footer__bottom--list-item">
-                <a href="#"
-                  >B-01-ANS-NEET2020-HINTS & SOLUTIONS-BIOLOGY-MODEL PAPER-01</a
-                >
-              </li>
-              <li class="footer__bottom--list-item">
-                <a href="#">B-02-QP-NEET2020-MODEL PAPER-02</a>
-              </li>
-              <li class="footer__bottom--list-item">
-                <a href="#">B-02-ANS-NEET2020-BIO-MODEL PAPER-02</a>
-              </li>
-              <li class="footer__bottom--list-item">
-                <a href="#">B-03-QP-NEET2020-BIO-MODEL PAPER-03</a>
-              </li>
-              <li class="footer__bottom--list-item">
-                <a href="#">B-03-ANS-HINTS & SOLUTIONS-BIO MODEL PAPER</a>
-              </li>
-            </ul>
-
-            <ul class="footer__bottom--list">
-              <li class="footer__bottom--list-item">
-                <a href="#">B-04-QP-NEET2020-MODEL PAPER-04</a>
-              </li>
-              <li class="footer__bottom--list-item">
-                <a href="#"
-                  >B-04-ANS-HINTS & SOLUTIONS-NEET2020-MODEL PAPER-04</a
-                >
-              </li>
-              <li class="footer__bottom--list-item">
-                <a href="#">B-05-QP-NEET2020-BIO-MODEL PAPER-05</a>
-              </li>
-              <li class="footer__bottom--list-item">
-                <a href="#"
-                  >B-05-ANS-HINTS & SOLUTIONS-NEET-2020 BIO-MODEL PAPER</a
-                >
-              </li>
-              <li class="footer__bottom--list-item">
-                <a href="#">B-06-QP-NEET2020-BIO-MODEL PAPER-06</a>
-              </li>
-              <li class="footer__bottom--list-item">
-                <a href="#">B-06-ANS-NEET2020-BIO-MODEL PAPER-06</a>
-              </li>
-              s
-            </ul>
+          <div class="footer__search--container">
+            <div class="footer__search">
+              <input type="text" class="footer__search--text" placeholder="Email Address" />
+              <button type="button" class="footer__search--btn btn">
+                Subscribe
+              </button>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="footer__copyright">
-        <p class="footer__copyright--text">
-          Copyright &copy; <a href="#">Parishrama Neet Academy</a> Website by:
-          <a href="#">Mass Designs</a>
-        </p>
-      </div>
-    </footer>
+      <hr />
 
-    <script src="js/jquery.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/animation.js"></script>
-    <script src="script.js"></script>
-  </body>
+      <div class="footer__bottom">
+        <h3 class="heading-tertiary heading-tertiary--yellow u-margin-bottom-big">
+          Downloads
+        </h3>
+
+        <h4 class="heading-subtertiary heading-subtertiary--yellow u-margin-bottom-small">
+          Biology
+        </h4>
+        <div class="footer__bottom--list-container u-margin-bottom-big">
+          <ul class="footer__bottom--list">
+            <li class="footer__bottom--list-item">
+              <a href="#">B-01-QP-NEET-2020-BIOLOGY MODEL PAPER-01</a>
+            </li>
+            <li class="footer__bottom--list-item">
+              <a href="#">B-01-ANS-NEET2020-HINTS & SOLUTIONS-BIOLOGY-MODEL PAPER-01</a>
+            </li>
+            <li class="footer__bottom--list-item">
+              <a href="#">B-02-QP-NEET2020-MODEL PAPER-02</a>
+            </li>
+            <li class="footer__bottom--list-item">
+              <a href="#">B-02-ANS-NEET2020-BIO-MODEL PAPER-02</a>
+            </li>
+            <li class="footer__bottom--list-item">
+              <a href="#">B-03-QP-NEET2020-BIO-MODEL PAPER-03</a>
+            </li>
+            <li class="footer__bottom--list-item">
+              <a href="#">B-03-ANS-HINTS & SOLUTIONS-BIO MODEL PAPER</a>
+            </li>
+          </ul>
+
+          <ul class="footer__bottom--list">
+            <li class="footer__bottom--list-item">
+              <a href="#">B-04-QP-NEET2020-MODEL PAPER-04</a>
+            </li>
+            <li class="footer__bottom--list-item">
+              <a href="#">B-04-ANS-HINTS & SOLUTIONS-NEET2020-MODEL PAPER-04</a>
+            </li>
+            <li class="footer__bottom--list-item">
+              <a href="#">B-05-QP-NEET2020-BIO-MODEL PAPER-05</a>
+            </li>
+            <li class="footer__bottom--list-item">
+              <a href="#">B-05-ANS-HINTS & SOLUTIONS-NEET-2020 BIO-MODEL PAPER</a>
+            </li>
+            <li class="footer__bottom--list-item">
+              <a href="#">B-06-QP-NEET2020-BIO-MODEL PAPER-06</a>
+            </li>
+            <li class="footer__bottom--list-item">
+              <a href="#">B-06-ANS-NEET2020-BIO-MODEL PAPER-06</a>
+            </li>
+          </ul>
+        </div>
+
+        <h4 class="heading-subtertiary heading-subtertiary--yellow u-margin-bottom-small">
+          Chemistry
+        </h4>
+        <div class="footer__bottom--list-container u-margin-bottom-big">
+          <ul class="footer__bottom--list">
+            <li class="footer__bottom--list-item">
+              <a href="#">B-01-QP-NEET-2020-BIOLOGY MODEL PAPER-01</a>
+            </li>
+            <li class="footer__bottom--list-item">
+              <a href="#">B-01-ANS-NEET2020-HINTS & SOLUTIONS-BIOLOGY-MODEL PAPER-01</a>
+            </li>
+            <li class="footer__bottom--list-item">
+              <a href="#">B-02-QP-NEET2020-MODEL PAPER-02</a>
+            </li>
+            <li class="footer__bottom--list-item">
+              <a href="#">B-02-ANS-NEET2020-BIO-MODEL PAPER-02</a>
+            </li>
+            <li class="footer__bottom--list-item">
+              <a href="#">B-03-QP-NEET2020-BIO-MODEL PAPER-03</a>
+            </li>
+            <li class="footer__bottom--list-item">
+              <a href="#">B-03-ANS-HINTS & SOLUTIONS-BIO MODEL PAPER</a>
+            </li>
+          </ul>
+
+          <ul class="footer__bottom--list">
+            <li class="footer__bottom--list-item">
+              <a href="#">B-04-QP-NEET2020-MODEL PAPER-04</a>
+            </li>
+            <li class="footer__bottom--list-item">
+              <a href="#">B-04-ANS-HINTS & SOLUTIONS-NEET2020-MODEL PAPER-04</a>
+            </li>
+            <li class="footer__bottom--list-item">
+              <a href="#">B-05-QP-NEET2020-BIO-MODEL PAPER-05</a>
+            </li>
+            <li class="footer__bottom--list-item">
+              <a href="#">B-05-ANS-HINTS & SOLUTIONS-NEET-2020 BIO-MODEL PAPER</a>
+            </li>
+            <li class="footer__bottom--list-item">
+              <a href="#">B-06-QP-NEET2020-BIO-MODEL PAPER-06</a>
+            </li>
+            <li class="footer__bottom--list-item">
+              <a href="#">B-06-ANS-NEET2020-BIO-MODEL PAPER-06</a>
+            </li>
+          </ul>
+        </div>
+
+        <h4 class="heading-subtertiary heading-subtertiary--yellow u-margin-bottom-small">
+          Physics
+        </h4>
+        <div class="footer__bottom--list-container">
+          <ul class="footer__bottom--list">
+            <li class="footer__bottom--list-item">
+              <a href="#">B-01-QP-NEET-2020-BIOLOGY MODEL PAPER-01</a>
+            </li>
+            <li class="footer__bottom--list-item">
+              <a href="#">B-01-ANS-NEET2020-HINTS & SOLUTIONS-BIOLOGY-MODEL PAPER-01</a>
+            </li>
+            <li class="footer__bottom--list-item">
+              <a href="#">B-02-QP-NEET2020-MODEL PAPER-02</a>
+            </li>
+            <li class="footer__bottom--list-item">
+              <a href="#">B-02-ANS-NEET2020-BIO-MODEL PAPER-02</a>
+            </li>
+            <li class="footer__bottom--list-item">
+              <a href="#">B-03-QP-NEET2020-BIO-MODEL PAPER-03</a>
+            </li>
+            <li class="footer__bottom--list-item">
+              <a href="#">B-03-ANS-HINTS & SOLUTIONS-BIO MODEL PAPER</a>
+            </li>
+          </ul>
+
+          <ul class="footer__bottom--list">
+            <li class="footer__bottom--list-item">
+              <a href="#">B-04-QP-NEET2020-MODEL PAPER-04</a>
+            </li>
+            <li class="footer__bottom--list-item">
+              <a href="#">B-04-ANS-HINTS & SOLUTIONS-NEET2020-MODEL PAPER-04</a>
+            </li>
+            <li class="footer__bottom--list-item">
+              <a href="#">B-05-QP-NEET2020-BIO-MODEL PAPER-05</a>
+            </li>
+            <li class="footer__bottom--list-item">
+              <a href="#">B-05-ANS-HINTS & SOLUTIONS-NEET-2020 BIO-MODEL PAPER</a>
+            </li>
+            <li class="footer__bottom--list-item">
+              <a href="#">B-06-QP-NEET2020-BIO-MODEL PAPER-06</a>
+            </li>
+            <li class="footer__bottom--list-item">
+              <a href="#">B-06-ANS-NEET2020-BIO-MODEL PAPER-06</a>
+            </li>
+            s
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__copyright">
+      <p class="footer__copyright--text">
+        Copyright &copy; <a href="#">Parishrama Neet Academy</a> Website by:
+        <a href="#">Mass Designs</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/jquery.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/animation.js"></script>
+  <script src="script.js"></script>
+</body>
+
 </html>
