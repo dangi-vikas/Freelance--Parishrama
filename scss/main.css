@@ -517,7 +517,7 @@ ul {
 }
 
 .course-card--up {
-  background-image: url("/img/courseCardBackground.png");
+  background-image: url("../img/courseCardBackground.png");
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1305,7 +1305,7 @@ ul {
 }
 
 .section-hero {
-  background: url(../../img/heroBackground.svg);
+  background: url(../img/heroBackground.svg);
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 5rem;
@@ -1686,7 +1686,7 @@ ul {
 .section-whyus {
   padding: 5rem 0;
   margin: 5rem auto;
-  background: url(/img/whyUsBackground.svg);
+  background: url(../img/whyUsBackground.svg);
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -1740,7 +1740,7 @@ ul {
 .section-pp {
   padding: 5rem 0;
   margin: 5rem auto;
-  background: url(/img/pp-background.svg) no-repeat;
+  background: url(../img/pp-background.svg) no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -1855,7 +1855,7 @@ ul {
 }
 
 .section-courses .card--up {
-  background-image: url("/img/courseCardBackground.png");
+  background-image: url("../img/courseCardBackground.png");
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1873,7 +1873,7 @@ ul {
 }
 
 .section-testimonials {
-  background: url(../../img/heroBackground.svg);
+  background: url(../img/heroBackground.svg);
   background-size: cover;
   background-repeat: no-repeat;
   padding: 2rem 0;
@@ -1892,7 +1892,7 @@ ul {
 
 .section-testimonials .title h1::before {
   content: "";
-  background: url("../../img/quotes.svg");
+  background: url("../img/quotes.svg");
   background-size: cover;
   color: #ffc700;
   position: absolute;
@@ -1998,7 +1998,7 @@ ul {
 }
 
 .section-hero-about {
-  background: url(/img/aboutHeroImage.png);
+  background: url(../img/aboutHeroImage.png);
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 65vh;
@@ -2130,7 +2130,7 @@ ul {
 
 .section-features {
   padding: 2rem 0;
-  background: url(/img/aboutHeroBackground.svg);
+  background: url(../img/aboutHeroBackground.svg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -2181,7 +2181,7 @@ ul {
 }
 
 .section-features .admission-card--up {
-  background-image: url("/img/courseCardBackground.png");
+  background-image: url("../img/courseCardBackground.png");
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2233,7 +2233,7 @@ ul {
 
 .section-salient {
   width: 100%;
-  background: url(/img/salientBackground.png);
+  background: url(../img/salientBackground.png);
   background-size: cover;
   background-repeat: no-repeat;
   padding: 4rem;
@@ -2274,7 +2274,7 @@ ul {
 
 .section-salient p::before {
   content: "";
-  background-image: url(/img/bullet.svg);
+  background-image: url(../img/bullet.svg);
   height: 1.7rem;
   width: 1.7rem;
   background-size: cover;
@@ -2284,7 +2284,7 @@ ul {
 }
 
 .section-hero-courses {
-  background: url(/img/coursesHeroImage.png);
+  background: url(../img/coursesHeroImage.png);
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 65vh;
@@ -2318,7 +2318,7 @@ ul {
 .section-about-courses {
   margin-top: 4rem;
   padding: 2rem;
-  background: url(/img/coursesAboutBackground.svg);
+  background: url(../img/coursesAboutBackground.svg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -2344,7 +2344,7 @@ ul {
 
 .section-courses-courses .title h1::before {
   content: "";
-  background: url("../../img/quotes.svg");
+  background: url("../img/quotes.svg");
   background-size: cover;
   color: #ffc700;
   position: absolute;
@@ -2420,7 +2420,7 @@ ul {
 
 .section-courses-courses__text p::before {
   content: "";
-  background-image: url(/img/bullet.svg);
+  background-image: url(../img/bullet.svg);
   height: 1.6rem;
   width: 1.6rem;
   background-size: cover;
@@ -2435,7 +2435,7 @@ ul {
 }
 
 .section-courses-courses__image {
-  background: url("/img/courseCardBackground.png");
+  background: url("../img/courseCardBackground.png");
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   background-size: cover;
@@ -2496,7 +2496,7 @@ ul {
 }
 
 .section-hero-long-courses {
-  background: url(/img/LongCoursesHeroImage.png);
+  background: url(../img/LongCoursesHeroImage.png);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -2753,7 +2753,7 @@ ul {
 
 .section-scholarship-long-courses p:not(:last-child)::before {
   content: "";
-  background-image: url(/img/whiteBullet.svg);
+  background-image: url(../img/whiteBullet.svg);
   color: #ffffff;
   height: 1.6rem;
   width: 1.6rem;
@@ -2796,7 +2796,7 @@ ul {
 }
 
 .section-hero-contact {
-  background: url(/img/contactHeroImage.png);
+  background: url(../img/contactHeroImage.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -3058,7 +3058,7 @@ ul {
 }
 
 .section-hero-download {
-  background: url(/img/downloadHeroImage.png);
+  background: url(../img/downloadHeroImage.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -3295,7 +3295,7 @@ ul {
 .section-downloads-download-jumpto__container a::before {
   content: "";
   position: absolute;
-  background-image: url(/img/triangleBullet.svg);
+  background-image: url(../img/triangleBullet.svg);
   background-size: cover;
   left: -1rem;
   top: 1rem;
