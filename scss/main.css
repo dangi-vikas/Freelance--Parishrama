@@ -504,6 +504,128 @@ ul {
           transform: scale(1);
 }
 
+.course-card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 25rem;
+  margin-bottom: 28rem;
+}
+
+.course-card--up {
+  background-image: url("/img/courseCardBackground.png");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  background-size: cover;
+  position: absolute;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  top: 0;
+  z-index: 10;
+  padding: 2rem;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+}
+
+.course-card--up__textbox {
+  padding-left: 1rem;
+}
+
+.course-card--up__text {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 2.8rem;
+  margin-bottom: 0;
+}
+
+.course-card--up__icon--container {
+  margin-top: 1rem;
+  margin-right: 1rem;
+  display: inline-block;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.course-card--up__icon--container img {
+  height: 100%;
+}
+
+.course-card--down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90%;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1.5rem 4rem #0002;
+          box-shadow: 0 1.5rem 4rem #0002;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  text-align: center;
+  padding: 3rem;
+  z-index: -1;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: -9rem;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+.course-card--down__textbox {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  display: block;
+  position: relative;
+  text-align: center;
+}
+
+.course-card--down__text {
+  font-size: 1.6rem;
+  color: #000000;
+  font-weight: 400;
+  text-align: center;
+}
+
+.course-card--down a {
+  margin-top: 2rem;
+}
+
+.course-card:hover .course-card--down {
+  height: 100%;
+  bottom: -100%;
+}
+
+.course-card:hover .course-card--down__textbox {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
 .admission-card {
   position: relative;
   display: -webkit-box;
@@ -1122,7 +1244,8 @@ ul {
   border-bottom: 2px solid transparent;
 }
 
-.nav > .nav-links > a.link:hover {
+.nav > .nav-links > a.link:hover,
+.nav > .nav-links > a.link.active {
   border-bottom: 2px solid #ffc700;
 }
 
@@ -1944,23 +2067,16 @@ ul {
   text-align: center;
 }
 
-.section-about__heading span {
-  position: relative;
-}
-
-.section-about__heading span::after {
-  display: inline-block;
-  position: absolute;
-  top: 100%;
-  content: "";
-  width: 70%;
-  height: 4px;
-  background: #ffc700;
-  left: 0;
-}
-
 .section-about__heading--intro {
   font-weight: 500;
+}
+
+.section-about__heading--intro::after {
+  display: block;
+  content: "";
+  width: 20%;
+  height: 4px;
+  background: #ffc700;
 }
 
 .section-about__text-container {
@@ -2033,23 +2149,6 @@ ul {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 2rem auto;
-}
-
-.section-features__header h1,
-.section-features__header span {
-  font-weight: 700;
-  position: relative;
-}
-
-.section-features__header span::after {
-  display: inline-block;
-  position: absolute;
-  top: 100%;
-  content: "";
-  width: 100%;
-  height: 4px;
-  background: #ffc700;
-  left: 0;
 }
 
 .section-features__quotes {
@@ -2557,19 +2656,15 @@ ul {
   position: relative;
 }
 
-.section-about-long-courses .item span {
-  position: relative;
-}
-
-.section-about-long-courses .item span::after {
-  display: inline-block;
-  position: absolute;
-  top: 100%;
-  content: "";
-  width: 110%;
-  height: 4px;
-  background: #ffc700;
+.section-about-long-courses .item h3::after {
   right: 0;
+  display: block;
+  position: absolute;
+  right: 0;
+  content: "";
+  width: 50%;
+  height: 5px;
+  background: #ffc700;
 }
 
 .section-about-long-courses .item img {
@@ -2612,19 +2707,15 @@ ul {
   position: relative;
 }
 
-.section-scholarship-long-courses span {
-  position: relative;
-}
-
-.section-scholarship-long-courses span::after {
-  display: inline-block;
-  position: absolute;
-  top: 100%;
-  content: "";
-  width: 80%;
-  height: 4px;
-  background: #ffc700;
+.section-scholarship-long-courses h1:after {
   right: 0;
+  display: block;
+  position: absolute;
+  left: 85%;
+  content: "";
+  width: 15%;
+  height: 5px;
+  background: #ffc700;
 }
 
 .section-scholarship-long-courses h4 {
@@ -2883,18 +2974,12 @@ ul {
   background-color: #ffffff;
 }
 
-@media only screen and (max-width: 62em) {
-  .section-map-contact__details-container {
-    max-width: 35rem;
-  }
-}
-
 @media only screen and (max-width: 48em) {
   .section-map-contact__details-container {
     position: relative;
     max-width: 100%;
     left: 0;
-    margin: 2rem 0;
+    margin-bottom: 2rem;
   }
 }
 
@@ -2926,10 +3011,18 @@ ul {
   z-index: 0;
 }
 
-@media only screen and (max-width: 48em) {
-  .section-map-contact__map {
-    height: auto;
-  }
+.section-map-contact__map html
+> body
+:first-child
+:first-child
+> .gm-style
+:nth-child(4)
+:first-child {
+  right: 0 !important;
+}
+
+.section-map-contact__map .gm-style {
+  right: 0 !important;
 }
 
 .section-map-contact__map-container {
@@ -2968,7 +3061,6 @@ ul {
   background: url(/img/downloadHeroImage.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
 }
 
 .section-hero-download__container {
@@ -3017,22 +3109,15 @@ ul {
 
 .section-downloads-download__container > h3 {
   font-size: 2.8rem;
+}
+
+.section-downloads-download__container > h3:after {
   margin-bottom: 7rem;
-}
-
-.section-downloads-download__container > h3 > span {
-  position: relative;
-}
-
-.section-downloads-download__container > h3 > span::after {
-  display: inline-block;
-  position: absolute;
-  top: 100%;
+  display: block;
   content: "";
-  width: 70%;
-  height: 4px;
+  width: 10%;
+  height: 5px;
   background: #ffc700;
-  left: 0;
 }
 
 .section-downloads-download__wrapper {
@@ -3151,11 +3236,6 @@ ul {
   width: 1.6rem;
 }
 
-.section-downloads-download-item-detail p > span {
-  font-size: 1.2rem;
-  font-weight: 500;
-}
-
 .section-downloads-download-item-link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3174,14 +3254,19 @@ ul {
 .section-downloads-download-new {
   background-color: #ffc700;
   border-radius: 5px;
-  padding: 0 2px;
 }
 
-.section-downloads-download .section-downloads-download-jumpto {
+.section-downloads-download-new > p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.section-downloads-download-jumpto {
+  position: relative;
   height: 100%;
 }
 
-.section-downloads-download .section-downloads-download-jumpto__container {
+.section-downloads-download-jumpto__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3194,12 +3279,12 @@ ul {
 }
 
 @media only screen and (max-width: 48em) {
-  .section-downloads-download .section-downloads-download-jumpto__container {
+  .section-downloads-download-jumpto__container {
     margin: 0rem 0rem 3rem 0rem;
   }
 }
 
-.section-downloads-download .section-downloads-download-jumpto__container a {
+.section-downloads-download-jumpto__container a {
   padding: 0.5rem;
   font-size: 1.6rem;
   font-weight: 500;
@@ -3207,7 +3292,7 @@ ul {
   position: relative;
 }
 
-.section-downloads-download .section-downloads-download-jumpto__container a::before {
+.section-downloads-download-jumpto__container a::before {
   content: "";
   position: absolute;
   background-image: url(/img/triangleBullet.svg);
