@@ -478,13 +478,11 @@ ul {
   z-index: -1;
   background-color: #ffffff;
   position: absolute;
-  bottom: -9rem;
+  top: 6rem;
 }
 
 .card--down__textbox {
-  -webkit-transform: scale(0);
-  transform: scale(0);
-  display: block;
+  display: none;
   position: relative;
   text-align: center;
 }
@@ -502,12 +500,12 @@ ul {
 
 .card:hover .card--down {
   height: 100%;
-  bottom: -100%;
+  top: 100%;
+  justify-content: center;
 }
 
 .card:hover .card--down__textbox {
-  -webkit-transform: scale(1);
-  transform: scale(1);
+  display: block;
 }
 
 .course-card {
@@ -1903,6 +1901,8 @@ ul {
 
 .section-courses .card--down {
   z-index: 0;
+  min-height: 28rem;
+  justify-content: flex-end;
 }
 
 .section-testimonials {
