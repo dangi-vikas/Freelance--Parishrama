@@ -731,11 +731,18 @@ ul {
 @media (max-width: 990px) {
   .card--down {
     height: 100%;
-    bottom: -100%;
+    top: 100%;
+    justify-content: center !important;
   }
+
+  .section-testimonials .card--down {
+    min-height: 28rem;
+    justify-content: space-around !important;
+    top: 100%;
+  }
+
   .card--down__textbox {
-    -webkit-transform: scale(1);
-    transform: scale(1);
+    display: block;
   }
 }
 
@@ -846,7 +853,7 @@ ul {
 
 .card--down-active {
   height: 100%;
-  bottom: -100%;
+  top: 100%;
 }
 
 .footer__container {
@@ -1881,7 +1888,7 @@ ul {
 
 .section-courses .card {
   min-height: 25rem;
-  margin-bottom: 28rem;
+  margin-bottom: 30rem;
 }
 
 .section-courses .card--up {
@@ -1950,6 +1957,20 @@ ul {
   border-radius: 1rem;
 }
 
+.section-testimonials .card--down {
+  text-align: left;
+  margin-bottom: 30rem;
+  justify-content: flex-end;
+  font-size: 1.4rem;
+  height: 10rem;
+  top: 100%;
+}
+
+.section-testimonials .card:hover .card--down {
+  height: 100%;
+  justify-content: space-around;
+}
+
 .section-testimonials .card--down p {
   text-align: left;
   font-size: 1.4rem;
@@ -1991,13 +2012,8 @@ ul {
   font-size: 1.4rem;
 }
 
-.section-testimonials .card:hover .section-testimonials .card--down {
-  -webkit-transform: translateY(100%);
-  transform: translateY(100%);
-}
-
 .section-testimonials .owl-stage {
-  margin-bottom: 28rem;
+  margin-bottom: 30rem;
 }
 
 .section-testimonials .owl-stage .owl-item.active:first-child {
