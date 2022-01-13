@@ -517,7 +517,7 @@ ul {
   -ms-flex-align: center;
   align-items: center;
   min-height: 25rem;
-  margin-bottom: 28rem;
+  margin-bottom: 30rem;
 }
 
 .course-card--up {
@@ -583,7 +583,7 @@ ul {
   align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
+  justify-content: flex-end;
   width: 90%;
   border-radius: 5px;
   -webkit-box-shadow: 0 1.5rem 4rem #0002;
@@ -595,16 +595,15 @@ ul {
   z-index: -1;
   background-color: #ffffff;
   position: absolute;
-  bottom: -9rem;
+  top: 6rem;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
+  min-height: 28rem;
 }
 
 .course-card--down__textbox {
-  -webkit-transform: scale(0);
-  transform: scale(0);
-  display: block;
+  display: none;
   position: relative;
   text-align: center;
 }
@@ -622,12 +621,12 @@ ul {
 
 .course-card:hover .course-card--down {
   height: 100%;
-  bottom: -100%;
+  top: 100%;
+  justify-content: center;
 }
 
 .course-card:hover .course-card--down__textbox {
-  -webkit-transform: scale(1);
-  transform: scale(1);
+  display: block;
 }
 
 .admission-card {
